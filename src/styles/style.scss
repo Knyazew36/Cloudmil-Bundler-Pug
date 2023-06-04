@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "sass:math";
 @use "sass:string";
+@import '../../node_modules/normalize.css/normalize.css';
 @import 'utils/variables';
 @import 'utils/media';
 @import 'utils/fonts';
@@ -9,11 +10,11 @@
 @import 'helpers/mixins';
 @import 'helpers/base';
 @import '../layout/layout';
-@import '../../node_modules/normalize.css/normalize.css';
 @import '../../node_modules/@fancyapps/ui/dist/fancybox.css';
 @import '../../node_modules/flatpickr/dist/flatpickr.min.css';
 @import '../../node_modules/swiper/swiper-bundle.min.css';
 @import '../../node_modules/tippy.js/dist/tippy.css';
+@import 'section/**/*';
 
 // BLOCKS
 
