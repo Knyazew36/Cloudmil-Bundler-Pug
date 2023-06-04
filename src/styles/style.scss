@@ -2,11 +2,7 @@
 @use "sass:math";
 @use "sass:string";
 @import '../../node_modules/normalize.css/normalize.css';
-@import 'utils/variables';
-@import 'utils/media';
-@import 'utils/fonts';
-@import 'utils/functions';
-@import 'utils/container';
+@import 'utils/**/*';
 @import 'helpers/mixins';
 @import 'helpers/base';
 @import '../layout/layout';
