@@ -5,7 +5,7 @@
     position: relative;
     padding-left: 40px;
     counter-increment: itemOl;
-    @include media-laptop {
+    @media #{media('<',l)} {
       padding-left: 35px;
     }
     &::before {
@@ -15,25 +15,25 @@
       left: 0;
       font-size: 16px;
       color: teal;
-      @include media-laptop {
+      @media #{media('<',l)} {
         top: 6px;
       }
-      @include media-tablet {
+      @media #{media('<',m)} {
         top: 4px;
         font-size: 14px;
       }
     }
-    &:nth-child(-n+9) {
+    &:nth-child(-n + 9) {
       &::before {
         content: '0' counter(itemOl);
       }
     }
     &:not(:last-child) {
       margin-bottom: 30px;
-      @include media-laptop {
+      @media #{media('<',l)} {
         margin-bottom: 25px;
       }
-      @include media-tablet {
+      @media #{media('<',m)} {
         margin-bottom: 20px;
       }
     }

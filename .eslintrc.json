@@ -20,7 +20,7 @@
     "no-console": "error",
     "no-unused-vars": "off",
     "prefer-arrow-callback": "off",
-    "semi": ["error", "never"],
+    "semi": "off",
     "space-before-function-paren": [
       "error",
       {

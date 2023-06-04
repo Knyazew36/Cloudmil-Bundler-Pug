@@ -80,7 +80,7 @@ block content
       +section()
         +ui-h4('UI Input')
         br
-        +ui-input('input', 'Name')(required)
+        //- +ui-input('input', 'Name')(required)
       +section()
         +ui-h4('UI Radio')
         br
@@ -90,11 +90,6 @@ block content
       +section()
         +ui-h4('UI Range')
         br
-        +ui-h6('UI Range single')
-        +ui-range()(data-start=5000 data-step=100 data-min=100 data-max=10000)
-        br
-        +ui-h6('UI Date double')
-        +ui-range()(data-start=[2500, 7500] data-step=100 data-min=100 data-max=10000)
       +section()
         +ui-h4('UI Select')
         br

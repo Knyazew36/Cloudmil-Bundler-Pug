@@ -32,7 +32,6 @@ vite-bem-template
 ├── .eslintrc.json
 ├── .gitattributes
 ├── .gitignore
-├── .gitlab-ci.yml
 ├── .pug-lintrc.json
 ├── .stylelintrc.json
 ├── gulpfile.js
@@ -87,6 +86,3 @@ vite-bem-template
     ```
     * для подключения стилевых файлов библиотек импортируйте их в файл ```src/styles/style.scss```
     * JS-файлы и стилевые файлы библиотек самостоятельно изменять нельзя
-
-## Контакты
-* Telegram: [@Alex K](https://t.me/Apnoea)

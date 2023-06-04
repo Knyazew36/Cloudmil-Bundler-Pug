@@ -1,7 +1,7 @@
 .breadcrumbs {
   display: flex;
   align-items: center;
-  @include media-tablet {
+  @media #{media('<',m)} {
     overflow-y: auto;
   }
   &__item {
@@ -20,7 +20,7 @@
       height: 1px;
       background: #aaa;
     }
-    @include media-tablet {
+    @media #{media('<',m)} {
       font-size: 12px;
     }
     &:last-child {

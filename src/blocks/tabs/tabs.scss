@@ -4,7 +4,7 @@
   padding: 6px 15px;
   border-radius: 6px;
   background-color: #ccc;
-  @include media-laptop {
+  @media #{media('<',l)} {
     margin: 0 -15px;
     border-radius: 0;
     overflow-x: auto;
@@ -18,7 +18,7 @@
     height: 100%;
     background: linear-gradient(270deg, #fff 0%, rgba(255 255 255 / 0) 100%);
     opacity: 0;
-    @include media-tablet {
+    @media #{media('<',m)} {
       opacity: 0.5;
     }
   }

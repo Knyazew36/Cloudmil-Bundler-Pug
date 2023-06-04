@@ -13,10 +13,10 @@
   &__menu {
     display: flex;
     z-index: 1;
-    @include media-laptop {
+    @media #{media('<',l)} {
       margin-left: 100px;
     }
-    @include media-tablet {
+    @media #{media('<',m)} {
       display: none;
     }
   }
