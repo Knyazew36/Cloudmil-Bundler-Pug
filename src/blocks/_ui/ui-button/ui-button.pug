@@ -11,13 +11,10 @@ mixin ui-button(text, mods)
     }
 
   if (attributes.href)
-    a.ui-button(class=allMods)&attributes(attributes)
-      if text.p3
-        +ui-p3(text.p3, text.mods)
+    a.ui-button(class=allMods)&attributes(attributes)=text
+
       block
 
   else
-    button.ui-button(class=allMods)&attributes(attributes)
-      if text.p3
-        +ui-p3(text.p3, text.mods)
+    button.ui-button(class=allMods)&attributes(attributes)=text
       block
