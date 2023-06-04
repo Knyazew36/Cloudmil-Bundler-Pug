@@ -1,4 +1,4 @@
-mixin ui-picture(fileName)
+mixin picture(fileName)
   -
     var file = {
       getTitle(filename) {
@@ -13,7 +13,7 @@ mixin ui-picture(fileName)
         return extension;
       },
       getPath(title, extension) {
-        var path = 'dist/images/' + title + "." + extension;
+        var path = '../../images/' + title + "." + extension;
         return path;
       },
     };
