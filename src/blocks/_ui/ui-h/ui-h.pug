@@ -5,7 +5,7 @@ mixin ui-h1(title, mods)
     if (typeof mods !== 'undefined' && mods) {
       const modsList = mods.split(',')
       for (const element of modsList) {
-        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
       }
       allMods = allMods.trim()
     }
@@ -20,7 +20,7 @@ mixin ui-h2(title, mods)
     if (typeof mods !== 'undefined' && mods) {
       const modsList = mods.split(',')
       for (const element of modsList) {
-        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
       }
       allMods = allMods.trim()
     }
@@ -35,7 +35,7 @@ mixin ui-h3(title, mods)
     if (typeof mods !== 'undefined' && mods) {
       const modsList = mods.split(',')
       for (const element of modsList) {
-        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
       }
       allMods = allMods.trim()
     }
@@ -50,7 +50,7 @@ mixin ui-h4(title, mods)
     if (typeof mods !== 'undefined' && mods) {
       const modsList = mods.split(',')
       for (const element of modsList) {
-        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
       }
       allMods = allMods.trim()
     }
@@ -65,7 +65,7 @@ mixin ui-h5(title, mods)
     if (typeof mods !== 'undefined' && mods) {
       const modsList = mods.split(',')
       for (const element of modsList) {
-        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
       }
       allMods = allMods.trim()
     }
@@ -80,7 +80,7 @@ mixin ui-h6(title, mods)
     if (typeof mods !== 'undefined' && mods) {
       const modsList = mods.split(',')
       for (const element of modsList) {
-        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
       }
       allMods = allMods.trim()
     }

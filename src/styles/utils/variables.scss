@@ -4,10 +4,11 @@ $font: 'Roboto', 'Arial', sans-serif;
 $fs: 16px;
 
 $black: #181d1d;
+$bg: #fcfcff;
 
-// @function color($variant: black) {
-//   @return map.get($colors, $variant);
-// }
+@function color($variant: black) {
+  @return map.get($colors, $variant);
+}
 
 $breakpoints: (
   xxl: 1920px,

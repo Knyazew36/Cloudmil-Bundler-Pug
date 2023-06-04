@@ -5,7 +5,7 @@ mixin tabs(mods)
     if (typeof mods !== 'undefined' && mods) {
       const modsList = mods.split(',')
       for (const element of modsList) {
-        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
       }
       allMods = allMods.trim()
     }
@@ -20,7 +20,7 @@ mixin tabs-head(tabsHeadingItems, mods)
     if (typeof mods !== 'undefined' && mods) {
       const modsList = mods.split(',')
       for (const element of modsList) {
-        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
       }
       allMods = allMods.trim()
     }
@@ -39,7 +39,7 @@ mixin tabs-body(mods)
     if (typeof mods !== 'undefined' && mods) {
       const modsList = mods.split(',')
       for (const element of modsList) {
-        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
       }
       allMods = allMods.trim()
     }
@@ -54,7 +54,7 @@ mixin tabs-item(mods)
     if (typeof mods !== 'undefined' && mods) {
       const modsList = mods.split(',')
       for (const element of modsList) {
-        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
       }
       allMods = allMods.trim()
     }
