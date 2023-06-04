@@ -8,7 +8,7 @@ import uiTooltip from '../blocks/_ui/ui-tooltip/ui-tooltip';
 import gallery from '../blocks/gallery/gallery';
 import slider from '../blocks/slider/slider';
 import tabs from '../blocks/tabs/tabs';
-
+import './libs/typewriter';
 document.addEventListener('DOMContentLoaded', function () {
   uiAccordion();
   uiDatepicker();

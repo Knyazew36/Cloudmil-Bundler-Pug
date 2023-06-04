@@ -1,10 +1,10 @@
 // fonts
 
-$font: 'Roboto', 'Arial', sans-serif;
+$font: 'Roboto Mono', sans-serif;
 $fs: 16px;
 
 $black: #181d1d;
-$bg: #fcfcff;
+$bg: #0e0d13;
 
 @function color($variant: black) {
   @return map.get($colors, $variant);

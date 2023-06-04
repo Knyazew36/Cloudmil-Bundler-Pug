@@ -30,7 +30,7 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
-  // color: $black;
+  color: $black;
   transition: 0.3s;
   &:hover {
     color: teal;
@@ -70,7 +70,7 @@ blockquote {
   min-height: 100vh;
   margin: 0 auto;
   font-family: $font;
-  // color: $black;
+  color: $black;
 
   .inner {
     max-width: 1340px;

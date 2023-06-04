@@ -1,0 +1,32 @@
+mixin card(title,description,year,company)
+  .card
+    .card__inner
+      .card__img
+      .card__text
+        h3.card__title=title
+        p.card__description=description
+      .card__bottom
+        p.card__year=year
+        p.card__company=company
+
+mixin card-small(title,description,year,company)
+  .card-small
+    .card-small__inner
+      .card-small__img
+      .card__text
+        h3.card__title=title
+        p.card__description=description
+      .card__bottom
+        p.card__year=year
+        p.card__company=company
+        
+mixin card-big(title,description,year,company)
+  .card-big
+    .card-big__inner
+      .card-big__img
+      .card-small__text
+        h3.card__title=title
+        p.card__description=description
+      .card__bottom
+        p.card__year=year
+        p.card__company=company

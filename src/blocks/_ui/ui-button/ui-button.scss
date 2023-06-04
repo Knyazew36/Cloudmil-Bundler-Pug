@@ -1,25 +1,41 @@
 .ui-button {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  padding: 15px 50px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $black;
-  background: #fff;
-  border: 1px solid teal;
-  border-radius: 6px;
-  transition: 0.3s;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 8px;
+
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #5c5772;
+  background: #221f30;
+  border: none;
   cursor: pointer;
-  &:hover {
-    color: teal;
+  border-radius: 30px;
+  &_preview {
+    gap: 4px;
+    padding: 13px 34px;
+    width: 174px;
+    height: 42px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #a97ffd;
+    background: #2c254d;
+    border-radius: 40px;
   }
-  &--filled {
-    color: #fff;
-    background: teal;
-    &:hover {
-      color: teal;
-      background: #fff;
-    }
+  &_footer {
+    padding: 20px 80.5px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #a97ffd;
+    border: 1px solid #a97ffd;
+    border-radius: 60px;
+    background: transparent;
   }
 }

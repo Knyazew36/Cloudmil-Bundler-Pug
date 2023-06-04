@@ -57,6 +57,7 @@
     "select2": "^4.1.0-rc.0",
     "slide-element": "^2.3.1",
     "swiper": "^9.2.0",
-    "tippy.js": "^6.3.7"
+    "tippy.js": "^6.3.7",
+    "typewriter-effect": "^2.20.1"
   }
 }

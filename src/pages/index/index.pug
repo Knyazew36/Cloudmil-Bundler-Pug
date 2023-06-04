@@ -5,4 +5,37 @@ block variables
     const pageTitle = 'Index'
 
 block content
-  main
+  section.preview
+    .container
+      .preview__inner
+        .preview__top
+          .preview__row-top
+            .preview__box-name#typewriter
+            .preview__box-title
+              h1.preview__title a UI/UX designer
+          .preview__row-middle
+            .preview__col
+              p.preview__status /open to work
+            .preview__col
+              .preview__img
+                +picture('designer.png')
+              .preview__description
+                p.preview__text I create functional & visually pleasing interfaces for the web and mobile. Currently I work for D’Terra agency as a full-time employee. My work ranges from bank’s websites to web services of start ups.
+                p.preview__text I solve problems through beautiful design with empathy to users. I drive ideas from the concept to the release. I have passion for design trends and follow closely digital culture.
+                +ui-button('','_preview').preview__button
+                  p Learn more
+                  +arrow-right
+        .preview__bottom
+          +ui-button
+            +arrow-bottom
+            p Scroll down
+  //- section.portfolio
+  //-   .container
+  //-     .portfolio__inner
+  //-       h2.portfolio__title Portfolio
+  //-       .portfolio__box
+  //-         .portfolio__row.big-small
+  //-         .portfolio__row.small-small
+  //-         .portfolio__row.small-big
+  //-       .portfolio__bottom
+  //-         +ui-button('See more projects','_portfolio')
