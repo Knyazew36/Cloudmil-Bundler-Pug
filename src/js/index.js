@@ -9,8 +9,11 @@ import gallery from '../blocks/gallery/gallery';
 import slider from '../blocks/slider/slider';
 import tabs from '../blocks/tabs/tabs';
 import './libs/typewriter';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 document.addEventListener('DOMContentLoaded', function () {
+  AOS.init()
   uiAccordion();
   uiDatepicker();
   uiTextarea();

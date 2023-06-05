@@ -7,6 +7,9 @@ block variables
 block content
   section.preview
     .container
+      +decor-1
+      +decor-2
+      +decor-3
       .preview__inner
         .preview__top
           .preview__row-top
@@ -35,19 +38,19 @@ block content
         h2.portfolio__title Portfolio
         .portfolio__box
           .portfolio__row.big-small
-            .portfolio__item
+            .portfolio__item(data-aos="zoom-in-up-up")
               +card('title','desc','year','company',)
-            .portfolio__item
+            .portfolio__item(data-aos="zoom-in-up")
               +card-small('title','desc','year','company',).card-small
           .portfolio__row.small-small
-            .portfolio__item
+            .portfolio__item(data-aos="zoom-in-up")
               +card-small('title','desc','year','company',).card-small
-            .portfolio__item
+            .portfolio__item(data-aos="zoom-in-up")
               +card-small('title','desc','year','company',).card-small
           .portfolio__row.small-big
-            .portfolio__item
+            .portfolio__item(data-aos="zoom-in-up")
               +card-small('title','desc','year','company',).card-small
-            .portfolio__item
+            .portfolio__item(data-aos="zoom-in-up")
               +card-big('title','desc','year','company',)
         .portfolio__bottom
           +ui-button('See more projects','_portfolio')
