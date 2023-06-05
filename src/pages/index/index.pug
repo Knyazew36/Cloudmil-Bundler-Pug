@@ -35,19 +35,19 @@ block content
         h2.portfolio__title Portfolio
         .portfolio__box
           .portfolio__row.big-small
-            .portfolio__item
+            .portfolio__item(data-aos="zoom-in-up")
               +card('title','desc','year','company',)
-            .portfolio__item
+            .portfolio__item(data-aos="zoom-in")
               +card-small('title','desc','year','company',).card-small
           .portfolio__row.small-small
-            .portfolio__item
+            .portfolio__item(data-aos="zoom-in")
               +card-small('title','desc','year','company',).card-small
-            .portfolio__item
+            .portfolio__item(data-aos="zoom-in")
               +card-small('title','desc','year','company',).card-small
           .portfolio__row.small-big
-            .portfolio__item
+            .portfolio__item(data-aos="zoom-in")
               +card-small('title','desc','year','company',).card-small
-            .portfolio__item
+            .portfolio__item(data-aos="zoom-in")
               +card-big('title','desc','year','company',)
         .portfolio__bottom
           +ui-button('See more projects','_portfolio')
