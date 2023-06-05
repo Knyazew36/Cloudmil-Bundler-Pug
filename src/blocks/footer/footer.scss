@@ -1,46 +1,78 @@
 .footer {
-  flex: 0 1;
-  padding: 20px 0;
-  .inner {
+  margin-top: 100px;
+  padding-bottom: 80px;
+
+  &__inner {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+
+    width: 100%;
   }
-  &__logo {
-    width: 215px;
-    height: 30px;
+
+  &__top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
-  &__menu {
+
+  &__subtitle {
+    margin-right: 10%;
+    text-align: end;
+    font-family: 'Futura';
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+  }
+
+  &__text {
+    max-width: 310px;
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &-right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__link {
     display: flex;
-    justify-content: space-between;
-    width: 50%;
-    @media #{media('<',l)} {
-      order: 1;
-      flex-wrap: wrap;
-    }
-    @media #{media('<',m)} {
-      order: unset;
-      width: 100%;
-      margin-top: 20px;
-      margin-bottom: 30px;
-    }
+    justify-content: center;
+    align-items: center;
+
+    width: 58px;
+    height: 58px;
+
+    border: 1px solid #A97FFD;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #A97FFD;
+    cursor: pointer;
   }
-  &__list {
-    margin-top: 13px;
-    .footer__item {
-      margin-top: 10px;
-      font: 300 16px/1.5 $font;
-      color: #000;
-      @media #{media('<',l)} {
-        font-size: 14px;
-        color: #505050;
-      }
-      &:first-child {
-        margin-top: 0;
-      }
-    }
-    .footer__link {
-      text-transform: none;
-      font-weight: 300;
-    }
+
+  &__year {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #FFFFFF;
+  }
+
+  .col {
+    display: flex;
+    gap: 16px;
   }
 }

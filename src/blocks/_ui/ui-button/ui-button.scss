@@ -14,6 +14,8 @@
   border: none;
   cursor: pointer;
   border-radius: 30px;
+  transition: $transition;
+
   &_preview {
     gap: 4px;
     padding: 13px 34px;
@@ -27,6 +29,7 @@
     background: #2c254d;
     border-radius: 40px;
   }
+
   &_footer {
     padding: 20px 80.5px;
 
@@ -37,5 +40,14 @@
     border: 1px solid #a97ffd;
     border-radius: 60px;
     background: transparent;
+  }
+
+  &_portfolio {
+    width: 100%;
+
+    font-weight: 300;
+    background: transparent;
+    border: 1px solid #2C254D;
+    color: #A97FFD;
   }
 }

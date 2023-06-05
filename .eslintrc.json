@@ -6,17 +6,33 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": ["sonarjs", "unicorn"],
+  "plugins": [
+    "sonarjs",
+    "unicorn"
+  ],
   "extends": [
     "standard",
     "plugin:sonarjs/recommended",
     "plugin:unicorn/recommended"
   ],
   "rules": {
-    "comma-dangle": ["error", "never"],
-    "id-length": ["error", { "exceptions": ["$"] }],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "id-length": [
+      "error",
+      {
+        "exceptions": [
+          "$"
+        ]
+      }
+    ],
     "import/no-named-as-default": "off",
-    "indent": ["error", 2],
+    "indent": [
+      "error",
+      2
+    ],
     "no-console": "error",
     "no-unused-vars": "off",
     "prefer-arrow-callback": "off",
@@ -29,7 +45,10 @@
         "asyncArrow": "never"
       }
     ],
-    "quotes": ["error", "single"],
+    "quotes": [
+      "error",
+      "single"
+    ],
     "sonarjs/cognitive-complexity": "off",
     "sonarjs/no-duplicate-string": "off",
     "sonarjs/no-unused-collection": "off"

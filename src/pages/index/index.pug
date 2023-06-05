@@ -29,13 +29,25 @@ block content
           +ui-button
             +arrow-bottom
             p Scroll down
-  //- section.portfolio
-  //-   .container
-  //-     .portfolio__inner
-  //-       h2.portfolio__title Portfolio
-  //-       .portfolio__box
-  //-         .portfolio__row.big-small
-  //-         .portfolio__row.small-small
-  //-         .portfolio__row.small-big
-  //-       .portfolio__bottom
-  //-         +ui-button('See more projects','_portfolio')
+  section.portfolio
+    .container
+      .portfolio__inner
+        h2.portfolio__title Portfolio
+        .portfolio__box
+          .portfolio__row.big-small
+            .portfolio__item
+              +card('title','desc','year','company',)
+            .portfolio__item
+              +card-small('title','desc','year','company',).card-small
+          .portfolio__row.small-small
+            .portfolio__item
+              +card-small('title','desc','year','company',).card-small
+            .portfolio__item
+              +card-small('title','desc','year','company',).card-small
+          .portfolio__row.small-big
+            .portfolio__item
+              +card-small('title','desc','year','company',).card-small
+            .portfolio__item
+              +card-big('title','desc','year','company',)
+        .portfolio__bottom
+          +ui-button('See more projects','_portfolio')

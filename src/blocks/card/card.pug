@@ -1,5 +1,5 @@
 mixin card(title,description,year,company)
-  .card
+  .card&attributes(attributes)
     .card__inner
       .card__img
       .card__text
@@ -24,7 +24,7 @@ mixin card-big(title,description,year,company)
   .card-big
     .card-big__inner
       .card-big__img
-      .card-small__text
+      .card__text
         h3.card__title=title
         p.card__description=description
       .card__bottom
