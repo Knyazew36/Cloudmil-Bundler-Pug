@@ -1,33 +1,37 @@
 .preview {
+  position: relative;
   height: 100vh;
+
   &__inner {
     width: 100%;
     position: relative;
     z-index: 1;
   }
+
   &__top {
     margin: 0 auto;
     margin-top: 230px;
     max-width: 1010px;
   }
+
   &__row-top {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+
   &__box-name {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     color: #ffffff;
   }
+
   &__box-title {
-    background: linear-gradient(
-      269.67deg,
-      #a5edf0 0.29%,
-      #beadff 41.68%,
-      #a9ee89 98.23%
-    );
+    background: linear-gradient(269.67deg,
+        #a5edf0 0.29%,
+        #beadff 41.68%,
+        #a9ee89 98.23%);
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -35,6 +39,7 @@
     -moz-animation: animated_text 5s ease-in-out infinite;
     -webkit-animation: animated_text 5s ease-in-out infinite;
   }
+
   &__title {
     padding-bottom: 10px;
     font-family: 'Futura';
@@ -43,22 +48,26 @@
     line-height: 110%;
     letter-spacing: 0.02em;
   }
+
   &__row-middle {
     margin-top: 90px;
     display: flex;
     justify-content: space-between;
   }
+
   &__status {
     font-weight: 400;
     font-size: 12px;
     line-height: 120%;
     color: #a97ffd;
   }
+
   &__col {
     display: flex;
     gap: 33px;
     max-width: 670px;
   }
+
   &__img {
     width: 92px;
     height: 102px;
@@ -66,17 +75,20 @@
     border-radius: 40px;
     overflow: hidden;
   }
+
   &__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     color: #ffffff;
   }
+
   &__description {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+
   &__button {
     margin-top: 50px;
   }
