@@ -1,0 +1,16 @@
+mixin preloader(mods)
+  -
+    const baseName = 'preloader'
+    let allMods = ''
+    if (typeof mods !== 'undefined' && mods) {
+      const modsList = mods.split(',')
+      for (const element of modsList) {
+        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+      }
+      allMods = allMods.trim()
+    }
+
+  .preloader(class=allMods)&attributes(attributes)
+    .preloader
+      .clear-loading.loading-effect-2
+        span
