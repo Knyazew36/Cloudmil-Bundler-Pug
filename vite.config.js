@@ -1,17 +1,20 @@
-import path, { resolve } from 'node:path'
-import url from 'node:url'
-import { defineConfig } from 'vite'
-import viteBabel from 'vite-plugin-babel'
-import viteMultipage from 'vite-plugin-multipage'
-import vitePug from 'vite-plugin-pug-transformer'
-import viteEslint from 'vite-plugin-eslint'
-import viteStylelint from 'vite-plugin-stylelint'
-import viteSassGlob from 'vite-plugin-sass-glob-import'
-import viteImagemin from 'vite-plugin-imagemin'
-import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+import path, { resolve } from 'node:path';
+import url from 'node:url';
+import { defineConfig } from 'vite';
+import viteBabel from 'vite-plugin-babel';
+import viteMultipage from 'vite-plugin-multipage';
+import vitePug from 'vite-plugin-pug-transformer';
+import viteEslint from 'vite-plugin-eslint';
+import viteStylelint from 'vite-plugin-stylelint';
+import viteSassGlob from 'vite-plugin-sass-glob-import';
+import viteImagemin from 'vite-plugin-imagemin';
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 
-const root = resolve(path.dirname(url.fileURLToPath(import.meta.url)), 'src')
-const outDir = resolve(path.dirname(url.fileURLToPath(import.meta.url)), 'dist')
+const root = resolve(path.dirname(url.fileURLToPath(import.meta.url)), 'src');
+const outDir = resolve(
+  path.dirname(url.fileURLToPath(import.meta.url)),
+  'dist'
+);
 
 export default defineConfig({
   root,
@@ -24,21 +27,21 @@ export default defineConfig({
     rollupOptions: {
       output: {
         assetFileNames: (assetInfo) => {
-          let extType = assetInfo.name.split('.')[1]
+          let extType = assetInfo.name.split('.')[1];
           if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
-            extType = 'images'
+            extType = 'images';
           } else if (extType === 'css') {
-            extType = 'styles'
+            extType = 'styles';
           }
-          return `${extType}/[name][extname]`
+          return `${extType}/[name][extname]`;
         },
-        chunkFileNames: 'scripts/scripts.js'
-      }
-    }
+        chunkFileNames: 'scripts/scripts.js',
+      },
+    },
   },
   plugins: [
     viteBabel({
-      presets: ['@babel/preset-env']
+      presets: ['@babel/preset-env'],
     }),
     viteMultipage({
       mimeCheck: true,
@@ -46,50 +49,51 @@ export default defineConfig({
       pageDir: 'pages',
       purgeDir: 'pages',
       removePageDirs: true,
-      rootPage: 'index.html'
+      rootPage: 'index.html',
     }),
     vitePug({
       pugOptions: {
-        pretty: true
-      }
+        pretty: true,
+      },
     }),
     viteEslint({
-      failOnError: false
+      failOnError: false,
+      exclude: ['**/jquery.min.js'],
     }),
     viteStylelint(),
     viteSassGlob(),
     viteImagemin({
       gifsicle: {
         optimizationLevel: 7,
-        interlaced: false
+        interlaced: false,
       },
       optipng: {
-        optimizationLevel: 7
+        optimizationLevel: 7,
       },
       mozjpeg: {
-        quality: 75
+        quality: 75,
       },
       pngquant: {
         quality: [0.7, 0.7],
-        speed: 4
+        speed: 4,
       },
       svgo: {
         plugins: [
           {
-            name: 'removeViewBox'
+            name: 'removeViewBox',
           },
           {
             name: 'removeEmptyAttrs',
-            active: false
-          }
-        ]
-      }
+            active: false,
+          },
+        ],
+      },
     }),
     createSvgIconsPlugin({
       iconDirs: [resolve(process.cwd(), 'src/images')],
       symbolId: '[name]',
       inject: 'body-last',
-      customDomId: '__svg__icons__dom__'
-    })
-  ]
-})
+      customDomId: '__svg__icons__dom__',
+    }),
+  ],
+});

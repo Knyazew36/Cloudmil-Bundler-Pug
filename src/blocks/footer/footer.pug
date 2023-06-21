@@ -1,41 +1,75 @@
 -
-  const footerMenu = [
-    { title: 'Title_1',
-      list: [
-      { name: 'Link_1', link: '#' },
-      { name: 'Link_2', link: '#' },
-      { name: 'Link_3', link: '#' }
-    ]},
-    { title: 'Title_2',
-      list: [
-      { name: 'Link_1', link: '#' },
-      { name: 'Link_2', link: '#' },
-      { name: 'Link_3', link: '#' }
-    ]},
-    { title: 'Title_3',
-      list: [
-      { name: 'Link_1', link: '#' },
-      { name: 'Link_2', link: '#' },
-      { name: 'Link_3', link: '#' }
-    ]},
-    { title: 'Title_4',
-      list: [
-      { name: 'Link_1', link: '#' },
-      { name: 'Link_2', link: '#' },
-      { name: 'Link_3', link: '#' }
-    ]}
-  ]
-
-footer.footer
-  .inner
-    a.footer__logo(href='/')
-      +ui-svg('icon_logo')
-    .footer__menu
-      each footerMenuItem in footerMenu
-        .footer__item
-          .footer__link=footerMenuItem.title
-          ul.footer__list
-            each footerMenuItemName, index in footerMenuItem.list
-              li.footer__item
-                a.footer__link(href=footerMenuItemName.link)
-                  +ui-p3(footerMenuItemName.name)
+footer#footer
+  .footer-widgets
+    .container-fluid
+      .row
+        .col-md-3.col-sm-3
+          .tf-footer
+            ul
+              li.logoft
+                .footer__logo
+                  img(src='./images/Big-grain-logo.png' alt='Image')
+              li.copy-right
+                | © 2023 
+                a.center01(href='#') 
+                a.center01(href='#')  @Big Grain Все права зарегистриованы
+              //- li.icon-footer
+              //-   a(href='#')
+              //-     i.fa.fa-skype(aria-hidden='true')  
+              //-   a(href='#')
+              //-     i.fa.fa-pinterest(aria-hidden='true')
+              //-   a(href='#')
+              //-     i.fa.fa-twitter(aria-hidden='true')  
+              //-   a(href='#')
+              //-     i.fa.fa-vimeo(aria-hidden='true')  
+        .col-md-2.col-sm-2
+          .link-footer
+            .list-link-1
+              h6.footer-tags TOP LINKS
+              ul
+                li
+                  a(href='about.html') About Us
+                li
+                  a(href='service.html') Services
+                li
+                  a(href='team.html') Team
+                li
+                  a(href='blog.html') News
+                li
+                  a(href='about.html') Information
+        .col-md-2.col-sm-2
+          .link-footer
+            .list-link-2
+              h6.footer-tags ABOUT US
+              ul
+                li
+                  a(href='about.html') About Us
+                li
+                  a(href='service.html') Services
+                li
+                  a(href='portfolio.html') Profolio
+                li
+                  a(href='team.html') Team
+                li
+                  a(href='blog.html') News
+        //- .col-md-2.col-sm-2
+        //-   .link-footer
+        //-     .list-link-3
+        //-       h6.footer-tags OUR TERMS
+        //-       ul
+        //-         li
+        //-           a(href='about.html') About Us
+        //-         li
+        //-           a(href='about.html') Privacy Policy
+        //-         li
+        //-           a(href='about.html') Terms & Conditions
+        //-         li
+        //-           a(href='about.html') Information
+        .col-md-3.col-sm-3.col-md
+          .payment
+            ul
+              li
+                img.img-app(src='images/shortcode/10.png' alt='Image')
+              li.img-payment
+                img(src='images/shortcode/11.png' alt='image')
++footer-bottom
