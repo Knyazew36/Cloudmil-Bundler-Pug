@@ -11,7 +11,7 @@ import './libs/jquery-countTo';
 import './libs/jquery-validate';
 import './libs/jquery.cookie';
 import './libs/jquery.easing';
-// import './libs/parallax';
+import './libs/parallax';
 import './libs/bootstrap.min';
 // import './libs/imagesloaded.min';
 import './libs/jquery.bxslider.min';
