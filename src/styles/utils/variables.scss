@@ -48,3 +48,10 @@ $col-part-d: '(#{$col-width-d} + #{$col-gap-d})';
 $transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 $transition-duration: 0.5s;
 $transition: $transition-duration $transition-timing-function;
+
+$yellow: #e6d54f;
+$green: #435a52;
+$green-light: #297d53;
+
+$cursive: 'Bad Script', cursive;
+$manrope: 'Manrope', sans-serif;

@@ -2,7 +2,7 @@
 @import url('./ionicons.css');
 @import url('./shortcodes.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Sue+Ellen+Francisco&display=swap');
-@import url('./bootstrap.css');
+/* @import url('./bootstrap.css'); */
 /* @import url('animate.css'); */
 @import url('./responsive.css');
 
@@ -29,21 +29,7 @@
 
 /* Reset
 ------------------------------------------------------------- */
-
-/* html {
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-} */
-
-/* body {
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-} */
-
-a,
+/* 
 abbr,
 acronym,
 address,
@@ -136,8 +122,8 @@ video {
   border: 0;
   outline: 0;
   background: transparent;
-}
-
+} */
+/* 
 article,
 aside,
 details,
@@ -150,7 +136,7 @@ menu,
 nav,
 section {
   display: block;
-}
+} */
 
 ol,
 ul {
@@ -269,22 +255,6 @@ input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
-body {
-  font: 16px/30px 'Open Sans', sans-serif;
-  background-color: #fff;
-  color: #798883;
-}
-
-/* a {
-  text-decoration: none;
-  color: #435a52;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-} */
-
 a:hover,
 a:focus {
   color: #e6d54f;
@@ -316,7 +286,7 @@ button {
   border: none;
 }
 
-button,
+/* button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
@@ -343,7 +313,7 @@ input[type='submit'] {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
+} */
 
 button.search-submit-form {
   position: absolute;

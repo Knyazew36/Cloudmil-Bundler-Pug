@@ -1,0 +1,14 @@
+mixin modal()
+  .my-modal
+    .overlay
+    .my-modal__inner
+      button.btn-close(type='button my-modal__close')
+        span.icon-cross
+        span.visually-hidden
+      h3.my-modal__title Оставить заявку
+      form.my-modal__form(action='#')
+        input(type='text' placeholder='Имя')
+        input(type='text' placeholder='Фамилия')
+        input(type='number' placeholder='Телефонный номер')
+        textarea#1(name='comment' placeholder='Комментарий')
+        button.submit.my-modal__button Отправить
