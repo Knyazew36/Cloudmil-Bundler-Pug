@@ -1,0 +1,95 @@
+@import './scss/mixins';
+@import './scss/banner';
+@import './scss/footer-bottom';
+// @import './scss/slider';
+@import './scss/header';
+@import './scss/about';
+@import './scss/direction';
+@import './scss/service';
+@import './scss/utils';
+@import './scss/base';
+@import './scss/footer';
+@import './scss/modal';
+@import './scss/buttons';
+@import './scss/qualities';
+@import './scss/swiper';
+@import './scss/slide';
+body {
+  font-family: 'Bad Script', cursive;
+}
+
+.test {
+  margin: 0 auto;
+  height: 600px;
+  width: 600px;
+  opacity: 0.7;
+
+  img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.img-video {
+  height: 500px;
+}
+
+.video-play {
+  &:hover {
+    transition: all 0.6 ease;
+    transform: translate(-50%, -55%);
+  }
+}
+
+.section-about {
+  padding-bottom: 100px;
+}
+
+.button-banner {
+  margin-top: 55px;
+}
+
+.heading-history {
+  margin: 0;
+}
+
+.our-news {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+
+  &__last {
+    grid-column: span 2;
+  }
+}
+
+.m-section {
+  margin-top: 100px;
+
+  @media (max-width: 767px) {
+    margin-top: 40px;
+  }
+}
+
+.slide-tittle {
+  display: inline-block;
+  text-align: center;
+}
+
+.section-banner {
+  background-image: url('../images/seed/slide-4.jpg');
+}
+
+@keyframes leftToRight {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.relative {
+  position: relative;
+}

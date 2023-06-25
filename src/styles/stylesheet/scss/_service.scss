@@ -1,0 +1,45 @@
+.service {
+  background-color: #f7f0ea;
+  padding: 110px 0;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    font-family: $cursive;
+  }
+
+  &__box {
+    margin-top: 60px;
+  }
+
+  &__subtitle {
+    h4 {
+      font-size: 28px;
+      text-align: center;
+      font-weight: 500;
+      font-family: $cursive;
+      transition: $transition;
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+
+  &-img {
+    height: 250px;
+  }
+}
+.box-service {
+  &:hover {
+    .service__subtitle {
+      & h4 {
+        color: $yellow;
+      }
+    }
+  }
+}

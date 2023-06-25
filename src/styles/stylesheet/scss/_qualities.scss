@@ -1,0 +1,30 @@
+.qualities {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+  }
+  &__card {
+    background-color: #f2f2f2;
+    width: 400px;
+  }
+  &__title {
+    font-size: 22px;
+    font-family: $cursive;
+    font-weight: 600;
+  }
+  &__img {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__box {
+    padding: 30px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-family: $manrope;
+  }
+}

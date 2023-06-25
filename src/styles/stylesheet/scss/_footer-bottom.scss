@@ -1,0 +1,12 @@
+.footer-bottom {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+  &__text {
+    font-size: 32px;
+  }
+}

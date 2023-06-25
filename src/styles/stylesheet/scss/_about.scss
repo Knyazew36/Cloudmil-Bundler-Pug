@@ -1,0 +1,66 @@
+.section-about {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+    font-family: $cursive;
+  }
+  &__video {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+    width: 100%;
+    video {
+      width: 80%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $yellow;
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+    transition: $transition;
+    opacity: 0.8;
+    z-index: 2;
+    cursor: pointer;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      border-radius: 5px;
+      border: 0.1px solid #999595;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &_active {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}

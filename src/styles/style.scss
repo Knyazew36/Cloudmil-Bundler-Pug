@@ -6,12 +6,13 @@
 @import 'helpers/mixins';
 @import 'helpers/base';
 @import '../layout/layout';
-@import '../../node_modules/@fancyapps/ui/dist/fancybox.css';
-@import '../../node_modules/flatpickr/dist/flatpickr.min.css';
-@import '../../node_modules/swiper/swiper-bundle.min.css';
-@import '../../node_modules/tippy.js/dist/tippy.css';
 @import 'section/**/*';
-
-// BLOCKS
-
+@import './stylesheet/style.css';
+@import './stylesheet/bootstrap.min.css';
+@import './stylesheet/responsive.css';
+@import './stylesheet/shortcodes.css';
+@import './stylesheet/font-awesome.min.css';
+@import './stylesheet/icon-1.css';
+@import './stylesheet/jquery.bxslider.css';
+@import './stylesheet/main';
 @import '../blocks/**/*';

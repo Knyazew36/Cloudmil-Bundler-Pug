@@ -1,41 +1,22 @@
--
-  const footerMenu = [
-    { title: 'Title_1',
-      list: [
-      { name: 'Link_1', link: '#' },
-      { name: 'Link_2', link: '#' },
-      { name: 'Link_3', link: '#' }
-    ]},
-    { title: 'Title_2',
-      list: [
-      { name: 'Link_1', link: '#' },
-      { name: 'Link_2', link: '#' },
-      { name: 'Link_3', link: '#' }
-    ]},
-    { title: 'Title_3',
-      list: [
-      { name: 'Link_1', link: '#' },
-      { name: 'Link_2', link: '#' },
-      { name: 'Link_3', link: '#' }
-    ]},
-    { title: 'Title_4',
-      list: [
-      { name: 'Link_1', link: '#' },
-      { name: 'Link_2', link: '#' },
-      { name: 'Link_3', link: '#' }
-    ]}
-  ]
-
 footer.footer
-  .inner
-    a.footer__logo(href='/')
-      +ui-svg('icon_logo')
-    .footer__menu
-      each footerMenuItem in footerMenu
-        .footer__item
-          .footer__link=footerMenuItem.title
-          ul.footer__list
-            each footerMenuItemName, index in footerMenuItem.list
-              li.footer__item
-                a.footer__link(href=footerMenuItemName.link)
-                  +ui-p3(footerMenuItemName.name)
+  .footer__inner
+    .footer__col
+      img.footer__logo(src='./../../images/seed/logo-1-new.png' alt='logo')
+      p.footer__text © 2023 "Big Grain"
+    .footer__col
+    .footer__col.footer__links
+      p.footer__link(data-aos='fade-left')
+        span Адрес:
+        |    Lorem ipsum dolor sit amet consectetur.
+      p.footer__link(data-aos='fade-left')
+        span Телефон:
+        |    Lorem ipsum dolor sit amet consectetur.
+      p.footer__link(data-aos='fade-left')
+        span Время работы:
+        |    Lorem ipsum dolor sit amet consectetur.
+  .footer-bottom
+    .container
+      .footer-bottom__inner
+        p.footer-bottom__text  Оставьте заявку и наш менеджер перезвонит вам!
+        .button-footer
+          a.gain-button(data-aos='fade-left' href='contact.html') Оставить заявку

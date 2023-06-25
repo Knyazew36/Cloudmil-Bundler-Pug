@@ -1,37 +1,20 @@
--
-  const headerMenu = [
-    { title: 'Title_1',
-      list: [
-        { name: 'Link_1', link: '#' },
-        { name: 'Link_2', link: '#' },
-        { name: 'Link_3', link: '#' }
-      ]
-    },
-    { title: 'Title_2', link: '#' },
-    { title: 'Title_3',
-      list: [
-        { name: 'Link_1', link: '#' },
-        { name: 'Link_2', link: '#' },
-        { name: 'Link_3', link: '#' }
-      ]
-    },
-    { title: 'Title_4', link: '#' }
-  ]
-
 header.header
-  .inner
-    a.header__logo(href='/')
-      +ui-svg('icon_logo')
-    ul.header__menu
-      each headerMenuItem in headerMenu
-        li.header__item
-          if headerMenuItem.list
-            .header__link.header__link--arrow
-              +ui-p3(headerMenuItem.title)
-            ul.header__list
-              each headerMenuItemLink in headerMenuItem.list
-                li.header__item
-                  a.header__link(href=headerMenuItemLink.link)=headerMenuItemLink.name
-          else
-            a.header__link(href=headerMenuItem.link)
-              +ui-p3(headerMenuItem.title)
+  .header__inner
+    .header__col
+      a.header__logo(href='#')
+        .header__logo-inner
+          img(src='./../../images/logo.png' alt='logo')
+      nav.navigation
+        ul.navigation__list
+          li.navigation__item
+            a.navigation__link Каталог
+          li.navigation__item
+            a.navigation__link Портфолио
+          li.navigation__item
+            a.navigation__link Галерея
+          li.navigation__item
+            a.navigation__link Контакты
+    .header__col
+      .header__connection
+        p.header__phone Связаться с нами
+        img.header__phone-img(src='./../../images/seed/phone.svg' alt='phone')
