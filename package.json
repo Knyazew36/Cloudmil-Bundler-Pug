@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "gulp pugMixins && vite",
-    "build": "gulp pugMixins && vite build && node .change-path.js",
+    "build": "gulp pugMixins && vite build && node .change-path.js && gulp copyFiles",
     "preview": "vite preview",
     "block": "node .create-block.js",
     "page": "node .create-page.js"
@@ -52,6 +52,7 @@
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
     "flatpickr": "^4.6.13",
+    "fs-extra": "^11.1.1",
     "lazysizes": "^5.3.2",
     "normalize.css": "^8.0.1",
     "select2": "^4.1.0-rc.0",
