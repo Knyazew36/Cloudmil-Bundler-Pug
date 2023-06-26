@@ -791,16 +791,16 @@
 }
 
 /* footer */
-.footer-style {
+/* .footer-style {
   background-color: #252c24 !important;
   border-bottom: 1px solid #3e483c;
 }
 .footer {
   margin-top: 0 !important;
-}
+} */
 
 /* gain-button */
-.gain-button {
+/* .gain-button {
   background-color: #e6d54f;
   color: #435a52;
   font-family: Manrope, sans-serif;
@@ -821,9 +821,9 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
+} */
 
-.gain-button:before {
+/* .gain-button:before {
   border-radius: 3px 3px 3px 3px;
   padding: 5px;
   opacity: 0.2;
@@ -840,9 +840,9 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
+} */
 
-.gain-button:hover {
+/* .gain-button:hover {
   background: #297d53;
   color: #fff;
 }
@@ -979,6 +979,7 @@
   font-weight: 550;
   line-height: 32px;
 }
+*/
 
 /* menu */
 

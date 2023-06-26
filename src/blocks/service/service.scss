@@ -2,11 +2,15 @@
   position: relative;
   &__box {
     display: flex;
-    // justify-content: space-between;
     gap: 20px;
+  }
+
+  &__title {
+    line-height: 130%;
   }
   &-card {
     width: 300px;
+
     &__img {
       height: 250px;
 
@@ -21,9 +25,10 @@
       display: flex;
       position: relative;
       justify-content: center;
-      padding-top: 20px;
+      padding-top: 30px;
       padding-bottom: 40px;
       background-color: white;
+      transition: $transition;
     }
 
     &__title {
@@ -34,6 +39,7 @@
       font-family: 'Bad Script', cursive;
       transition: all 0.4s ease;
       color: #435a52;
+      transition: $transition;
     }
 
     &__button {
@@ -51,6 +57,22 @@
       border: 2px solid #e6d54f;
       color: #a2a8a3;
       transition: $transition;
+    }
+
+    &:hover {
+      .service-card__body {
+        background-color: $green-light;
+      }
+      .service-card__title {
+        color: #e6d54f;
+      }
+      .service-card__button {
+        background: #e6d54f;
+        i {
+          transition: $transition;
+          color: white;
+        }
+      }
     }
   }
 }

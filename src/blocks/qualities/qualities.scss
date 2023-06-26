@@ -10,12 +10,13 @@
     width: 400px;
   }
   &__title {
-    font-size: 22px;
+    font-size: 28px;
     font-family: $cursive;
     font-weight: 600;
+    line-height: 120%;
   }
   &__img {
-    height: 300px;
+    height: 250px;
     position: relative;
     overflow: hidden;
   }
@@ -24,7 +25,17 @@
   }
 
   &__text {
+    font-size: 20px;
     margin-top: 20px;
-    font-family: $manrope;
+    line-height: 120%;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 120px;
   }
 }

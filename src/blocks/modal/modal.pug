@@ -11,4 +11,5 @@ mixin modal()
         input(type='text' placeholder='Фамилия')
         input(type='number' placeholder='Телефонный номер')
         textarea#1(name='comment' placeholder='Комментарий')
-        button.submit.my-modal__button Отправить
+      .my-modal__btn
+        +btn('Отправить','btn_yellow')

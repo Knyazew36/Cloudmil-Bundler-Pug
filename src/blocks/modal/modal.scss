@@ -1,3 +1,56 @@
-.modal {
-  position: relative;
+.my-modal {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 99;
+  // transition: all 0.3s ease;
+
+  &__inner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    padding: 40px;
+    width: 600px;
+    background-color: #3e483c;
+    border-radius: 10px;
+    z-index: 9;
+  }
+
+  &__close {
+    position: absolute;
+    right: -20px;
+    top: 0;
+  }
+  &__form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__title {
+    text-align: center;
+    color: white;
+    font-family: 'Bad Script', cursive;
+    font-size: 36px;
+  }
+  &__btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  &_active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  background-color: black;
+  opacity: 0.5;
 }

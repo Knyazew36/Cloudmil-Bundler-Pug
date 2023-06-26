@@ -1,7 +1,9 @@
 .footer-bottom {
   &__inner {
+    padding: 0 40px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    gap: 140px;
     align-items: center;
     color: white;
   }

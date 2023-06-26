@@ -1,15 +1,11 @@
-@import './scss/banner';
 @import './scss/footer-bottom';
 // @import './scss/slider';
-@import './scss/header';
 @import './scss/about';
 @import './scss/direction';
 @import './scss/service';
 @import './scss/base';
 @import './scss/footer';
-@import './scss/modal';
 @import './scss/buttons';
-@import './scss/qualities';
 @import './scss/swiper';
 @import './scss/slide';
 body {
@@ -69,10 +65,10 @@ body {
   }
 }
 
-.slide-tittle {
-  display: inline-block;
-  text-align: center;
-}
+// .slide-tittle {
+//   display: inline-block;
+//   text-align: center;
+// }
 
 .section-banner {
   background-image: url('../images/seed/slide-4.jpg');

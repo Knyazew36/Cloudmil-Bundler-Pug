@@ -1,0 +1,50 @@
+.direction {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  &__decor {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+  }
+  &__img {
+    height: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+  &__right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 42px;
+    font-weight: 600;
+    font-family: $cursive;
+  }
+  &__list {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-weight: 500;
+    font-size: 26px;
+    font-family: $cursive;
+  }
+  &__button {
+    margin-top: 60px;
+    width: 400px;
+    transition: $transition;
+  }
+}

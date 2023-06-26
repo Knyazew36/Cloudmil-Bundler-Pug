@@ -1,4 +1,4 @@
-@import url('./font-awesome.css');
+/* @import url('./font-awesome.css'); */
 @import url('./ionicons.css');
 @import url('./shortcodes.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Sue+Ellen+Francisco&display=swap');
@@ -948,9 +948,8 @@ h3 {
 }
 
 .title-55 {
-  font-family: 'Manrope', sans-serif !important;
   font-weight: 500;
-  text-transform: uppercase;
+  text-align: center;
   color: #fff;
 }
 
@@ -1408,7 +1407,7 @@ h3 {
 
 /* banner home */
 
-.section-banner {
+/* .section-banner {
   background: url('../../images/images/seed/slide-4.jpg') no-repeat fixed center;
   width: 100%;
   height: auto;
@@ -1436,7 +1435,7 @@ h3 {
 
 .tf-banner img {
   margin-bottom: 22px;
-}
+} */
 
 /* team home */
 

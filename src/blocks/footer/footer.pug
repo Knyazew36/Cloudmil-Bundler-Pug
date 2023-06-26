@@ -1,4 +1,4 @@
-footer.footer
+footer.footer.mt-section
   .footer__inner
     .footer__col
       img.footer__logo(src='./../../images/seed/logo-1-new.png' alt='logo')
@@ -7,16 +7,18 @@ footer.footer
     .footer__col.footer__links
       p.footer__link(data-aos='fade-left')
         span Адрес:
-        |    Lorem ipsum dolor sit amet consectetur.
-      p.footer__link(data-aos='fade-left')
+        |   394030, г. Воронеж, Бакунский переулок, д. 11, офис 411
+      a(href="tel:89202277757").footer__link(data-aos='fade-left')
         span Телефон:
-        |    Lorem ipsum dolor sit amet consectetur.
-      p.footer__link(data-aos='fade-left')
-        span Время работы:
-        |    Lorem ipsum dolor sit amet consectetur.
+        |   8-920-227-77-57
+      a(href="mailto:biggrain.buh@mail.ru").footer__link(data-aos='fade-left')
+        span Электронная почта
+        |   Biggrain.buh@mail.ru
+      //- p.footer__link(data-aos='fade-left')
+      //-   span Время работы:
+      //-   |    Lorem ipsum dolor sit amet consectetur.
   .footer-bottom
-    .container
-      .footer-bottom__inner
-        p.footer-bottom__text  Оставьте заявку и наш менеджер перезвонит вам!
-        .button-footer
-          a.gain-button(data-aos='fade-left' href='contact.html') Оставить заявку
+    .footer-bottom__inner
+      p.footer-bottom__text  Оставьте заявку и наш менеджер перезвонит вам!
+      .button-footer
+        +btn('Оставить заявку','btn_yellow')
