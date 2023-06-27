@@ -2,15 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 17px 28px;
+  padding: 20px 44px;
   position: relative;
 
-  font-family: Manrope, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   transition: $transition;
   border-radius: 3px;
+
+  @media #{media('<',m)} {
+    line-height: 130%;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -26,23 +30,29 @@
   &_yellow {
     background-color: #e6d54f;
     color: #435a52;
+
     &::before {
       border: 0.1px solid #3e483c;
     }
+
     &:hover {
       color: white;
       background-color: $green-light;
     }
   }
+
   &_green {
     background-color: #3e483c;
     color: white;
+
     &::before {
       border: 0.1px solid white;
     }
+
     &:hover {
       color: #3e483c;
       background-color: $yellow;
+
       &::before {
         border: 0.1px solid #3e483c;
       }

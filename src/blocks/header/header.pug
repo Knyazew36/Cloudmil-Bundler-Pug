@@ -14,7 +14,18 @@ header.header
             a.navigation__link Галерея
           li.navigation__item
             a.navigation__link Контакты
+        .navigation__bottom 
+          p.footer__link(data-a='fade-left')
+            span Адрес:
+            |   394030, г. Воронеж, Бакунский переулок, д. 11, офис 411
+          a(href="tel:89202277757").footer__link(data-a='fade-left')
+            span Телефон:
+            |   8-920-227-77-57
+          a(href="mailto:biggrain.buh@mail.ru").footer__link(data-a='fade-left')
+            span Электронная почта:
+            |   Biggrain.buh@mail.ru
     .header__col
       .header__connection
         p.header__phone Связаться с нами
         img.header__phone-img(src='./../../images/seed/phone.svg' alt='phone')
+    .header__burger

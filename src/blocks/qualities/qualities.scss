@@ -4,22 +4,38 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     justify-items: center;
+
+    @media #{media('<',m)} {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
+
   &__card {
     background-color: #f2f2f2;
     width: 400px;
+    border-radius: $border;
+    overflow: hidden;
+
+    @media #{media('<',t)} {
+      width: auto;
+    }
+
+
   }
+
   &__title {
     font-size: 28px;
     font-family: $cursive;
     font-weight: 600;
     line-height: 120%;
   }
+
   &__img {
     height: 250px;
     position: relative;
     overflow: hidden;
   }
+
   &__box {
     padding: 30px;
   }
@@ -28,6 +44,7 @@
     font-size: 20px;
     margin-top: 20px;
     line-height: 120%;
+    color: #2B332B;
   }
 
   &__decor {

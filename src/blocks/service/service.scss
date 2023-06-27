@@ -1,20 +1,79 @@
 .service {
   position: relative;
-  &__box {
+  background-color: #f7f0ea;
+  padding: 110px 0;
+
+  @media #{media('<',m)} {
+    padding: 40px 0;
+  }
+
+  &__inner {
     display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    font-family: $cursive;
+  }
+
+  &__box {
+    margin-top: 60px;
+  }
+
+  &__subtitle {
+    h4 {
+      font-size: 28px;
+      text-align: center;
+      font-weight: 500;
+      font-family: $cursive;
+      transition: $transition;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+
+  &-img {
+    height: 250px;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+
+    @media #{media('<',t)} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media #{media('<',m)} {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__title {
     line-height: 130%;
   }
+
   &-card {
-    width: 300px;
+    // width: 300px;
+
+    border-radius: $border;
+    overflow: hidden;
+
+    @media #{media('<',m)} {
+      width: auto;
+    }
 
     &__img {
       height: 250px;
 
       overflow: hidden;
+
       img {
         object-fit: cover;
         height: auto;
@@ -22,19 +81,18 @@
     }
 
     &__body {
+      padding: 10px;
       display: flex;
       position: relative;
-      justify-content: center;
+      justify-content: space-between;
+      flex-direction: column;
       padding-top: 30px;
-      padding-bottom: 40px;
       background-color: white;
       transition: $transition;
     }
 
     &__title {
-      text-align: center;
       font-size: 28px;
-      text-align: center;
       font-weight: 500;
       font-family: 'Bad Script', cursive;
       transition: all 0.4s ease;
@@ -46,9 +104,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      position: absolute;
-      bottom: -25px;
-      right: 0;
+      margin-top: 20px;
+      align-self: flex-end;
       width: 50px;
       height: 50px;
       border-radius: 50%;
@@ -63,15 +120,29 @@
       .service-card__body {
         background-color: $green-light;
       }
+
       .service-card__title {
         color: #e6d54f;
       }
+
       .service-card__button {
         background: #e6d54f;
+
         i {
           transition: $transition;
           color: white;
         }
+      }
+    }
+  }
+}
+
+
+.box-service {
+  &:hover {
+    .service__subtitle {
+      & h4 {
+        color: $yellow;
       }
     }
   }
