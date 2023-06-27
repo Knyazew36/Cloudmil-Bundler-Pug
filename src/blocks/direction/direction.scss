@@ -55,6 +55,10 @@
     font-weight: 500;
     font-size: 26px;
     font-family: $cursive;
+
+    @media #{media('<',m)} {
+      margin-top: 30px;
+    }
   }
 
   &__button {

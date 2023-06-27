@@ -10,18 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
   AOS.init();
   modal()
   header()
-  window.addEventListener('scroll', () => {
 
-
-    let scrollPosition = document.documentElement.scrollTop;
-    const header = document.querySelector('.header');
-    if (scrollPosition > 0) {
-      header.classList.add('--active');
-    } else {
-      header.classList.remove('--active');
-    }
-
-  });
 
   const videoBtn = document.querySelector('.section-about__button');
 

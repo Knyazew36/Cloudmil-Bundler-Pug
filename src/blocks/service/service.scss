@@ -55,9 +55,7 @@
     }
   }
 
-  &__title {
-    line-height: 130%;
-  }
+
 
   &-card {
     // width: 300px;
@@ -96,8 +94,13 @@
       font-weight: 500;
       font-family: 'Bad Script', cursive;
       transition: all 0.4s ease;
+      line-height: 130%;
       color: #435a52;
       transition: $transition;
+
+      @media #{media('<',m)} {
+        line-height: 100%;
+      }
     }
 
     &__button {
