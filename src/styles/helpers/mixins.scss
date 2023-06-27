@@ -42,16 +42,16 @@
   scrollbar-darkshadow-color: $scrollbar-bg;
   scrollbar-3dlight-color: $scrollbar-bg;
 
-  scrollbar-arrow-color: color(green);
+  scrollbar-arrow-color: #2b332b;
 
-  scrollbar-highlight-color: color(green);
-  scrollbar-shadow-color: color(green);
-  scrollbar-face-color: color(green);
+  scrollbar-highlight-color: #2b332b;
+  scrollbar-shadow-color: #2b332b;
+  scrollbar-face-color: #2b332b;
 
   // firefox
 
   scrollbar-width: thin;
-  scrollbar-color: color(green) $scrollbar-bg;
+  scrollbar-color: #2b332b;
 
   // chrome, edge, opera, safari
 
@@ -64,7 +64,7 @@
   &::-webkit-scrollbar-thumb {
     // margin: 4px 0;
 
-    background-color: color(green);
+    background-color: #2b332b;
   }
 }
 

@@ -2,12 +2,12 @@ body {
   background-color: $bg;
   font-family: $font;
   overflow-x: hidden;
+  @include styled-scrollbar;
 }
 
 .main {
   padding: 0 !important;
 }
-
 
 .--scroll-hidden {
   overflow: hidden;
