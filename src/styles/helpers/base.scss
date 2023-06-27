@@ -3,6 +3,18 @@ body {
   font-family: $font;
   overflow-x: hidden;
 }
+
 .main {
   padding: 0 !important;
+}
+
+
+.--scroll-hidden {
+  overflow: hidden;
+}
+
+.container {
+  @media #{media('<',m)} {
+    padding: 0 20px;
+  }
 }

@@ -10,6 +10,7 @@ import viteSassGlob from 'vite-plugin-sass-glob-import'
 import viteImagemin from 'vite-plugin-imagemin'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
+
 const root = resolve(path.dirname(url.fileURLToPath(import.meta.url)), 'src')
 const outDir = resolve(path.dirname(url.fileURLToPath(import.meta.url)), 'dist')
 
@@ -50,7 +51,8 @@ export default defineConfig({
     }),
     vitePug({
       pugOptions: {
-        pretty: true
+        pretty: true,
+        basedir: path.resolve(__dirname, 'src/blocks')
       }
     }),
     viteEslint({

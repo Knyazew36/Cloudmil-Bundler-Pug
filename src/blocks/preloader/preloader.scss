@@ -1,3 +1,17 @@
 .preloader {
   position: relative;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  pointer-events: none;
+
+  &.--preloader {
+    opacity: 0;
+    z-index: -1;
+    // pointer-events: all;
+    transition: $transition;
+
+  }
 }

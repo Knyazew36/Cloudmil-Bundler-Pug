@@ -1,44 +1,22 @@
 import '../styles/style.scss';
-// import 'virtual:svg-icons-register';
-// import 'lazysizes';
-import './libs/modal.js';
 import './libs/swiper.js';
-import './libs/parallax.js';
-import './libs/parallax.min.js';
+import { header } from '../blocks/header/header'
+import { preloader } from '../blocks/preloader/preloader';
+import { modal } from '../blocks/modal/modal';
 
-document.addEventListener('DOMContentLoaded', function () {
-  console.info('asdf 1');
-});
 
+preloader()
 window.addEventListener('DOMContentLoaded', () => {
-  window.addEventListener('scroll', () => {
-    AOS.init();
+  AOS.init();
+  modal()
+  header()
 
-    let scrollPosition = document.documentElement.scrollTop;
-    const header = document.querySelector('.header');
-    if (scrollPosition > 0) {
-      header.classList.add('--active');
-    } else {
-      header.classList.remove('--active');
-    }
-    const videoBtn = document.querySelector('.section-about__button');
+
+  const videoBtn = document.querySelector('.section-about__button');
+
+  if (videoBtn) {
     const video = document.querySelector('#video');
-    let isVideoLoaded = false;
 
-    function playVideo() {
-      if (!isVideoLoaded) {
-        video.load();
-        video.setAttribute('preload', 'metadata');
-        video.addEventListener('loadedmetadata', () => {
-          isVideoLoaded = true;
-          video.play();
-        });
-      } else {
-        video.play();
-      }
-      video.setAttribute('controls', '');
-      videoBtn.classList.add('section-about__button_active');
-    }
 
     function pauseVideo() {
       videoBtn.classList.remove('section-about__button_active');
@@ -53,9 +31,10 @@ window.addEventListener('DOMContentLoaded', () => {
         pauseVideo();
       }
     });
+  }
 
-    video.addEventListener('pause', pauseVideo);
-  });
+
+  // video.addEventListener('pause', pauseVideo);
 
   var goTop = function () {
     window.addEventListener('scroll', function () {
@@ -81,3 +60,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
   goTop();
 });
+
+
