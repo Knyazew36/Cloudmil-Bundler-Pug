@@ -65,6 +65,7 @@
   display: flex;
   justify-content: center;
   background-color: #252c24;
+
   &__inner {
     display: flex;
     align-items: center;
@@ -74,11 +75,12 @@
     gap: 30px;
     padding: 80px 0 70px 0px;
 
+
     @media #{media('<',m)} {
       padding: 40px 0 40px 0px;
       flex-direction: column;
       text-align: center;
-      gap: 0;
+      gap: 20px;
     }
   }
 

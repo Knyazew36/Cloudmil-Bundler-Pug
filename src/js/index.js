@@ -5,7 +5,7 @@ import { preloader } from '../blocks/preloader/preloader';
 import { modal } from '../blocks/modal/modal';
 import { swiperTop } from '../blocks/swiper-top/swiper-top';
 import { swiperBottom } from '../blocks/swiper-bottom/swiper-bottom';
-
+import { banner } from '../blocks/banner/banner';
 
 preloader()
 window.addEventListener('DOMContentLoaded', () => {
@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   header()
   swiperTop()
   swiperBottom()
-
+  banner()
   const videoBtn = document.querySelector('.section-about__button');
   console.log(videoBtn);
   if (videoBtn) {
@@ -37,9 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     video.addEventListener('pause', pauseVideo);
 
-    // video.style.width = '100%';
-    // video.style.height = 'auto';
-
 
   }
 
@@ -48,29 +45,27 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-  // var goTop = function () {
-  //   window.addEventListener('scroll', function () {
-  //     if (window.scrollY > 800) {
-  //       document.querySelector('.go-top').classList.add('show');
-  //     } else {
-  //       document.querySelector('.go-top').classList.remove('show');
-  //     }
-  //   });
+// var goTop = function () {
+//   window.addEventListener('scroll', function () {
+//     if (window.scrollY > 800) {
+//       document.querySelector('.go-top').classList.add('show');
+//     } else {
+//       document.querySelector('.go-top').classList.remove('show');
+//     }
+//   });
 
-  //   document.querySelector('.go-top').addEventListener('click', function (e) {
-  //     e.preventDefault();
-  //     console.log('asdf');
-  //     var scrollToTop = function () {
-  //       if (window.scrollY !== 0) {
-  //         window.scrollBy(0, -30);
-  //         requestAnimationFrame(scrollToTop);
-  //       }
-  //     };
-  //     scrollToTop();
-  //   });
-  // };
+//   document.querySelector('.go-top').addEventListener('click', function (e) {
+//     e.preventDefault();
+//     console.log('asdf');
+//     var scrollToTop = function () {
+//       if (window.scrollY !== 0) {
+//         window.scrollBy(0, -30);
+//         requestAnimationFrame(scrollToTop);
+//       }
+//     };
+//     scrollToTop();
+//   });
+// };
 
-  // goTop();
-
-
+// goTop();
 
