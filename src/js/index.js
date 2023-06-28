@@ -1,25 +1,25 @@
 import '../styles/style.scss';
 import './libs/swiper.js';
-import { header } from '../blocks/header/header'
+import { header } from '../blocks/header/header';
 import { preloader } from '../blocks/preloader/preloader';
 import { modal } from '../blocks/modal/modal';
 import { swiperTop } from '../blocks/swiper-top/swiper-top';
 import { swiperBottom } from '../blocks/swiper-bottom/swiper-bottom';
 import { banner } from '../blocks/banner/banner';
 
-preloader()
+preloader();
 window.addEventListener('DOMContentLoaded', () => {
   AOS.init();
-  modal()
-  header()
-  swiperTop()
-  swiperBottom()
-  banner()
-  const videoBtn = document.querySelector('.section-about__button');
-  console.log(videoBtn);
-  if (videoBtn) {
-    const video = document.querySelector('#video');
+  modal();
+  header();
+  swiperTop();
+  swiperBottom();
+  banner();
 
+  const videoBtn = document.querySelector('.section-about__button');
+  const video = document.querySelector('#video');
+  video.setAttribute('preload', 'auto');
+  if (videoBtn) {
     function playVideo() {
       videoBtn.classList.add('section-about__button_active');
       video.setAttribute('controls', true);
@@ -33,17 +33,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     videoBtn.addEventListener('click', () => {
       playVideo();
-
     });
     video.addEventListener('pause', pauseVideo);
-
-
   }
-
-
 });
-
-
 
 // var goTop = function () {
 //   window.addEventListener('scroll', function () {
@@ -68,4 +61,3 @@ window.addEventListener('DOMContentLoaded', () => {
 // };
 
 // goTop();
-
