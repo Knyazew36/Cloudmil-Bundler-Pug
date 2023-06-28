@@ -13,6 +13,7 @@
 
   @media #{media('<',m)} {
     line-height: 130%;
+    padding: 20px;
   }
 
   &::before {

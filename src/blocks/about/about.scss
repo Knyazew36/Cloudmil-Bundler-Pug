@@ -24,11 +24,15 @@
       width: 70%;
       height: 100%;
       border-radius: $border;
+      background-image: url('/images/seed/video.JPG');
+      background-position: center;
 
       @media #{media('<',m)} {
         width: 100%;
       }
     }
+
+
   }
 
   &__button {
@@ -51,6 +55,11 @@
     svg {
       width: 30px;
       height: 30px;
+      fill: rgba(0, 0, 0, 0.305);
+    }
+
+    &:hover {
+      opacity: 1;
     }
 
     &::before {
@@ -62,13 +71,15 @@
       border: 0.1px solid #999595;
     }
 
-    &:hover {
-      opacity: 1;
-    }
+
+    // &:hover {
+    //   opacity: 1;
+    // }
 
     &_active {
       opacity: 0;
       pointer-events: none;
     }
+
   }
 }
