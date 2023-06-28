@@ -1852,7 +1852,7 @@ h3 {
 
 /* Mobile navigation
 ---------------------------------------- */
-#mainnav-mobi {
+/* #mainnav-mobi {
   display: block;
   background-color: #252c24;
   z-index: 100000;
@@ -1870,8 +1870,8 @@ h3 {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
+} */
+/* 
 #mainnav-mobi ul li {
   margin: 0;
   position: relative;
@@ -1926,7 +1926,7 @@ h3 {
 #mainnav-mobi ul.sub-menu > li > a:hover,
 #mainnav-mobi > ul > li > ul > li.active > a {
   color: #fff;
-}
+} */
 
 .btn-menu {
   display: none;
