@@ -2,9 +2,7 @@
   position: relative;
 }
 
-
 .slide-tittle {
-
   display: block;
   padding: 30px;
   font-weight: 500;
@@ -12,6 +10,6 @@
   z-index: 3;
 
   @media #{media('<',m)} {
-    font-size: 62px;
+    font-size: 56px;
   }
 }

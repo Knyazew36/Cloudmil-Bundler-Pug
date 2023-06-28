@@ -1,13 +1,21 @@
-
 export const header = () => {
-  const burger = document.querySelector('.header__burger')
-  const navigation = document.querySelector('.navigation')
+  const burger = document.querySelector('.header__burger');
+  const navigation = document.querySelector('.navigation');
+  let isActive = false;
 
   burger.addEventListener('click', () => {
-    burger.classList.toggle('--active')
-    navigation.classList.toggle('--active')
-    document.querySelector('body').classList.toggle('--scroll-hidden')
-  })
+    if (isActive) {
+      burger.classList.remove('--active');
+      navigation.classList.remove('--active');
+      document.querySelector('body').classList.remove('--scroll-hidden');
+      isActive = false;
+    } else {
+      burger.classList.add('--active');
+      navigation.classList.add('--active');
+      document.querySelector('body').classList.add('--scroll-hidden');
+      isActive = true;
+    }
+  });
 
   window.addEventListener('scroll', () => {
     let scrollPosition = document.documentElement.scrollTop;
@@ -17,6 +25,5 @@ export const header = () => {
     } else {
       header.classList.remove('--active');
     }
-
   });
-}
+};
