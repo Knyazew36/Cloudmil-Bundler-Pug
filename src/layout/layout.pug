@@ -1,6 +1,8 @@
 block variables
 include ../blocks/mixins
 
+- var header = false
+
 doctype html
 html(lang='ru')
   block head
@@ -18,9 +20,12 @@ html(lang='ru')
 
   body
     .wrapper
+      +modal
+      +preloader
       block header
         include ../blocks/header/header
       block content
+        
       block footer
         include ../blocks/footer/footer
     block scripts

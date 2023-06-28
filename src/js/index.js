@@ -17,9 +17,10 @@ window.addEventListener('DOMContentLoaded', () => {
   banner();
 
   const videoBtn = document.querySelector('.section-about__button');
-  const video = document.querySelector('#video');
-  video.setAttribute('preload', 'auto');
+
   if (videoBtn) {
+    const video = document.querySelector('#video');
+    video.setAttribute('preload', 'true');
     function playVideo() {
       videoBtn.classList.add('section-about__button_active');
       video.setAttribute('controls', true);

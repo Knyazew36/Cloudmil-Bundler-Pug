@@ -1,0 +1,27 @@
+.breadcrumb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+  &__link {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: $manrope;
+  }
+  span {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+  }
+  &__homie {
+    color: white;
+    &:hover {
+      color: $yellow;
+    }
+  }
+  &__target {
+    color: $yellow;
+  }
+}
