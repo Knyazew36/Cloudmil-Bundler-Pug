@@ -10,6 +10,7 @@
     display: grid;
     padding: 0 40px;
     padding-bottom: 60px;
+    overflow: hidden;
 
     grid-template-columns: repeat(3, 1fr);
 
@@ -65,7 +66,6 @@
   display: flex;
   justify-content: center;
   background-color: #252c24;
-  overflow: hidden;
   &__inner {
     display: flex;
     align-items: center;
