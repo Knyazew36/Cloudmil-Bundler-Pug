@@ -24,16 +24,14 @@
       width: 70%;
       height: 100%;
       border-radius: $border;
-      background-image: url('/images/seed/video.JPG');
-      background-position: center;
-      background-size: cover;
+      // background-image: url('/images/seed/video.JPG');
+      // background-position: center;
+      // background-size: cover;
 
       @media #{media('<',m)} {
         width: 100%;
       }
     }
-
-
   }
 
   &__button {
@@ -52,7 +50,10 @@
     opacity: 0.8;
     z-index: 2;
     cursor: pointer;
-
+    @media #{media('<',m)} {
+      height: 50px;
+      width: 50px;
+    }
     svg {
       width: 30px;
       height: 30px;
@@ -72,7 +73,6 @@
       border: 0.1px solid #999595;
     }
 
-
     // &:hover {
     //   opacity: 1;
     // }
@@ -81,6 +81,5 @@
       opacity: 0;
       pointer-events: none;
     }
-
   }
 }
