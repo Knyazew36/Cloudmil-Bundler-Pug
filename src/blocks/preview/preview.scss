@@ -1,0 +1,52 @@
+.preview-page {
+  &__preview {
+    margin-top: -100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      object-position: center;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: #5a6259;
+      opacity: 0.5;
+    }
+  }
+  &__titlebox {
+    z-index: 1;
+    position: relative;
+  }
+  &__links {
+    overflow: hidden;
+  }
+
+  &__title {
+    font-size: 120px;
+    color: white;
+    text-align: center;
+    font-family: $cursive;
+
+    @media #{media('<',m)} {
+      font-size: 64px;
+    }
+  }
+}

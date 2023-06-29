@@ -1,0 +1,46 @@
+.gallery-block {
+  position: relative;
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    @media #{media('<',m)} {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    height: 500px;
+    background: $black;
+    cursor: pointer;
+    transition: $transition;
+    overflow: hidden;
+    border-radius: $border;
+    @media #{media('<',m)} {
+      height: 300px;
+    }
+    @media #{media('>',m)} {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__btn {
+    margin-top: 40px;
+    width: 300px;
+  }
+}

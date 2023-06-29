@@ -1,11 +1,15 @@
 import '../styles/style.scss';
 import './libs/swiper.js';
+import $ from 'jquery';
 import { header } from '../blocks/header/header';
 import { preloader } from '../blocks/preloader/preloader';
 import { modal } from '../blocks/modal/modal';
 import { swiperTop } from '../blocks/swiper-top/swiper-top';
 import { swiperBottom } from '../blocks/swiper-bottom/swiper-bottom';
 import { banner } from '../blocks/banner/banner';
+import { Fancybox } from '@fancyapps/ui';
+import '../../node_modules/@fancyapps/ui/dist/fancybox.css';
+import { parsleyFunc } from './libs/parsley';
 
 preloader();
 window.addEventListener('DOMContentLoaded', () => {
@@ -15,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   swiperTop();
   swiperBottom();
   banner();
+  parsleyFunc();
 
   const videoBtn = document.querySelector('.section-about__button');
 

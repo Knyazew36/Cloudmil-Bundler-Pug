@@ -1,7 +1,7 @@
 import Rellax from 'rellax';
 
 export const banner = () => {
-  const banners = document.querySelectorAll('.banner__img');
+  const parallax = document.querySelectorAll('.parallax');
   const options = {
     speed: -5,
     center: true,
@@ -11,7 +11,7 @@ export const banner = () => {
     horizontal: false,
   };
 
-  banners.forEach((el) => {
+  parallax.forEach((el) => {
     new Rellax(el, options);
   });
 };

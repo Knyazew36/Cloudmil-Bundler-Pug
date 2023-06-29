@@ -55,11 +55,7 @@
     }
   }
 
-
-
   &-card {
-    // width: 300px;
-
     border-radius: $border;
     overflow: hidden;
 
@@ -117,6 +113,13 @@
       border: 2px solid #e6d54f;
       color: #a2a8a3;
       transition: $transition;
+      svg {
+        g {
+          fill: #c1c1c1;
+        }
+        width: 16px;
+        height: auto;
+      }
     }
 
     &:hover {
@@ -139,7 +142,6 @@
     }
   }
 }
-
 
 .box-service {
   &:hover {

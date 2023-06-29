@@ -1,4 +1,6 @@
-footer.footer
+
+
+footer.footer(class= footerMt?'mt-section':'')
   .footer__inner
     .footer__col
       img.footer__logo(src='./../../images/seed/logo-1-new.png' alt='logo')
@@ -14,8 +16,8 @@ footer.footer
       a(href="mailto:biggrain.buh@mail.ru").footer__link(data-aos='fade-left')
         span Электронная почта:
         |   Biggrain.buh@mail.ru
-  .footer-bottom
+  .footer-bottom(data-aos='fade-up') 
     .footer-bottom__inner
-      p.footer-bottom__text(data-aos='fade-up')  Оставьте заявку и наш менеджер перезвонит вам
-      .button-footer(data-aos='fade-up')
+      p.footer-bottom__text Оставьте заявку и наш менеджер перезвонит вам
+      .button-footer
         +btn('Оставить заявку','btn_yellow')

@@ -1,0 +1,12 @@
+extends ../../layout/layout
+
+block variables
+  -
+    const pageName = 'gallery'
+    const pageTitle = 'gallery'
+    const footerMt=true
+
+block content
+  main
+    +preview('Галерея')
+    +gallery-block
