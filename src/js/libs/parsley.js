@@ -1,12 +1,33 @@
 import 'parsleyjs';
 import $ from 'jquery';
+import Inputmask from 'inputmask';
+
 export const parsleyFunc = () => {
-  // parsley
   $('form').parsley({
     errorsContainer: function (ParsleyField) {
       return ParsleyField.$element.closest('.select-wrapper');
     },
   });
+
+  Inputmask({ mask: '+7 (999) 999-99-99', showMaskOnHover: false }).mask(
+    '[data-mask-phone]'
+  );
+
+  window.Parsley.addValidator('phoneRequired', {
+    validateString: function (value) {
+      if (value === null || value === undefined) {
+        return false;
+      } else {
+        var digits = value.replace(/\D/g, '');
+        return digits.length === 11;
+      }
+    },
+    messages: {
+      ru: 'Пожалуйста, введите полный номер телефона.',
+    },
+  });
+
+  $('[data-mask-phone]').attr('data-parsley-phone-required', '');
 
   Parsley.addMessages('ru', {
     defaultMessage: 'Некорректное значение',
@@ -34,39 +55,4 @@ export const parsleyFunc = () => {
   });
 
   Parsley.setLocale('ru');
-
-  // маска на телефон
-  // Inputmask({ mask: '+7 (999) 999-99-99', showMaskOnHover: false }).mask(
-  //   '[data-mask-phone]'
-  // );
-  // валидация телефона
-  window.Parsley.addValidator('phone', {
-    requirementType: 'string',
-    validateString: function (value) {
-      const result = value.replaceAll(/\D/g, '');
-
-      return result.length === 11;
-    },
-    messages: {
-      ru: 'Заполните поле',
-    },
-  });
-
-  // маска на дату
-  // Inputmask({ mask: '99.99.9999', showMaskOnHover: false }).mask(
-  //   '[data-mask-date]'
-  // );
-
-  // кастом валидатиция на цифры и спецсимволы
-  window.Parsley.addValidator('string', {
-    requirementType: 'string',
-    validateString: function (value) {
-      const regexp = /[^a-zа-яё\s]/i;
-
-      return !regexp.test(value);
-    },
-    messages: {
-      ru: 'Спецсимволы и цифры запрещены',
-    },
-  });
 };

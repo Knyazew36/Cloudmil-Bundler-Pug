@@ -1,9 +1,15 @@
 export const goTop = function () {
+  const scrollButton = document.querySelector('.go-top');
+
   window.addEventListener('scroll', function () {
-    if (window.scrollY > 800) {
-      document.querySelector('.go-top').classList.add('show');
+    if (window.pageYOffset > 800) {
+      scrollButton.classList.add('show');
     } else {
-      document.querySelector('.go-top').classList.remove('show');
+      scrollButton.classList.remove('show');
     }
+  });
+
+  scrollButton.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 };

@@ -6,10 +6,13 @@ mixin modal()
         span.icon-cross
         span.visually-hidden
       h3.my-modal__title Оставить заявку
-      form.my-modal__form(action='#')
-        input(type='text' placeholder='Имя')
-        input(type='text' placeholder='Фамилия')
-        input(type='text' placeholder='Телефонный номер')
-        textarea#1(name='comment' placeholder='Комментарий')
-      .my-modal__btn
-        +btn('Отправить','btn_yellow')
+      .contact__form.my-modal__form 
+        form.contact-form(action='#')
+          .contact-form__input
+              input(type='text' placeholder='Имя' required)
+          .contact-from-input
+            input(type='text' placeholder='Фамилия')
+          .contact-from-input
+            input(type='text' placeholder='Телефонный номер' required data-mask-phone)
+          textarea(name='comment' placeholder='Комментарий')
+          +btn('Связаться с нами','btn_yellow contact__button').contact-form__button

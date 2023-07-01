@@ -7,6 +7,11 @@
     flex-direction: column;
   }
   &__block {
+    background-color: #2b332b;
+    padding: 40px 20px;
+    border-radius: $border;
+    overflow: hidden;
+
     position: relative;
     z-index: 2;
     margin-top: 80px;
@@ -30,15 +35,53 @@
     border-radius: $border;
     overflow: hidden;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    &-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: $black;
+      opacity: 0.3;
+      cursor: pointer;
+      transition: $transition;
+
+      &.--hide {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+    &-tap {
+      width: 60px;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: pulse 2.5s ease infinite;
+    }
   }
 
   &-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-radius: $border;
+
+    &__input {
+      display: flex;
+      flex-direction: column;
+    }
     &__row {
       display: flex;
+
       gap: 20px;
+      @media #{media('<',m)} {
+        flex-direction: column;
+        gap: 0;
+        input {
+        }
+      }
     }
   }
   &__row {
@@ -51,18 +94,34 @@
     font-family: $manrope;
     display: flex;
     font-size: 16px;
+    color: $yellow;
     gap: 10px;
     span {
+      font-weight: 00;
       font-family: $cursive;
+      color: white;
     }
   }
 
   &__subtitle {
     font-family: $cursive;
     font-size: 32px;
+    color: white;
   }
   &__bottom {
     overflow: hidden;
     padding-top: 10px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
   }
 }

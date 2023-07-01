@@ -14,16 +14,16 @@ html(lang='ru')
       link(href='https://vitejs.dev/logo.svg' rel='icon' type='image/x-icon')
       link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css')
       link(rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css')
-      //- link(rel='preconnect' href='https://fonts.googleapis.com')
-      //- link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
       link(href='https://fonts.googleapis.com/css2?family=Bad+Script&display=swap' rel='stylesheet')
 
   body(style{
     opacity:0
   })
     .wrapper
-      +modal
       +preloader
+      +modal
+      +button-up
+
       block header
         include ../blocks/header/header
       block content

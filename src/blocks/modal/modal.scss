@@ -22,10 +22,7 @@
   }
 
   &__form {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    margin-top: 40px;
   }
 
   &__title {
@@ -33,12 +30,6 @@
     color: white;
     font-family: 'Bad Script', cursive;
     font-size: 36px;
-  }
-
-  &__btn {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
   }
 
   &_active {
@@ -62,7 +53,6 @@
   display: flex;
   align-items: center;
 }
-
 
 .btn-close {
   position: absolute;
@@ -101,10 +91,8 @@
   }
 }
 
-
 @media #{media('<',m)} {
   .my-modal {
-
     &__inner {
       padding: 20px;
       width: 90%;
@@ -135,5 +123,4 @@
       pointer-events: all;
     }
   }
-
 }

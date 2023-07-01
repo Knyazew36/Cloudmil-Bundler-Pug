@@ -47,12 +47,12 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
+    "inputmask": "^5.0.8",
     "jquery": "^3.7.0",
     "normalize.css": "^8.0.1",
     "parallax-js": "^3.1.0",
     "parsleyjs": "^2.9.2",
     "rellax": "^1.12.1",
-    "scroll-js": "^3.5.2",
     "select2": "^4.1.0-rc.0",
     "swiper": "^9.2.0"
   }
