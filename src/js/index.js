@@ -10,6 +10,7 @@ import { banner } from '../blocks/banner/banner';
 import { Fancybox } from '@fancyapps/ui';
 import '../../node_modules/@fancyapps/ui/dist/fancybox.css';
 import { parsleyFunc } from './libs/parsley';
+import { goTop } from '../blocks/button-up/button-up';
 
 preloader();
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   swiperBottom();
   banner();
   parsleyFunc();
-
+  goTop();
   const videoBtn = document.querySelector('.section-about__button');
 
   if (videoBtn) {
@@ -43,27 +44,3 @@ window.addEventListener('DOMContentLoaded', () => {
     video.addEventListener('pause', pauseVideo);
   }
 });
-
-// var goTop = function () {
-//   window.addEventListener('scroll', function () {
-//     if (window.scrollY > 800) {
-//       document.querySelector('.go-top').classList.add('show');
-//     } else {
-//       document.querySelector('.go-top').classList.remove('show');
-//     }
-//   });
-
-//   document.querySelector('.go-top').addEventListener('click', function (e) {
-//     e.preventDefault();
-//     console.log('asdf');
-//     var scrollToTop = function () {
-//       if (window.scrollY !== 0) {
-//         window.scrollBy(0, -30);
-//         requestAnimationFrame(scrollToTop);
-//       }
-//     };
-//     scrollToTop();
-//   });
-// };
-
-// goTop();
