@@ -18,18 +18,21 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     @media #{media('<',m)} {
+      width: 100%;
       grid-template-columns: repeat(1, 1fr);
       margin-top: 40px;
     }
   }
   &__map {
     @media #{media('<',m)} {
-      padding: 0 20px;
+      padding: 0 10px;
     }
     &-body {
       position: relative;
       width: 80%;
       height: 60vh;
+      min-height: 450px;
+
       display: flex;
       justify-content: center;
       margin: 0 auto;

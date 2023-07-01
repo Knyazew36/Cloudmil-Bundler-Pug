@@ -19,8 +19,6 @@
     @media #{media('<',t)} {
       width: auto;
     }
-
-
   }
 
   &__title {
@@ -34,6 +32,11 @@
     height: 250px;
     position: relative;
     overflow: hidden;
+    &-img {
+      width: 100%;
+
+      object-fit: cover;
+    }
   }
 
   &__box {
@@ -44,7 +47,7 @@
     font-size: 20px;
     margin-top: 20px;
     line-height: 120%;
-    color: #2B332B;
+    color: #2b332b;
   }
 
   &__decor {
