@@ -8,8 +8,8 @@
     width: 100%;
     overflow: hidden;
     z-index: 0;
-    background-image: url('../../images/slide-2.jpg');
-    background-position: 30% 0;
+    background-image: url('/slide-2.jpg');
+    background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: 100%;
     @media #{media('<',m)} {
