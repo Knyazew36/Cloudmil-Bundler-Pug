@@ -1,6 +1,5 @@
 .contact {
   position: relative;
-
   &__inner {
     position: relative;
     display: flex;
@@ -24,17 +23,25 @@
     }
   }
   &__map {
-    position: relative;
-    width: 80%;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: -8%;
-    z-index: 1;
-    border-radius: $border;
-    overflow: hidden;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    @media #{media('<',m)} {
+      padding: 0 20px;
+    }
+    &-body {
+      position: relative;
+      width: 80%;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: -8%;
+      z-index: 1;
+      border-radius: $border;
+      overflow: hidden;
+      box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+      @media #{media('<',m)} {
+        width: 100%;
+      }
+    }
 
     &-overlay {
       position: absolute;

@@ -50,12 +50,13 @@
     cursor: pointer;
     line-height: 130%;
 
-    &:hover {
-      transition: $transition;
+    @media #{media('>',m)} {
+      &:hover {
+        transition: $transition;
 
-      color: $green-light;
+        color: $green-light;
+      }
     }
-
     span {
       color: white;
     }

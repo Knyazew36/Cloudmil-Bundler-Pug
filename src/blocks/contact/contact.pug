@@ -2,43 +2,45 @@ mixin contact(mods)
   section.contact 
     .contact__inner 
       +preview('Контакты')
-      .contact__map 
-        .contact__map-overlay
-          img(src="../../images/seed/tap.svg", alt="").contact__map-tap
-        script(type='text/javascript'  charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A298b118c05514fa7cf3d448d37f9574217fd1486cc8927396840209148ac2cee&width=100%25&height=720&lang=ru_RU&scroll=true')
-      .container.contact__block 
-        .contact__form 
-          form.contact-form(action='#')
-            .contact-form__input
-                input(type='text' placeholder='Имя' required)
-            .contact-from-input
-              input(type='text' placeholder='Фамилия')
-            .contact-from-input
-              input(type='text' placeholder='Телефонный номер' required data-mask-phone)
-            textarea(name='comment' placeholder='Комментарий')
-            +btn('Связаться с нами','btn_yellow contact__button').contact-form__button
-        .contact__bottom
-          h3.contact__subtitle Юридическая информация:
-          .contact__row
-            p.contact__text-info(data-aos='fade-left')
-              span ИНН
-              | 88005553535
-            p.contact__text-info(data-aos='fade-left')
-              span ИНН
-              | 88005553535
-            p.contact__text-info(data-aos='fade-left') 
-              span ЮР имя
-              | 88005553535
-            p.contact__text-info(data-aos='fade-left') 
-              span Сайт РФ
-              | 88005553535
-            p.contact__text-info(data-aos='fade-left') 
-              span Адрес:
-              |   394030, г. Воронеж, Бакунский переулок, д. 11, офис 411
-            p.contact__text-info(data-aos='fade-left') 
-              span Телефон:
-              |   8-920-227-77-57
-            p.contact__text-info(data-aos='fade-left') 
-              span Электронная почта:
-              | Biggrain.buh@mail.ru
-      
+      .contact__map
+        .contact__map-body
+          .contact__map-overlay
+            img(src="../../images/seed/tap.svg", alt="").contact__map-tap
+          script(type='text/javascript'  charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A298b118c05514fa7cf3d448d37f9574217fd1486cc8927396840209148ac2cee&width=100%25&height=720&lang=ru_RU&scroll=true')
+      .container 
+        .contact__block 
+          .contact__form 
+            form.contact-form(action='#')
+              .contact-form__input
+                  input(type='text' placeholder='Имя' required)
+              .contact-from-input
+                input(type='text' placeholder='Фамилия')
+              .contact-from-input
+                input(type='text' placeholder='Телефонный номер' required data-mask-phone)
+              textarea(name='comment' placeholder='Комментарий')
+              +btn('Связаться с нами','btn_yellow contact__button').contact-form__button
+          .contact__bottom
+            h3.contact__subtitle Юридическая информация:
+            .contact__row
+              p.contact__text-info(data-aos='fade-left')
+                span ИНН
+                | 88005553535
+              p.contact__text-info(data-aos='fade-left')
+                span ИНН
+                | 88005553535
+              p.contact__text-info(data-aos='fade-left') 
+                span ЮР имя
+                | 88005553535
+              p.contact__text-info(data-aos='fade-left') 
+                span Сайт РФ
+                | 88005553535
+              p.contact__text-info(data-aos='fade-left') 
+                span Адрес:
+                |   394030, г. Воронеж, Бакунский переулок, д. 11, офис 411
+              p.contact__text-info(data-aos='fade-left') 
+                span Телефон:
+                |   8-920-227-77-57
+              p.contact__text-info(data-aos='fade-left') 
+                span Электронная почта:
+                | Biggrain.buh@mail.ru
+        

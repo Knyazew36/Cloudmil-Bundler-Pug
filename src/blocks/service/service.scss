@@ -31,8 +31,10 @@
       font-family: $cursive;
       transition: $transition;
 
-      &:hover {
-        color: $yellow;
+      @media #{media('>',m)} {
+        &:hover {
+          color: $yellow;
+        }
       }
     }
   }
@@ -133,10 +135,8 @@
 
       .service-card__button {
         background: #e6d54f;
-
-        i {
-          transition: $transition;
-          color: white;
+        svg g {
+          fill: white;
         }
       }
     }

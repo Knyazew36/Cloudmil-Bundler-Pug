@@ -75,13 +75,13 @@
   .icon-cross {
     @include cross(20px, #fff, 2px);
   }
-
-  &:hover,
-  &:focus {
-    transform: rotateZ(90deg);
-    background: #e6d54f;
+  @media #{media('>',m)} {
+    &:hover,
+    &:focus {
+      transform: rotateZ(90deg);
+      background: #e6d54f;
+    }
   }
-
   @media #{media('<',m)} {
     top: 0;
     right: 0;

@@ -21,8 +21,10 @@
   }
   &__homie {
     color: white;
-    &:hover {
-      color: $yellow;
+    @media #{media('>',m)} {
+      &:hover {
+        color: $yellow;
+      }
     }
   }
   &__target {
