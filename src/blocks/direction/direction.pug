@@ -4,16 +4,14 @@ mixin direction(mods)
       .direction__inner
         .direction__left(data-aos='fade-up')
           .direction__img
-            img.direction__img_1(src='./images/about.JPG' alt='')
+            img.direction__img_1(src="./images/about.jpg" ,alt='')
         .direction__right(data-aos='fade-up')
           .direction__row
             h2.direction__title
               | Основными направлениями нашей деятельности являются продажа:
             ul.direction__list
               li(data-aos='fade-right') - Масличной и мелкосемянной культуры
-
               li(data-aos='fade-right') - Зернобытовой и бобовой культуры
-              
               li(data-aos='fade-right') - Круп
               li(data-aos='fade-right') - Зернобытовой и бобовой культуры
           +btn('Смотреть нашу продукцию', 'btn_green direction__button')

@@ -1,5 +1,6 @@
 .gallery-block {
   position: relative;
+  margin-top: -100px;
   &__images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

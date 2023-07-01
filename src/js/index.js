@@ -13,7 +13,7 @@ import { banner } from '../blocks/banner/banner';
 import { parsleyFunc } from './libs/parsley';
 import { goTop } from '../blocks/button-up/button-up';
 import { contact } from '../blocks/contact/contact';
-
+import { changeBackgroundPositionOnScroll } from '../blocks/preview/preview';
 preloader();
 window.addEventListener('DOMContentLoaded', () => {
   AOS.init();
@@ -26,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
   goTop();
   const videoBtn = document.querySelector('.section-about__button');
   contact();
+  changeBackgroundPositionOnScroll();
   if (videoBtn) {
     const video = document.querySelector('#video');
     video.setAttribute('preload', 'true');
