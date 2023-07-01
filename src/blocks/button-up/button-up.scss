@@ -29,7 +29,7 @@
   right: 20px;
   opacity: 1;
   visibility: visible;
-  z-index: 99;
+  z-index: 3;
 }
 @media #{media('>',m)} {
   .go-top:hover {
