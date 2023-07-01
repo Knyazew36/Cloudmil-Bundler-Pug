@@ -14,6 +14,7 @@ import { parsleyFunc } from './libs/parsley';
 import { goTop } from '../blocks/button-up/button-up';
 import { contact } from '../blocks/contact/contact';
 import { changeBackgroundPositionOnScroll } from '../blocks/preview/preview';
+import { video } from './video';
 preloader();
 window.addEventListener('DOMContentLoaded', () => {
   AOS.init();
@@ -24,26 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
   banner();
   parsleyFunc();
   goTop();
-  const videoBtn = document.querySelector('.section-about__button');
   contact();
   changeBackgroundPositionOnScroll();
-  if (videoBtn) {
-    const video = document.querySelector('#video');
-    video.setAttribute('preload', 'true');
-    function playVideo() {
-      videoBtn.classList.add('section-about__button_active');
-      video.setAttribute('controls', true);
-      video.play();
-    }
-    function pauseVideo() {
-      videoBtn.classList.remove('section-about__button_active');
-      video.removeAttribute('controls');
-      video.pause();
-    }
-
-    videoBtn.addEventListener('click', () => {
-      playVideo();
-    });
-    video.addEventListener('pause', pauseVideo);
-  }
+  video();
 });

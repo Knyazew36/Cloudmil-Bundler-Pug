@@ -124,19 +124,21 @@
       }
     }
 
-    &:hover {
-      .service-card__body {
-        background-color: $green-light;
-      }
+    @media #{media('>',m)} {
+      &:hover {
+        .service-card__body {
+          background-color: $green-light;
+        }
 
-      .service-card__title {
-        color: #e6d54f;
-      }
+        .service-card__title {
+          color: #e6d54f;
+        }
 
-      .service-card__button {
-        background: #e6d54f;
-        svg g {
-          fill: white;
+        .service-card__button {
+          background: #e6d54f;
+          svg g {
+            fill: white;
+          }
         }
       }
     }
