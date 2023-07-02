@@ -50,10 +50,9 @@
     overflow: hidden;
 
     @media #{media('<',m)} {
-      width: auto;
-      padding: 10px 15px;
+      width: 100%;
+      padding: 10px 20px;
       padding-bottom: 30px;
-      transform: translateY(-50px);
     }
   }
 
@@ -64,10 +63,12 @@
     font-family: $cursive;
     text-align: center;
     transition: $transition;
+
+    width: 100%;
     transform: translateY(150%);
 
     @media #{media('<',m)} {
-      font-size: 64px;
+      font-size: 60px;
       line-height: 100%;
     }
   }

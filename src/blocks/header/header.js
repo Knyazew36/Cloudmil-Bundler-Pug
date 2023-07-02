@@ -1,3 +1,5 @@
+import { disablePageScroll, enablePageScroll } from 'scroll-lock';
+
 export const header = () => {
   const burger = document.querySelector('.header__burger');
   const navigation = document.querySelector('.navigation');
@@ -7,12 +9,12 @@ export const header = () => {
     if (isActive) {
       burger.classList.remove('--active');
       navigation.classList.remove('--active');
-      document.querySelector('body').classList.remove('--scroll-hidden');
+      enablePageScroll(navigation);
       isActive = false;
     } else {
       burger.classList.add('--active');
       navigation.classList.add('--active');
-      document.querySelector('body').classList.add('--scroll-hidden');
+      disablePageScroll(navigation);
       isActive = true;
     }
   });
