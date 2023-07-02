@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "gulp pugMixins && vite",
-    "build": "gulp pugMixins && vite build && node .change-path.js && gulp copyFiles",
+    "build": "gulp pugMixins && vite build && node .change-path.js",
     "preview": "vite preview",
     "block": "node .create-block.js",
     "page": "node .create-page.js"

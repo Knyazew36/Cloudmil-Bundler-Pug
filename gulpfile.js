@@ -32,10 +32,4 @@ function pugMixins() {
     ])
     .pipe(generatePugMixins());
 }
-// function copyFiles() {
-//   const source = path.resolve('./src/rev-slider/**/*');
-//   const destination = path.resolve('./dist/');
-//   return gulp.src(source, { base: './src' }).pipe(gulp.dest(destination));
-// }
-
 export { pugMixins };
