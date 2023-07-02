@@ -38,4 +38,4 @@ function pugMixins() {
 //   return gulp.src(source, { base: './src' }).pipe(gulp.dest(destination));
 // }
 
-export { pugMixins, copyFiles };
+export { pugMixins };
