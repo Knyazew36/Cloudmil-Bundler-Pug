@@ -1,3 +1,4 @@
+import Swiper from 'swiper';
 export const swiperTop = () => {
   const swiper = new Swiper('[data-swiper="top"]', {
     loop: true,
@@ -19,5 +20,3 @@ export const swiperTop = () => {
     currentTitle.classList.add('slider-active');
   });
 };
-
-

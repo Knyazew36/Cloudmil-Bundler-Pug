@@ -1,4 +1,4 @@
-import Swiper from "swiper";
+import Swiper from 'swiper';
 
 export const swiperBottom = () => {
   const swiper = new Swiper('[data-swiper="bottom"]', {
@@ -10,5 +10,3 @@ export const swiperBottom = () => {
     slidesPerView: 'auto',
   });
 };
-
-
