@@ -1,6 +1,8 @@
+import '../../node_modules/swiper/swiper.min.css';
 import '../styles/style.scss';
-// import './libs/swiper.js';
 import $ from 'jquery';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Fancybox } from '@fancyapps/ui';
 import '../../node_modules/@fancyapps/ui/dist/fancybox.css';
 
@@ -15,6 +17,7 @@ import { goTop } from '../blocks/button-up/button-up';
 import { contact } from '../blocks/contact/contact';
 import { changeBackgroundPositionOnScroll } from '../blocks/preview/preview';
 import { video } from './video';
+
 preloader();
 window.addEventListener('DOMContentLoaded', () => {
   AOS.init();
