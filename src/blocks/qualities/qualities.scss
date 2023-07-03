@@ -1,7 +1,7 @@
 .qualities {
   &__inner {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     justify-items: center;
 
@@ -12,7 +12,7 @@
 
   &__card {
     background-color: #f2f2f2;
-    width: 400px;
+    // width: 400px;
     border-radius: $border;
     overflow: hidden;
 
@@ -29,7 +29,8 @@
   }
 
   &__img {
-    height: 250px;
+    // height: 250px;
+    min-height: 150px;
     position: relative;
     overflow: hidden;
     &-img {
@@ -52,10 +53,15 @@
 
   &__decor {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 5%;
+    left: 5%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
     z-index: 1;
-    width: 120px;
+    width: 100px;
+    opacity: 1;
+    @media #{media('<',m)} {
+      width: 90px;
+    }
   }
 }
