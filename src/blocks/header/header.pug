@@ -7,7 +7,7 @@ header.header
       nav.navigation
         ul.navigation__list
           li.navigation__item
-            a.navigation__link Каталог
+            a.navigation__link(href='./catalog.html') Каталог
           //- li.navigation__item
           //-   a.navigation__link О нас
           li.navigation__item
@@ -26,7 +26,7 @@ header.header
             |   Biggrain.buh@mail.ru
     .header__col
       +language
-      .header__connection
+      .header__connection.modal-on
         p.header__phone Связаться с нами
         img.header__phone-img(src='./../../images/phone.svg' alt='phone')
       .header__burger

@@ -1,2 +1,11 @@
-mixin formComponents(mods)
-  .e 
+mixin input
+  .input-wrapper(data-input-parent='')
+    .input-wrapper__placeholder
+      |#{attributes.placeholder}
+    input.input(data-input='' required)&attributes(attributes)
+
+mixin textarea
+  .input-wrapper(data-input-parent='')
+    .input-wrapper__placeholder
+      |#{attributes.placeholder}
+    textarea.textarea(data-input='')&attributes(attributes)

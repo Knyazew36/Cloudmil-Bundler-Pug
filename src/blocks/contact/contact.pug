@@ -11,12 +11,12 @@ mixin contact(mods)
           .contact__form 
             form.contact-form(action='#')
               .contact-form__input
-                  input(type='text' placeholder='Имя' required)
+                +input(type='text' placeholder='Имя' required)
               .contact-from-input
-                input(type='text' placeholder='Фамилия')
+                +input(type='text' placeholder='Фамилия')
               .contact-from-input
-                input(type='text' placeholder='Телефонный номер' required data-mask-phone)
-              textarea(name='comment' placeholder='Комментарий')
+                +input(type='text' placeholder='Телефонный номер' required data-mask-phone)
+              +textarea(name='comment' placeholder='Комментарий')
               +btn('Связаться с нами','btn_yellow contact__button').contact-form__button
           .contact__bottom
             h3.contact__subtitle Юридическая информация:

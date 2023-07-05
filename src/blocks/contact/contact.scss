@@ -78,21 +78,6 @@
     gap: 20px;
     border-radius: $border;
 
-    &__input {
-      display: flex;
-      flex-direction: column;
-    }
-    &__row {
-      display: flex;
-
-      gap: 20px;
-      @media #{media('<',m)} {
-        flex-direction: column;
-        gap: 0;
-        input {
-        }
-      }
-    }
     &__text {
       color: white;
       line-height: 130%;
@@ -116,11 +101,13 @@
     }
     p {
       color: $yellow;
+      line-height: 120%;
     }
     span {
-      font-weight: 700;
+      font-weight: 400;
       font-family: $cursive;
       color: white;
+      line-height: 120%;
     }
   }
 

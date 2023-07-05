@@ -1,31 +1,41 @@
+import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 export const modal = () => {
-  const btn = document.querySelector('.header__connection');
-  const footerBtn = document.querySelector('.button-footer')
   const modal = document.querySelector('.my-modal');
   const close = document.querySelector('.btn-close');
   const overlay = document.querySelector('.overlay');
+  const buttons = document.querySelectorAll('.modal-on');
 
-  btn.addEventListener('click', () => {
-    modal.classList.add('my-modal_active');
-    document.querySelector('body').classList.add('--hidden');
+  const btnResponse = document.querySelector('.modal-response');
+  if (buttons.length == 0) return;
 
+  modal.addEventListener('submit', (e) => {
+    e.preventDefault();
+    modal.classList.add('--response');
+    setTimeout(() => {
+      modalOff();
+    }, 2000);
   });
-  footerBtn.addEventListener('click', () => {
-    modal.classList.add('my-modal_active');
-    document.querySelector('body').classList.add('--hidden');
 
+  buttons.forEach((el) => {
+    el.addEventListener('click', () => {
+      modalOnn();
+    });
   });
 
-
-
+  const modalOnn = () => {
+    modal.classList.add('my-modal_active');
+    disablePageScroll();
+  };
+  const modalOff = () => {
+    modal.classList.remove('my-modal_active');
+    enablePageScroll();
+    modal.classList.remove('--response');
+  };
 
   close.addEventListener('click', () => {
-    modal.classList.remove('my-modal_active');
-    document.querySelector('body').classList.remove('--hidden');
+    modalOff();
   });
   overlay.addEventListener('click', () => {
-    modal.classList.remove('my-modal_active');
-    document.querySelector('body').classList.remove('--hidden');
+    modalOff();
   });
-}
-
+};

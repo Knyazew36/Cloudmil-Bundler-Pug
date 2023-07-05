@@ -1,6 +1,8 @@
 .parsley-required,
 .parsley-phoneRequired {
-  transition: $transition;
   padding-top: 10px;
   color: red;
+  &:hover {
+    color: red;
+  }
 }

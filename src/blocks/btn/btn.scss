@@ -10,7 +10,7 @@
   text-transform: uppercase;
   transition: $transition;
   border-radius: 3px;
-
+  cursor: pointer;
   @media #{media('<',m)} {
     line-height: 130%;
     padding: 20px;
