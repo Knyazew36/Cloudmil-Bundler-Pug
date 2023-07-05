@@ -17,6 +17,7 @@ import { goTop } from '../blocks/button-up/button-up';
 import { contact } from '../blocks/contact/contact';
 import { changeBackgroundPositionOnScroll } from '../blocks/preview/preview';
 import { video } from './video';
+import { formComponents } from '../blocks/formComponents/formComponents';
 
 preloader();
 window.addEventListener('DOMContentLoaded', () => {
@@ -31,4 +32,5 @@ window.addEventListener('DOMContentLoaded', () => {
   contact();
   changeBackgroundPositionOnScroll();
   video();
+  formComponents();
 });

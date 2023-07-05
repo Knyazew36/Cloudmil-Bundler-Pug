@@ -61,4 +61,22 @@
       }
     }
   }
+
+  &_catalog {
+    padding: 15px 20px;
+    font-size: 18px;
+    line-height: 130%;
+
+    background-color: #e6d54f;
+    color: #435a52;
+
+    &::before {
+      border: 0.1px solid #3e483c;
+    }
+    @media #{media('>',m)} {
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
 }

@@ -1,0 +1,19 @@
+
+
+mixin catalog(mods)
+  .catalog 
+    .container
+      .catalog__inner 
+        - for (var n = 0; n < 2; n++)
+          section.catalog__section(data-aos='fade-up')
+            h2.catalog__title Название категории
+            .catalog__box
+                .catalog__item
+                  - for (var i = 0; i < 4; i++)
+                    .catalog-card
+                      .catalog-card__img 
+                        img.service-img(src='../../images/card-1.JPG' alt='')
+                      .service-card__body.catalog-card__body
+                        h4.catalog-card__title Название продукта
+                        .catalog__btn
+                          +btn('Узнать закупочную стоимость','btn_catalog')
