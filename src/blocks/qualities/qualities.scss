@@ -5,6 +5,9 @@
     gap: 40px;
     justify-items: center;
 
+    @media #{media('<',t)} {
+      grid-template-columns: repeat(2, 1fr);
+    }
     @media #{media('<',m)} {
       grid-template-columns: repeat(1, 1fr);
     }
@@ -12,12 +15,19 @@
 
   &__card {
     background-color: #f2f2f2;
-    // width: 400px;
     border-radius: $border;
     overflow: hidden;
 
     @media #{media('<',t)} {
       width: auto;
+      &:last-child {
+        grid-column: span 2;
+      }
+    }
+    @media #{media('<',t)} {
+      &:last-child {
+        grid-column: span 1;
+      }
     }
   }
 
@@ -29,8 +39,8 @@
   }
 
   &__img {
-    // height: 250px;
     min-height: 150px;
+    max-height: 300px;
     position: relative;
     overflow: hidden;
     &-img {

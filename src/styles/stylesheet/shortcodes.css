@@ -53,9 +53,9 @@
   font-size: 18px;
   color: #838580;
 }
-.heading-title-content a:hover {
+/* .heading-title-content a:hover {
   color: #e6d54f;
-}
+} */
 
 /* about */
 .tf-text-service {
@@ -343,14 +343,6 @@
 }
 .box-detail .detail-2 .fa:hover {
   color: #e6d54f;
-}
-
-/* Blog */
-.main-blog {
-  padding: 120px 0 120px 0;
-}
-.button-blog {
-  margin-top: 20px;
 }
 
 /* Blog Detail */
@@ -682,9 +674,7 @@
   font-size: 14px;
   font-weight: 400;
 }
-.widget-tags .tag-cloud a:hover {
-  background-color: #297d53;
-}
+
 .widget-tags .tag-cloud {
   text-align: justify;
 }
@@ -1133,9 +1123,7 @@
 .box-portfolio2 .title-32 a {
   color: #fff;
 }
-.box-portfolio2 .title-32 a:hover {
-  color: #e6d54f;
-}
+
 
 /* team */
 .section-team2 {

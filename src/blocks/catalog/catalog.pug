@@ -12,9 +12,8 @@ mixin catalog(mods)
                       img.service-img(src='../../images/card-1.JPG' alt='')
                     .service-card__body.catalog-card__body
                       h4.catalog-card__title=name
-                      .catalog__btn
-                        +btn('Узнать закупочную стоимость','btn_catalog modal-on')
-
+          .catalog__btn
+            +btn('Узнать о наличии товара','btn_yellow modal-on')
         section.catalog__section(data-aos='fade-up')
           h2.catalog__title Бобовые и зернобобовые культуры
           .catalog__box
@@ -25,20 +24,20 @@ mixin catalog(mods)
                       img.service-img(src='../../images/card-1.JPG' alt='')
                     .service-card__body.catalog-card__body
                       h4.catalog-card__title=name
-                      .catalog__btn
-                        +btn('Узнать закупочную стоимость','btn_catalog modal-on')
+          .catalog__btn
+            +btn('Узнать о наличии товара','btn_yellow modal-on')
         section.catalog__section(data-aos='fade-up')
           h2.catalog__title Крупы
           .catalog__box
-            .catalog__item
-              each name in ['Пшено','Крупа чечевичная','Рис','Гречка','Крупа чечевичная','Мука чечевичная']
-                .catalog-card
-                  .catalog-card__img 
-                    img.service-img(src='../../images/card-1.JPG' alt='')
-                  .service-card__body.catalog-card__body
-                    h4.catalog-card__title=name
-                    .catalog__btn
-                      +btn('Узнать закупочную стоимость','btn_catalog modal-on')
+              .catalog__item
+                each name in ['Пшено','Крупа чечевичная','Рис','Гречка','Крупа чечевичная','Мука чечевичная']
+                  .catalog-card
+                    .catalog-card__img 
+                      img.service-img(src='../../images/card-1.JPG' alt='')
+                    .service-card__body.catalog-card__body
+                      h4.catalog-card__title=name
+          .catalog__btn
+            +btn('Узнать о наличии товара','btn_yellow modal-on')
         section.catalog__section(data-aos='fade-up')
           h2.catalog__title Зерновые культуры
           .catalog__box
@@ -49,9 +48,8 @@ mixin catalog(mods)
                     img.service-img(src='../../images/card-1.JPG' alt='')
                   .service-card__body.catalog-card__body
                     h4.catalog-card__title=name
-                    .catalog__btn
-                      +btn('Узнать закупочную стоимость','btn_catalog modal-on')
-
+          .catalog__btn
+            +btn('Узнать о наличии товара','btn_yellow modal-on')
         section.catalog__section(data-aos='fade-up')
           h2.catalog__title Подсолнечное масло
           .catalog__box
@@ -62,5 +60,5 @@ mixin catalog(mods)
                     img.service-img(src='../../images/card-1.JPG' alt='')
                   .service-card__body.catalog-card__body
                     h4.catalog-card__title=name
-                    .catalog__btn
-                      +btn('Узнать закупочную стоимость','btn_catalog modal-on')
+          .catalog__btn
+            +btn('Узнать о наличии товара','btn_yellow modal-on')

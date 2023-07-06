@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 
-    @media #{media('<',m)} {
+    @media #{media('<',t)} {
       grid-template-columns: repeat(1, 1fr);
     }
   }
