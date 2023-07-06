@@ -13,7 +13,7 @@ export const modal = () => {
     modal.classList.add('--response');
     setTimeout(() => {
       modalOff();
-    }, 2000);
+    }, 3000);
   });
 
   buttons.forEach((el) => {

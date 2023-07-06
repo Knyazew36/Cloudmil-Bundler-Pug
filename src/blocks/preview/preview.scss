@@ -12,10 +12,14 @@
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: 100%;
+    &_catalog {
+      background-image: url('/istockphoto-1408016961-1024x1024.jpg');
+    }
     @media #{media('<',m)} {
       background-size: 300%;
       height: 500px;
     }
+
     img {
       position: absolute;
       top: 0;

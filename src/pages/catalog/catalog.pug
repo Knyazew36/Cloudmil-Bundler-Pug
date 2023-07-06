@@ -3,9 +3,12 @@ extends ../../layout/layout
 block variables
   -
     const pageName = 'catalog'
-    const pageTitle = 'catalog'
+    const pageTitle = 'Каталог'
 
 block content
   main
-    +preview('Каталог')
+    .preview-page__preview.background-element
+      .preview-page__titlebox
+        h1.preview-page__title Каталог
+        +breadcrumb(text)
     +catalog

@@ -1,19 +1,67 @@
-
-
 mixin catalog(mods)
   .catalog 
     .container
       .catalog__inner 
-        - for (var n = 0; n < 2; n++)
-          section.catalog__section(data-aos='fade-up')
-            h2.catalog__title Название категории
-            .catalog__box
-                .catalog__item
-                  - for (var i = 0; i < 4; i++)
-                    .catalog-card
-                      .catalog-card__img 
-                        img.service-img(src='../../images/card-1.JPG' alt='')
-                      .service-card__body.catalog-card__body
-                        h4.catalog-card__title Название продукта
-                        .catalog__btn
-                          +btn('Узнать закупочную стоимость','btn_catalog modal-on')
+
+        section.catalog__section(data-aos='fade-up')
+          h2.catalog__title Масличные и мелкосемянные культуры
+          .catalog__box
+              .catalog__item
+                each name, index in ['Горчица','Лён','Расторопша','Кориандр','Рыжик','Сафлор','Редька масличная','Подсолнечник','Рапс','Фацелия','Амарант','Клевер','Шрот (все виды)','Горчица белая','Горчица желтая','Горчица черная']
+                  .catalog-card
+                    .catalog-card__img 
+                      img.service-img(src='../../images/card-1.JPG' alt='')
+                    .service-card__body.catalog-card__body
+                      h4.catalog-card__title=name
+                      .catalog__btn
+                        +btn('Узнать закупочную стоимость','btn_catalog modal-on')
+
+        section.catalog__section(data-aos='fade-up')
+          h2.catalog__title Бобовые и зернобобовые культуры
+          .catalog__box
+              .catalog__item
+                each name in ['Кукуруза','Нут','Чечевица','Фасоль','Горох','Маш','Люпин','Лен','Лен коричневый','Лен золотой (белый)']
+                  .catalog-card
+                    .catalog-card__img 
+                      img.service-img(src='../../images/card-1.JPG' alt='')
+                    .service-card__body.catalog-card__body
+                      h4.catalog-card__title=name
+                      .catalog__btn
+                        +btn('Узнать закупочную стоимость','btn_catalog modal-on')
+        section.catalog__section(data-aos='fade-up')
+          h2.catalog__title Крупы
+          .catalog__box
+            .catalog__item
+              each name in ['Пшено','Крупа чечевичная','Рис','Гречка','Крупа чечевичная','Мука чечевичная']
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src='../../images/card-1.JPG' alt='')
+                  .service-card__body.catalog-card__body
+                    h4.catalog-card__title=name
+                    .catalog__btn
+                      +btn('Узнать закупочную стоимость','btn_catalog modal-on')
+        section.catalog__section(data-aos='fade-up')
+          h2.catalog__title Зерновые культуры
+          .catalog__box
+            .catalog__item
+              each name in ['Сорго','Пшеница','Ячмень','Рожь','Тритикале','Просо','Гречиха']
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src='../../images/card-1.JPG' alt='')
+                  .service-card__body.catalog-card__body
+                    h4.catalog-card__title=name
+                    .catalog__btn
+                      +btn('Узнать закупочную стоимость','btn_catalog modal-on')
+
+        section.catalog__section(data-aos='fade-up')
+          h2.catalog__title Подсолнечное масло
+          .catalog__box
+            .catalog__item
+              each name in ['Рафинированное подсолнечное масло','Нерафинированное подсолнечное масло']
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src='../../images/card-1.JPG' alt='')
+                  .service-card__body.catalog-card__body
+                    h4.catalog-card__title=name
+                    .catalog__btn
+                      +btn('Узнать закупочную стоимость','btn_catalog modal-on')

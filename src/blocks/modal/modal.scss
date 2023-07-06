@@ -45,6 +45,9 @@
       text-align: center;
       color: white;
       line-height: 130%;
+      @media #{media('<',m)} {
+        font-size: 42px;
+      }
     }
   }
   &__close {
