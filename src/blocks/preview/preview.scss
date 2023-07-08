@@ -12,9 +12,7 @@
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: 100%;
-    &_catalog {
-      background-image: url('/istockphoto-1408016961-1024x1024.jpg');
-    }
+
     @media #{media('<',m)} {
       background-size: 300%;
       height: 500px;
@@ -63,4 +61,13 @@
   @media #{media('<',m)} {
     height: 500px;
   }
+}
+.preview-page_contact {
+  background-image: url('/istockphoto-1346218406-1024x1024.jpg');
+}
+.preview-page_catalog {
+  background-image: url('/istockphoto-1408016961-1024x1024.jpg');
+}
+.preview-page_gallery {
+  background-image: url('/istockphoto-1328027617-1024x1024.jpg');
 }

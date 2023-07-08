@@ -2,7 +2,7 @@ mixin catalog(mods)
   .catalog 
     .container
       .catalog__inner 
-        section.catalog__section(data-aos='fade-up')
+        section.catalog__section(data-aos='fade-up' id='seed1')
           h2.catalog__title Масличные и мелкосемянные культуры
           .catalog__box
               .catalog__item
@@ -14,7 +14,7 @@ mixin catalog(mods)
                       h4.catalog-card__title=name
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
-        section.catalog__section(data-aos='fade-up')
+        section.catalog__section(data-aos='fade-up' id='legumes')
           h2.catalog__title Бобовые и зернобобовые культуры
           .catalog__box
               .catalog__item
@@ -26,7 +26,7 @@ mixin catalog(mods)
                       h4.catalog-card__title=name
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
-        section.catalog__section(data-aos='fade-up')
+        section.catalog__section(data-aos='fade-up' id='cereals')
           h2.catalog__title Крупы
           .catalog__box
               .catalog__item
@@ -38,7 +38,7 @@ mixin catalog(mods)
                       h4.catalog-card__title=name
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
-        section.catalog__section(data-aos='fade-up')
+        section.catalog__section(data-aos='fade-up' id='seed')
           h2.catalog__title Зерновые культуры
           .catalog__box
             .catalog__item
@@ -50,7 +50,7 @@ mixin catalog(mods)
                     h4.catalog-card__title=name
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
-        section.catalog__section(data-aos='fade-up')
+        section.catalog__section(data-aos='fade-up' id='oil')
           h2.catalog__title Подсолнечное масло
           .catalog__box
             .catalog__item

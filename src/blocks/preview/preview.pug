@@ -1,6 +1,5 @@
-mixin preview(text)
-  .preview-page__preview.background-element
-      //- img(src="../../images/slide-2.jpg", alt="")
+mixin preview(text,img)
+  .preview-page__preview.background-element&attributes(attributes)
       .preview-page__titlebox
         +breadcrumb(text)
         h1.preview-page__title=text

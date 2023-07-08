@@ -34,3 +34,15 @@ window.addEventListener('DOMContentLoaded', () => {
   video();
   formComponents();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash.substr(1);
+  if (hash) {
+    const targetElement = document.getElementById(hash);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  }
+});
