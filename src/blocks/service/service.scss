@@ -3,6 +3,7 @@
   background-color: #e6d64f21;
   padding: 110px 0;
 
+  cursor: pointer;
   @media #{media('<',m)} {
     padding: 40px 0;
   }
@@ -45,7 +46,7 @@
 
   &__box {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 
     @media #{media('<',t)} {
@@ -58,6 +59,8 @@
   }
 
   &-card {
+    display: flex;
+    flex-direction: column;
     border-radius: $border;
     overflow: hidden;
 
@@ -77,6 +80,7 @@
     }
 
     &__body {
+      height: 190px;
       padding: 10px;
       display: flex;
       position: relative;
@@ -109,7 +113,6 @@
       align-self: flex-end;
       width: 50px;
       height: 50px;
-      // border-radius: 50%;
       border-radius: $border;
       cursor: pointer;
       background-color: white;

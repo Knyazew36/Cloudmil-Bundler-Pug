@@ -1,4 +1,3 @@
-import '../../node_modules/swiper/swiper.min.css';
 import '../styles/style.scss';
 import $ from 'jquery';
 import AOS from 'aos';
@@ -18,6 +17,7 @@ import { contact } from '../blocks/contact/contact';
 import { changeBackgroundPositionOnScroll } from '../blocks/preview/preview';
 import { video } from './video';
 import { formComponents } from '../blocks/formComponents/formComponents';
+import { scrollTo } from './scrollto';
 
 preloader();
 window.addEventListener('DOMContentLoaded', () => {
@@ -33,16 +33,5 @@ window.addEventListener('DOMContentLoaded', () => {
   changeBackgroundPositionOnScroll();
   video();
   formComponents();
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const hash = window.location.hash.substr(1);
-  if (hash) {
-    const targetElement = document.getElementById(hash);
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth',
-      });
-    }
-  }
+  scrollTo();
 });
