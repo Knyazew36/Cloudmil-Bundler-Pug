@@ -116,7 +116,7 @@
       border-radius: $border;
       cursor: pointer;
       background-color: white;
-      border: 2px solid #e6d54f;
+      border: 2px solid $yellow;
       color: #a2a8a3;
       transition: $transition;
       svg {
@@ -135,11 +135,11 @@
         }
 
         .service-card__title {
-          color: #e6d54f;
+          color: $yellow;
         }
 
         .service-card__button {
-          background: #e6d54f;
+          background: $yellow;
           svg g {
             fill: white;
           }

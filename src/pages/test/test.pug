@@ -1,0 +1,67 @@
+extends ../../layout/layout
+
+block variables
+  -
+    const pageName = 'test'
+    const pageTitle = 'test'
+
+block content
+  main
+    +banner('Качество, сервис и надежность — это основные принципы, которым «Big Grain» придает особое значение!')
+    +banner('Качество, сервис и надежность — это основные принципы, которым «Big Grain» придает особое значение!').test
+    .test__service.mt-section
+      a.service-card(data-aos='fade-up' href='catalog.html#seed')
+        .service-card__img 
+          img.service-img(src='../../images/card-1.JPG' alt='')
+        .service-card__body 
+          h4.service-card__title Подсолнечное масло
+          .service-card__button
+            +arrow-right.service-card__arrow
+      a.service-card(data-aos='fade-up' href='catalog.html#oil').test
+        .service-card__img 
+          img.service-img(src='../../images/card-1.JPG' alt='')
+        .service-card__body 
+          h4.service-card__title Подсолнечное масло
+          .service-card__button
+            +arrow-right.service-card__arrow
+    .test__font.mt-section
+      .row.bg-green
+        p.test__font_color Цвет Подсолнечное масло
+        p.test__font Цвет Подсолнечное масло
+      .row.bg-green
+        p.test__font_font Шрифт Подсолнечное масло
+        p.test__font Шрифт Подсолнечное масло
+      .row.bg-green
+        p.test__font_font.test__font_color  Шрифт+ ЦВЕТ  Подсолнечное масло
+        p.test__font Шрифт Подсолнечное масло
+    .test__btn
+      +btn('Как сейчас','btn_yellow')
+      +btn('ЦВЕТ','btn_test')
+      +btn('Шрифт','btn_test_f btn_test_f')
+      +btn('ЦВЕТ ШРИФТ','btn_test_fc')
+
+    .test__q 
+      .qualities__card(data-aos='fade-up').test
+        .qualities__img
+          img(src='./../../images/nad.jpg' alt='').qualities__img-img
+          img.qualities__decor(src="../../images/logo-yelow.png", alt="logo")
+        .qualities__box
+          h3.qualities__title            Надежность — это неотъемлемая черта «Big Grain».
+          p.qualities__text
+            | Зарекомендовав себя, мы укрепили доверие клиентов и
+            | сельхозпроизводителей. Способность выполнять свои
+            | обязательства и сохранять долгосрочные отношения с партнерами
+            | делает нашу компанию приоритетной на рынке
+            | сельскохозяйственных продуктов.
+      .qualities__card(data-aos='fade-up')
+        .qualities__img
+          img(src='./../../images/nad.jpg' alt='').qualities__img-img
+          img.qualities__decor(src="../../images/logo-yelow.png", alt="logo")
+        .qualities__box
+          h3.qualities__title            Надежность — это неотъемлемая черта «Big Grain».
+          p.qualities__text
+            | Зарекомендовав себя, мы укрепили доверие клиентов и
+            | сельхозпроизводителей. Способность выполнять свои
+            | обязательства и сохранять долгосрочные отношения с партнерами
+            | делает нашу компанию приоритетной на рынке
+            | сельскохозяйственных продуктов.

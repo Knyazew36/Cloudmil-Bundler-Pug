@@ -28,8 +28,51 @@
     opacity: 0.2;
   }
 
+  &_test {
+    background-color: #d0ab67;
+    color: #435a52;
+
+    &::before {
+      border: 0.1px solid #3e483c;
+    }
+    @media #{media('>',m)} {
+      &:hover {
+        color: white;
+        background-color: $green-light;
+      }
+    }
+  }
+  &_test_f {
+    color: #435a52;
+    background-color: $yellow;
+    font-family: 'Rubik', sans-serif !important;
+    &::before {
+      border: 0.1px solid #3e483c;
+    }
+    @media #{media('>',m)} {
+      &:hover {
+        color: white;
+        background-color: $green-light;
+      }
+    }
+  }
+  &_test_fc {
+    background-color: #d0ab67;
+    color: #435a52;
+    font-family: 'Rubik', sans-serif !important;
+    &::before {
+      border: 0.1px solid #3e483c;
+    }
+    @media #{media('>',m)} {
+      &:hover {
+        color: white;
+        background-color: $green-light;
+      }
+    }
+  }
+
   &_yellow {
-    background-color: #e6d54f;
+    background-color: $yellow;
     color: #435a52;
 
     &::before {
@@ -67,7 +110,7 @@
     font-size: 18px;
     line-height: 130%;
 
-    background-color: #e6d54f;
+    background-color: $yellow;
     color: #435a52;
 
     &::before {
