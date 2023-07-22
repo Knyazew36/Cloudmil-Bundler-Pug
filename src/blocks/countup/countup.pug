@@ -1,0 +1,8 @@
+mixin countup(number,animate,text)
+  .countup
+    .countup__inner
+      .countup__top
+        .countup__number.countup-element(data-countup=number)
+        .countup__value(class=`number-animate-${number}`)=animate
+      .countup__bottom
+        p.countup__text=text

@@ -18,6 +18,7 @@ import { changeBackgroundPositionOnScroll } from '../blocks/preview/preview';
 import { video } from './video';
 import { formComponents } from '../blocks/formComponents/formComponents';
 import { scrollTo } from './scrollto';
+import './countup';
 
 preloader();
 window.addEventListener('DOMContentLoaded', () => {

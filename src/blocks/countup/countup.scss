@@ -1,0 +1,28 @@
+.countup {
+  position: relative;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  &__top {
+    display: flex;
+    gap: 8px;
+    color: #1b982b;
+    font-family: Bad Script;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__value {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: $transition;
+  }
+}
+.fade-up {
+  transform: translateY(0);
+  opacity: 1;
+}

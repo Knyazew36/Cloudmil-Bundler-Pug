@@ -1,0 +1,265 @@
+.about-section {
+  position: relative;
+  padding-top: 80px;
+}
+
+.about {
+  .container {
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: Bad Script;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 91px;
+    letter-spacing: 0em;
+    color: #000;
+    text-align: center;
+  }
+  &__text {
+    color: #000;
+    text-align: center;
+    font-family: Bad Script;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__subtext {
+    color: #000;
+    text-align: center;
+    font-family: Bad Script;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__list {
+    list-style: initial;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    overflow: hidden;
+    @media #{media("<",m)} {
+      list-style: none;
+    }
+  }
+}
+
+.about-name {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1140px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about-history {
+  &__inner {
+    width: 100%;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 710px;
+  }
+}
+
+.about-directions {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__list {
+    margin-top: 25px;
+  }
+}
+
+.about-advantages {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    @media #{media('<',t)} {
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__subtitle {
+    color: #000;
+    font-family: Bad Script;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.about-missions {
+  &__list {
+    max-width: 585px;
+    padding-left: 10px;
+  }
+}
+
+.about-modal {
+  margin-bottom: 100px;
+
+  &__inner {
+    display: flex;
+    gap: 65px;
+  }
+  &__left {
+    width: 233px;
+    flex-shrink: 0;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    max-width: 690px;
+    & p {
+      text-align: start;
+    }
+  }
+  img {
+    width: 233px;
+    height: 233px;
+  }
+  &__btn {
+    margin-top: 50px;
+  }
+}
+
+@media #{media('<',m)} {
+  .about-section {
+    padding-top: 40px;
+  }
+  .about {
+    &__inner {
+      width: 100%;
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 110%;
+    }
+    &__text {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &__subtext {
+      font-size: 16px;
+    }
+
+    &__list {
+      font-size: 20px;
+    }
+  }
+
+  .about-name {
+    &__inner {
+      gap: 12px;
+    }
+
+    &__box {
+      overflow: hidden;
+
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+
+  .about-history {
+    &__block {
+      margin-top: 25px;
+      gap: 12px;
+    }
+  }
+
+  .about-directions {
+    &__list {
+      margin-top: 20px;
+    }
+    &__text {
+      margin-top: 20px;
+    }
+  }
+
+  .about-advantages {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    &__item {
+      gap: 0;
+    }
+
+    &__subtitle {
+      font-size: 28px;
+    }
+  }
+  .about-missions {
+    &__list {
+      margin-top: 25px;
+      width: 100%;
+      max-width: 585px;
+    }
+  }
+
+  .about-modal {
+    margin-bottom: 100px;
+
+    &__inner {
+      flex-direction: column;
+      gap: 25px;
+    }
+    &__left {
+      width: 233px;
+    }
+
+    &__right {
+      gap: 25px;
+    }
+    img {
+      width: 233px;
+      height: 233px;
+    }
+    &__btn {
+      margin-top: 40px;
+      width: auto;
+    }
+  }
+}

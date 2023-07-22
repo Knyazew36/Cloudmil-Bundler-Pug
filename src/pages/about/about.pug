@@ -1,0 +1,11 @@
+extends ../../layout/layout
+
+block variables
+  -
+    const pageName = 'about'
+    const pageTitle = 'О нас'
+
+block content
+  main
+    +preview('О нас').preview-page_catalog
+    +about-section

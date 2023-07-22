@@ -4,3 +4,5 @@ gulpfile.js
 postcss.config.js
 vite.config.js
 /javascript
+countup.js
+index.js
