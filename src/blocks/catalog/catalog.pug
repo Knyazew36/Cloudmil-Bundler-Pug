@@ -2,18 +2,7 @@ mixin catalog(mods)
   .catalog 
     .container
       .catalog__inner 
-        section.catalog__section(data-aos='fade-up' id='seed1')
-          h2.catalog__title Масличные и мелкосемянные культуры
-          .catalog__box
-              .catalog__item
-                each name, index in ['Горчица белая',' Горчица желтая',' Горчица черная','Лен белый (золотой)','Лен коричневый','Расторопша','Подсолнечник','Сафлор','Редька масличная',]
-                  .catalog-card
-                    .catalog-card__img 
-                      img.service-img(src='../../images/card-1.JPG' alt='')
-                    .catalog-card__body
-                      h4.catalog-card__title=name
-          .catalog__btn
-            +btn('Узнать о наличии товара','btn_yellow modal-on')
+      
         section.catalog__section(data-aos='fade-up' id='legumes')
           h2.catalog__title Бобовые и зернобобовые культуры
           .catalog__box
@@ -21,28 +10,43 @@ mixin catalog(mods)
                 each name in ['Чечевица красная шлифованная рафинированная','Чечевица красная шлифованная','Чечевица красная колотая шлифованная рафинированная','Чечевица красная колотая шлифованная','Чечевица красная измельченная','Чечевица желтая шлифованная рафинированная','Чечевица желтая шлифованная','Чечевица желтая колотая шлифованная рафинированная','Чечевица желтая колотая шлифованная','Чечевица желтая измельченная','Смесь чечевицы красной и желтой шлифованная рафинированная','Смесь чечевицы красной и желтой колотая','Смесь чечевицы красной и желтой измельченная ','Чечевица зеленая','Чечевица коричневая','Нут',]
                   .catalog-card
                     .catalog-card__img 
-                      img.service-img(src='../../images/card-1.JPG' alt='')
+                      +picture(legumes-${index+1}.jpg)
+                    .catalog-card__body
+                      h4.catalog-card__title=name
+          .catalog__btn
+            +btn('Узнать о наличии товара','btn_yellow modal-on')
+        
+        section.catalog__section(data-aos='fade-up' id='seed1')
+          h2.catalog__title Масличные и мелкосемянные культуры
+          .catalog__box
+              .catalog__item
+                each name, index in ['Горчица белая',' Горчица желтая',' Горчица черная','Лен белый (золотой)','Лен коричневый','Расторопша','Подсолнечник','Сафлор','Редька масличная',]
+                  .catalog-card
+                    .catalog-card__img 
+                      img.service-img(src=`../../images/oilseeds-${index+1}.JPG` alt='')
                     .catalog-card__body
                       h4.catalog-card__title=name
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
         section.catalog__section(data-aos='fade-up' id='cereals')
-          h2.catalog__title Крупы
+          h2.catalog__title Мучные
           .catalog__box
               .catalog__item
-                each name in ['Пшено','Крупа чечевичная','Рис','Гречка','Крупа чечевичная','Мука чечевичная']
+                each name in ['Мука из чечевицы']
                   .catalog-card
                     .catalog-card__img 
-                      img.service-img(src='../../images/card-1.JPG' alt='')
+                      img.service-img(src=`../../images/flour-${index+1}.JPG` alt='')
                     .catalog-card__body
                       h4.catalog-card__title=name
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
+        
+        
         section.catalog__section(data-aos='fade-up' id='seed')
-          h2.catalog__title Зерновые культуры
+          h2.catalog__title Прочие
           .catalog__box
             .catalog__item
-              each name in ['Сорго','Пшеница','Ячмень','Рожь','Тритикале','Просо','Гречиха']
+              each name in ['Фацелия','Сорго','Кориандр','Гречиха']
                 .catalog-card
                   .catalog-card__img 
                     img.service-img(src='../../images/card-1.JPG' alt='')
@@ -51,10 +55,10 @@ mixin catalog(mods)
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
         section.catalog__section(data-aos='fade-up' id='oil')
-          h2.catalog__title Подсолнечное масло
+          h2.catalog__title Масло
           .catalog__box
             .catalog__item
-              each name in ['Рафинированное подсолнечное масло','Нерафинированное подсолнечное масло']
+              each name in ['Масло подсолнечное']
                 .catalog-card
                   .catalog-card__img 
                     img.service-img(src='../../images/card-1.JPG' alt='')

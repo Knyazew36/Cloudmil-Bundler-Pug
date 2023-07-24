@@ -36,14 +36,6 @@
     }
   }
 
-  &__logo {
-    width: 130px;
-
-    @media #{media('<',m)} {
-      width: 105px;
-    }
-  }
-
   &__col {
     display: flex;
     justify-content: space-between;
@@ -58,14 +50,15 @@
   &__logo {
     position: absolute;
     z-index: 5;
-    // top: 0;
-    top: -25px;
-    //Временно
+    top: -6px;
+  }
+  &-logo {
+    width: 135px;
+    height: auto;
     @media #{media('<',m)} {
-      top: -20px;
+      width: 100px;
     }
   }
-
   &__connection {
     display: flex;
     align-items: center;
