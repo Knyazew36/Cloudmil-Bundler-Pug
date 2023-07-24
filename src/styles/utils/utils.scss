@@ -5,6 +5,10 @@
     margin-top: 40px;
   }
 }
-
+.fz-small {
+  @media (max-width: 768px) {
+    font-size: 48px !important;
+  }
+}
 
 $border: 5px;

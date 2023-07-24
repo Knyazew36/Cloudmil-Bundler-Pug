@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import { Fancybox } from '@fancyapps/ui';
 import '../../node_modules/@fancyapps/ui/dist/fancybox.css';
 
+import './scrollto';
 import { header } from '../blocks/header/header';
 import { preloader } from '../blocks/preloader/preloader';
 import { modal } from '../blocks/modal/modal';
@@ -17,7 +18,6 @@ import { contact } from '../blocks/contact/contact';
 import { changeBackgroundPositionOnScroll } from '../blocks/preview/preview';
 import { video } from './video';
 import { formComponents } from '../blocks/formComponents/formComponents';
-import { scrollTo } from './scrollto';
 import './countup';
 
 preloader();
@@ -34,5 +34,4 @@ window.addEventListener('DOMContentLoaded', () => {
   changeBackgroundPositionOnScroll();
   video();
   formComponents();
-  scrollTo();
 });
