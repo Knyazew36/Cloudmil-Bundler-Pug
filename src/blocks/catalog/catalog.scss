@@ -31,19 +31,16 @@
 
   &__item {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 
     @media #{media('<',d)} {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    @media #{media('<',t)} {
       grid-template-columns: repeat(3, 1fr);
     }
-    @media #{media('<',m)} {
+    @media #{media('<',t)} {
       grid-template-columns: repeat(2, 1fr);
     }
-    @media #{media('<',s)} {
+    @media #{media('<',m)} {
       grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -87,7 +84,7 @@
     }
 
     &__img {
-      height: 150px;
+      height: 190px;
       overflow: hidden;
       img {
         width: 100%;

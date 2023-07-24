@@ -40,10 +40,6 @@
     }
   }
 
-  &-img {
-    height: 250px;
-  }
-
   &__box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -157,4 +153,9 @@
       }
     }
   }
+}
+
+.catalog-card {
+  border-radius: $border;
+  overflow: hidden;
 }

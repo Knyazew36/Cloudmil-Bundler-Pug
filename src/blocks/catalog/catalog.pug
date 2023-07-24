@@ -3,45 +3,159 @@ mixin catalog(mods)
     .container
       .catalog__inner 
       
-        section.catalog__section(data-aos='fade-up' id='legumes')
+        section.catalog__section(data-aos='fade-up' id='seed1')
           h2.catalog__title Бобовые и зернобобовые культуры
           .catalog__box
-              .catalog__item
-                each name in ['Чечевица красная шлифованная рафинированная','Чечевица красная шлифованная','Чечевица красная колотая шлифованная рафинированная','Чечевица красная колотая шлифованная','Чечевица красная измельченная','Чечевица желтая шлифованная рафинированная','Чечевица желтая шлифованная','Чечевица желтая колотая шлифованная рафинированная','Чечевица желтая колотая шлифованная','Чечевица желтая измельченная','Смесь чечевицы красной и желтой шлифованная рафинированная','Смесь чечевицы красной и желтой колотая','Смесь чечевицы красной и желтой измельченная ','Чечевица зеленая','Чечевица коричневая','Нут',]
-                  .catalog-card
-                    .catalog-card__img 
-                      +picture(legumes-${index+1}.jpg)
-                    .catalog-card__body
-                      h4.catalog-card__title=name
+            .catalog__item
+              .catalog-card
+                .catalog-card__img 
+                  +picture(`legumes-1.jpg`)
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица красная шлифованная рафинированная
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/legumes-2.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица красная шлифованная
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC08957.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица красная колотая шлифованная рафинированная
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC08968.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица красная колотая шлифованная
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC08971.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица красная измельченная
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC09012.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица желтая шлифованная рафинированная
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC09031.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица желтая шлифованная
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC09050.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица желтая колотая шлифованная рафинированная
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC09052.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица желтая колотая шлифованная
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC09070.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица желтая измельченная
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC09089.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Смесь чечевицы красной и желтой шлифованная рафинированная
+
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC09127.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Смесь чечевицы красной и желтой колотая
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC09126.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Смесь чечевицы красной и желтой измельченная
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC09140.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица зеленая
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC09155-2.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица коричневая
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC09164.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Нут
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
         
-        section.catalog__section(data-aos='fade-up' id='seed1')
+        section.catalog__section(data-aos='fade-up' id='legumes')
           h2.catalog__title Масличные и мелкосемянные культуры
           .catalog__box
               .catalog__item
-                each name, index in ['Горчица белая',' Горчица желтая',' Горчица черная','Лен белый (золотой)','Лен коричневый','Расторопша','Подсолнечник','Сафлор','Редька масличная',]
-                  .catalog-card
-                    .catalog-card__img 
-                      img.service-img(src=`../../images/oilseeds-${index+1}.JPG` alt='')
-                    .catalog-card__body
-                      h4.catalog-card__title=name
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src=`../../images/DSC09182.JPG` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Горчица белая
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src=`../../images/DSC09190-2.JPG` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Горчица желтая
+
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src=`../../images/DSC09207.JPG` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Горчица черная
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src=`../../images/DSC09214-2.JPG` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Лен белый (золотой)
+
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src=`../../images/DSC09226.JPG` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Лен коричневый
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src=`../../images/DSC09237.JPG` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Расторопша
+
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src=`../../images/DSC09247.JPG` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Подсолнечник
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src=`../../images/DSC09258.JPG` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Сафлор
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src=`../../images/DSC09272.JPG` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Редька масличная
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
         section.catalog__section(data-aos='fade-up' id='cereals')
           h2.catalog__title Мучные
           .catalog__box
               .catalog__item
-                each name in ['Мука из чечевицы']
-                  .catalog-card
-                    .catalog-card__img 
-                      img.service-img(src=`../../images/flour-${index+1}.JPG` alt='')
-                    .catalog-card__body
-                      h4.catalog-card__title=name
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src=`../../images/DSC09288.jpg` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Мука из чечевицы
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
-        
-        
         section.catalog__section(data-aos='fade-up' id='seed')
           h2.catalog__title Прочие
           .catalog__box

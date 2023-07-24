@@ -135,29 +135,10 @@
 
 .about-modal {
   margin-bottom: 100px;
-
+  max-width: 585px;
   &__inner {
     display: flex;
-    gap: 65px;
-  }
-  &__left {
-    width: 233px;
-    flex-shrink: 0;
-  }
-
-  &__right {
-    display: flex;
     flex-direction: column;
-    align-items: start;
-
-    max-width: 690px;
-    & p {
-      text-align: start;
-    }
-  }
-  img {
-    width: 233px;
-    height: 233px;
   }
   &__btn {
     margin-top: 50px;
@@ -165,9 +146,6 @@
 }
 
 @media #{media('<',m)} {
-  .about-section {
-    // padding-top: 40px;
-  }
   .about {
     &__inner {
       width: 100%;
@@ -248,19 +226,7 @@
     margin-bottom: 100px;
 
     &__inner {
-      flex-direction: column;
       gap: 25px;
-    }
-    &__left {
-      width: 233px;
-    }
-
-    &__right {
-      gap: 25px;
-    }
-    img {
-      width: 233px;
-      height: 233px;
     }
     &__btn {
       margin-top: 40px;
