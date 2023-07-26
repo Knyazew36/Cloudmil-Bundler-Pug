@@ -35,4 +35,7 @@ mixin gallery-block(mods)
             img(src="../../images/g5.jpg", alt="")
           a.gallery-block__img.fancybox(data-fancybox="gallery" href='./images/g6.jpg')
             img(src="../../images/g6.jpg", alt="")
+          each t, num in ['','','','','','','','','','','','','','','','','','','',]
+            a.gallery-block__img.fancybox(data-fancybox="gallery" href=`./images/p${num+1}.jpg`)
+              img(src=`../../images/p${num+1}.jpg`, alt="")
         +btn('Еще фото','btn_yellow', ).gallery-block__btn
