@@ -126,26 +126,30 @@ mixin catalog(mods)
                     img.service-img(src=`../../images/DSC09237.JPG` alt='')
                   .catalog-card__body
                     h4.catalog-card__title Расторопша
-
-                .catalog-card
-                  .catalog-card__img 
-                    img.service-img(src=`../../images/DSC09247.JPG` alt='')
-                  .catalog-card__body
-                    h4.catalog-card__title Подсолнечник
                 .catalog-card
                   .catalog-card__img 
                     img.service-img(src=`../../images/DSC09258.JPG` alt='')
                   .catalog-card__body
+                    h4.catalog-card__title Кориандр
+                .catalog-card
+                  .catalog-card__img 
+                    //- img.service-img(src=`../../images/DSC09247.JPG` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Подсолнечник
+                .catalog-card
+                  .catalog-card__img 
+                    img.service-img(src=`../../images/DSC09247.JPG` alt='')
+                  .catalog-card__body
                     h4.catalog-card__title Сафлор
                 .catalog-card
                   .catalog-card__img 
-                    img.service-img(src=`../../images/DSC09272.JPG` alt='')
+                    //- img.service-img(src=`../../images/DSC09272.JPG` alt='')
                   .catalog-card__body
                     h4.catalog-card__title Редька масличная
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
         section.catalog__section(data-aos='fade-up' id='cereals')
-          h2.catalog__title Мука
+          h2.catalog__title Мука из чечевицы
           .catalog__box
               .catalog__item
                 .catalog-card
@@ -153,20 +157,29 @@ mixin catalog(mods)
                     img.service-img(src=`../../images/DSC09288.jpg` alt='')
                   .catalog-card__body
                     h4.catalog-card__title Мука из чечевицы
+                .catalog-card
+                  .catalog-card__img 
+                    //- img.service-img(src=`../../images/DSC09288.jpg` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Мука из чечевицы производственная
+                .catalog-card
+                  .catalog-card__img 
+                    //- img.service-img(src=`../../images/DSC09288.jpg` alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title Мука из чечевицы кормовая
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
         section.catalog__section(data-aos='fade-up' id='seed')
-          h2.catalog__title Прочие
+          h2.catalog__title Фасованная продукция
           .catalog__box
             .catalog__item
-              each name in ['Фацелия','Сорго','Кориандр','Гречиха']
                 .catalog-card
                   .catalog-card__img 
-                    img.service-img(src='../../images/card-1.JPG' alt='')
+                    //- img.service-img(src='../../images/card-1.JPG' alt='')
                   .catalog-card__body
-                    h4.catalog-card__title=name
-          .catalog__btn
-            +btn('Узнать о наличии товара','btn_yellow modal-on')
+                    h4.catalog-card__title Продукт
+          
+             
         section.catalog__section(data-aos='fade-up' id='oil')
           h2.catalog__title Масло
           .catalog__box
@@ -177,5 +190,23 @@ mixin catalog(mods)
                     img.service-img(src='../../images/card-1.JPG' alt='')
                   .catalog-card__body
                     h4.catalog-card__title=name
+          .catalog__btn
+            +btn('Узнать о наличии товара','btn_yellow modal-on')
+        section.catalog__section(data-aos='fade-up' id='seed')
+          h2.catalog__title Прочие
+          .catalog__box
+            .catalog__item
+              each name in ['Фацелия','Сорго','Шпрот подсолнечный']
+                .catalog-card
+                  .catalog-card__img 
+                    //- img.service-img(src='../../images/card-1.JPG' alt='')
+                  .catalog-card__body
+                    h4.catalog-card__title=name
+          
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/DSC09272.JPG` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Гречиха
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')

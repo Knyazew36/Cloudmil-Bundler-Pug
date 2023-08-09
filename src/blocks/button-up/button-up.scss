@@ -27,10 +27,13 @@
   }
 }
 .go-top.show {
-  right: 20px;
+  right: 40px;
   opacity: 1;
   visibility: visible;
   z-index: 3;
+  @media #{media('<',t)} {
+    right: 20px;
+  }
 }
 @media #{media('>',m)} {
   .go-top:hover {
