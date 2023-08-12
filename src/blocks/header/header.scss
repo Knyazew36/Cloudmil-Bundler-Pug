@@ -50,12 +50,19 @@
       gap: 0;
     }
   }
-
   &__logo {
     position: absolute;
     z-index: 5;
     top: -6px;
+    //FIXME:
+    &_2 {
+      left: 200px;
+      @media #{media('<',t)} {
+        left: 130px;
+      }
+    }
   }
+
   &-logo {
     width: 135px;
     height: auto;
