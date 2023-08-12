@@ -154,11 +154,6 @@ mixin catalog(mods)
               .catalog__item
                 .catalog-card
                   .catalog-card__img 
-                    img.service-img(src=`../../images/DSC09288.jpg` alt='')
-                  .catalog-card__body
-                    h4.catalog-card__title Мука из чечевицы
-                .catalog-card
-                  .catalog-card__img 
                     //- img.service-img(src=`../../images/DSC09288.jpg` alt='')
                   .catalog-card__body
                     h4.catalog-card__title Мука из чечевицы производственная
@@ -166,19 +161,48 @@ mixin catalog(mods)
                   .catalog-card__img 
                     //- img.service-img(src=`../../images/DSC09288.jpg` alt='')
                   .catalog-card__body
-                    h4.catalog-card__title Мука из чечевицы кормовая
+                    h4.catalog-card__title Мука из чечевицы <br> кормовая
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
         section.catalog__section(data-aos='fade-up' id='fas')
           h2.catalog__title Фасованная продукция
           .catalog__box
             .catalog__item
-              each name in ['Товар','Товар',]
-                .catalog-card
-                  .catalog-card__img 
-                    //- img.service-img(src='../../images/card-1.JPG' alt='')
-                  .catalog-card__body
-                    h4.catalog-card__title=name
+              .catalog-card
+                .catalog-card__img 
+                  +picture('DSC09038.jpg')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица желтая фасованная измельченная
+              .catalog-card
+                .catalog-card__img 
+                  +picture('DSC09081.jpg')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица желтая колотая фасованная измельченная
+              .catalog-card
+                .catalog-card__img 
+                  +picture('DSC09058.jpg')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица желтая шлифованная рафинированная
+              .catalog-card
+                .catalog-card__img 
+                  +picture('DSC09061.jpg')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица желтая шлифованная 
+              .catalog-card
+                .catalog-card__img 
+                  +picture('ksr.jpg')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица красная шлифованная рафинированная
+              .catalog-card
+                .catalog-card__img 
+                  +picture('kks.jpg')
+                .catalog-card__body
+                  h4.catalog-card__title Чечевица красная колотая шлифованная
+              .catalog-card
+                .catalog-card__img 
+                  +picture('DSC09109.jpg')
+                .catalog-card__body
+                  h4.catalog-card__title Смесь чечевицы красной и желтой шлифованная рафинированная
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
         section.catalog__section(data-aos='fade-up' id='oil')
@@ -188,7 +212,7 @@ mixin catalog(mods)
               each name in ['Масло подсолнечное']
                 .catalog-card
                   .catalog-card__img 
-                    img.service-img(src='../../images/card-1.JPG' alt='')
+                    +picture('close-up-water-rings-on-a-yellow-pool-surface.jpg') 
                   .catalog-card__body
                     h4.catalog-card__title=name
           .catalog__btn

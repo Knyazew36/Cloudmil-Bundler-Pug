@@ -4,6 +4,7 @@ export const swiperBottom = () => {
     autoplay: {
       delay: 4500,
     },
+
     speed: 600,
     slidesPerView: 'auto',
   });

@@ -3,23 +3,6 @@ mixin swiper-bottom
     .section-swiper__inner
       .swiper(data-swiper="bottom")
         .swiper-wrapper
-          .swiper-slide
-            img(src="../../images/1-min.JPG", alt="")
-          .swiper-slide
-            img(src="../../images/2-min.JPG" alt='')
-          .swiper-slide
-            img(src="../../images/3-min.JPG" alt='')
-          .swiper-slide
-            img(src="../../images/4-min.JPG" alt='')
-          .swiper-slide
-            img(src="../../images/5-min.JPG" alt='')
-          .swiper-slide
-            img(src="../../images/6-min.JPG" alt='')
-          .swiper-slide
-            img(src="../../images/7-min.JPG" alt='')
-          .swiper-slide
-            img(src="../../images/8-min.JPG" alt='')
-          .swiper-slide
-            img(src="../../images/9-min.JPG" alt='')
-          .swiper-slide
-            img(src="../../images/10-min.JPG" alt='')
+          - for(let a = 1;a < 18; a++)
+            .swiper-slide 
+              +picture(`swb${a}.jpg`)

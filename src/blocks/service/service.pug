@@ -22,7 +22,7 @@ mixin service(mods)
                 .service-card__img 
                   img.service-img(src='../../images/DSC09288.jpg' alt='')
                 .service-card__body 
-                  h4.service-card__title Мука чечевичная (продовольственная и кормовая) 
+                  h4.service-card__title Мука чечевичная <br> (продовольственная и кормовая) 
                   .service-card__button
                     +arrow-right.service-card__arrow
               a.service-card(href='catalog.html#oil')
@@ -33,15 +33,15 @@ mixin service(mods)
                   .service-card__button
                     +arrow-right.service-card__arrow
               a.service-card(href='catalog.html#oil')
-                .service-card__img 
-                  img.service-img(src='../../images/close-up-water-rings-on-a-yellow-pool-surface.jpg' alt='')
+                .service-card__img
+                  +picture('close-up-water-rings-on-a-yellow-pool-surface.jpg') 
                 .service-card__body 
                   h4.service-card__title Подсолнечное масло
                   .service-card__button
                     +arrow-right.service-card__arrow
               a.service-card(href='catalog.html#fas')
-                .service-card__img 
-                  img.service-img(src='../../images/card-1.JPG' alt='')
+                .service-card__img
+                  +picture('fs.jpg')
                 .service-card__body 
                   h4.service-card__title Фасованная продукция 
                   .service-card__button
