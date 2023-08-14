@@ -30,9 +30,11 @@
     display: flex;
     justify-content: space-between;
     z-index: 5;
+
     @media #{media('<',t)} {
       padding: 25px 10px;
     }
+
     @media #{media('<',m)} {
       padding: 10px 20px;
     }
@@ -43,33 +45,42 @@
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+
     @media #{media('<',d)} {
       gap: 20px;
     }
+
     @media #{media('<',t)} {
       gap: 0;
     }
   }
+
   &__logo {
     position: absolute;
     z-index: 5;
     top: -6px;
+
     //FIXME:
     &_2 {
       left: 200px;
+
       @media #{media('<',t)} {
         left: 130px;
       }
     }
+
   }
 
   &-logo {
     width: 135px;
     height: auto;
+
     @media #{media('<',m)} {
       width: 100px;
     }
   }
+
+
   &__connection {
     display: flex;
     align-items: center;
@@ -162,6 +173,7 @@
   z-index: 4;
 
   transition: $transition;
+
   &__list {
     display: flex;
     gap: 20px;
@@ -226,4 +238,10 @@
   &.--active {
     transform: translateX(0);
   }
+}
+
+
+//FIXME: delete
+.header-logo-circle {
+  top: 0 !important;
 }
