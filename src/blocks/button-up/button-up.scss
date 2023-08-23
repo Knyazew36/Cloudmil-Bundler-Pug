@@ -37,6 +37,6 @@
 }
 @media #{media('>',m)} {
   .go-top:hover {
-    background-color: #297d53;
+    background-color: $green-light;
   }
 }

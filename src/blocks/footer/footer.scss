@@ -28,11 +28,13 @@
   }
 
   &__logo {
-    width: 130px;
-
+    width: 135px;
+    flex-shrink: 0;
     @media #{media('<',m)} {
-      width: 105px;
+      width: 100px;
     }
+    border-radius: $border;
+    overflow: hidden;
   }
   &__politic {
     margin-top: 8px;

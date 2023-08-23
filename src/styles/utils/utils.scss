@@ -8,13 +8,8 @@
 
 .fz-small {
   @media (max-width: 768px) {
-    font-size: 48px !important;
+    font-size: 44px !important;
   }
 }
 
 $border: 5px;
-
-//FIXME: удалить
-.mt-10 {
-  margin-top: 10px;
-}
