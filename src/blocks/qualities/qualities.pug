@@ -2,11 +2,10 @@ mixin qualities
   section.qualities.mt-section
     .container
       .qualities__inner
-
         .qualities__card(data-aos='fade-up')
           .qualities__img
-            +picture('imgs3.jpg').qualities__img-img
-            img.qualities__decor(src="../../images/logo-yelow.png", alt="logo")
+            +picture('imgs3.jpg')
+            +logo-yellow.qualities__decor
           .qualities__box
             h3.qualities__title  Качество 
             p.qualities__text Производственные линии с высокой степенью очистки. Любая форма фасовки.
@@ -14,16 +13,16 @@ mixin qualities
 
         .qualities__card(data-aos='fade-up')
           .qualities__img
-            +picture('imgs2.jpg').qualities__img-img
-            img.qualities__decor(src="../../images/logo-yelow.png", alt="logo")
+            +picture('imgs2.jpg')
+            +logo-yellow.qualities__decor
           .qualities__box
             h3.qualities__title Сервис
             p.qualities__text Соблюдаем договоренности и сроки, предоставляем выгодные цены, оперативно взаимодействуем с клиентами, доставляем продукцию любым удобным для вас способом. 
 
         .qualities__card(data-aos='fade-up')
           .qualities__img
-            +picture('imgs1.jpg').qualities__img-img
-            img.qualities__decor(src="../../images/logo-yelow.png", alt="logo")
+            +picture('imgs1.jpg')
+            +logo-yellow.qualities__decor
           .qualities__box
             h3.qualities__title Надежность
             p.qualities__text Мы выполняем свои обязательства и сохраняем долгосрочные отношения с партнерами. Благодаря высокому уровню доверия от клиентов наша компания стала приоритетной на рынке сельхозпроизводителей.
