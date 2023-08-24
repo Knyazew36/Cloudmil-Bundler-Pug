@@ -15,3 +15,9 @@ textarea {
 html {
   scroll-behavior: smooth;
 }
+
+a {
+  &:hover {
+    transition: $transition;
+  }
+}
