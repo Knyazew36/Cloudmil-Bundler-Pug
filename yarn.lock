@@ -6792,6 +6792,11 @@ scroll-lock@^2.1.5:
   resolved "https://registry.npmjs.org/scroll-lock/-/scroll-lock-2.1.5.tgz"
   integrity sha512-GN8Lp0AzXbkrPFUUNkMUruiiv019UvarNKE/SnXi+AxZRjMnDc2R22VB9RcUtL4P/uub04cKibmpHKIKTyWwYQ==
 
+scss-reset@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/scss-reset/-/scss-reset-1.4.2.tgz#0020fd9793286404a6cd9e97814102ad0942f049"
+  integrity sha512-eXtSeI5APjD/TtaIlRdiMRapgsX5GCP4I1Ti3FiUzCSE4GEYnfT1hGISrJkKGZsZbCDhwZv1bUdOOZfPGs3R1A==
+
 seek-bzip@^1.0.5:
   version "1.0.6"
   resolved "https://registry.npmjs.org/seek-bzip/-/seek-bzip-1.0.6.tgz"

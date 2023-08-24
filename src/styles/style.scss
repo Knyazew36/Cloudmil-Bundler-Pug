@@ -1,12 +1,11 @@
 @use 'sass:map';
 @use 'sass:math';
 @use 'sass:string';
+@use 'scss-reset/reset';
 @import '../../node_modules/normalize.css/normalize.css';
 @import 'utils/**/*';
 @import 'libs/**/*';
 @import 'helpers/mixins';
 @import 'helpers/base';
 @import '../layout/layout';
-@import './stylesheet/style.css';
-@import './stylesheet/main';
 @import '../blocks/**/*';

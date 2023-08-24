@@ -2,7 +2,7 @@
   opacity: 0;
   pointer-events: none;
   z-index: 6;
-
+  transition: $transition;
   &__inner {
     position: fixed;
     top: 50%;
@@ -70,6 +70,7 @@
   &_active {
     opacity: 1;
     pointer-events: all;
+    transition: $transition;
   }
 }
 

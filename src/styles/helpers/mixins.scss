@@ -48,12 +48,8 @@
   scrollbar-shadow-color: #2b332b;
   scrollbar-face-color: #2b332b;
 
-  // firefox
-
   scrollbar-width: thin;
   scrollbar-color: #2b332b;
-
-  // chrome, edge, opera, safari
 
   &::-webkit-scrollbar {
     width: $size;
@@ -62,8 +58,6 @@
     background-color: $scrollbar-bg;
   }
   &::-webkit-scrollbar-thumb {
-    // margin: 4px 0;
-
     background-color: #2b332b;
   }
 }
@@ -78,4 +72,38 @@
   box-orient: vertical;
   -webkit-line-clamp: $lineCount;
   line-clamp: $lineCount;
+}
+
+@mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: $size;
+  height: $size;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    // top: ($size - $thickness) / 2;
+    left: 0;
+    right: 0;
+    height: $thickness;
+    background: $color;
+    border-radius: $thickness;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+
+  span {
+    display: block;
+  }
 }
