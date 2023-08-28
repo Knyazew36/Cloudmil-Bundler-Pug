@@ -1,0 +1,40 @@
+.delivery-section {
+  padding-bottom: 200px;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    padding-bottom: 90px;
+  }
+  .about-advantages {
+    &__box {
+      padding-top: 40px;
+      gap: 30px;
+      display: flex;
+      align-items: baseline;
+      @media (max-width: 768px) {
+        align-items: center;
+      }
+      svg {
+        width: 150px;
+        height: auto;
+        path {
+          fill: $green;
+        }
+        @media (max-width: 768px) {
+          width: 80px;
+        }
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: calc(100% / 3 - 20px);
+      @media (max-width: 768px) {
+        width: auto;
+        align-items: center;
+      }
+    }
+  }
+}

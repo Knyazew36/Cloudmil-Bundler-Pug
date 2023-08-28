@@ -133,7 +133,7 @@ mixin catalog(mods)
                     h4.catalog-card__title Кориандр
                 .catalog-card
                   .catalog-card__img 
-                    //- img.service-img(src=`../../images/DSC09247.JPG` alt='')
+                     img.service-img(src=`../../images/istockphoto-477345277-1024x1024.jpg` alt='')
                   .catalog-card__body
                     h4.catalog-card__title Подсолнечник
                 .catalog-card
@@ -154,12 +154,12 @@ mixin catalog(mods)
               .catalog__item
                 .catalog-card
                   .catalog-card__img 
-                    //- img.service-img(src=`../../images/DSC09288.jpg` alt='')
+                    +picture('IMG_6528.jpg')
                   .catalog-card__body
-                    h4.catalog-card__title Мука из чечевицы производственная
+                    h4.catalog-card__title Мука из чечевицы продовольственная
                 .catalog-card
                   .catalog-card__img 
-                    //- img.service-img(src=`../../images/DSC09288.jpg` alt='')
+                    +picture('photo1692967066.jpg')
                   .catalog-card__body
                     h4.catalog-card__title Мука из чечевицы <br> кормовая
           .catalog__btn
@@ -221,10 +221,10 @@ mixin catalog(mods)
           h2.catalog__title Прочие
           .catalog__box
             .catalog__item
-              each name in ['Фацелия','Сорго','Шпрот подсолнечный']
+              each name in ['Фацелия','Сорго',]
                 .catalog-card
                   .catalog-card__img 
-                    //- img.service-img(src='../../images/card-1.JPG' alt='')
+                    //- img.service-img(src='../../images/istockphoto-1201606445-1024x1024.JPG' alt='')
                   .catalog-card__body
                     h4.catalog-card__title=name
               .catalog-card
@@ -232,5 +232,10 @@ mixin catalog(mods)
                   img.service-img(src=`../../images/DSC09272.JPG` alt='')
                 .catalog-card__body
                   h4.catalog-card__title Гречиха
+              .catalog-card
+                .catalog-card__img 
+                  img.service-img(src=`../../images/istockphoto-1201606445-1024x1024.jpg` alt='')
+                .catalog-card__body
+                  h4.catalog-card__title Шпрот подсолнечный
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')

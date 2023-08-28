@@ -2,9 +2,26 @@ extends ../../layout/layout
 
 block variables
   -
-    const pageName = 'delivery'
-    const pageTitle = 'delivery'
+    const pageName = 'Доставка'
+    const pageTitle = 'Доставка'
 
 block content
   main
-    +preview('Доставка').preview-page_contact 
+    +preview('Доставка').preview-page_delivery
+    .container
+      section.about-advantages.mt-section.delivery-section(data-aos='fade-up') 
+        .about-advantages__inner 
+          h2.about__title Наша компания осуществляет доставку следующими способами:
+          .about-advantages__box 
+            .about-advantages__item(data-aos='fade-left')
+              +car
+              h3.about-advantages__subtitle Доставка автотранспортом
+              .about__text 
+            .about-advantages__item(data-aos='fade-left')
+              +ship
+              h3.about-advantages__subtitle Доставка морским судном 
+            .about-advantages__item(data-aos='fade-left')
+              +train
+              h3.about-advantages__subtitle Доставка железнодорожным транспортом
+        .catalog__btn
+          +btn('Узнать подробности','btn_yellow modal-on')
