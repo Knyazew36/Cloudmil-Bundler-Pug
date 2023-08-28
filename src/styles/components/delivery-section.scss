@@ -37,4 +37,11 @@
       }
     }
   }
+
+  &__ship {
+    width: 170px !important;
+    @media (max-width: 768px) {
+      width: 100px !important;
+    }
+  }
 }
