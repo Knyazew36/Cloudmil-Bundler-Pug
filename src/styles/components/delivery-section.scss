@@ -1,7 +1,7 @@
 .delivery-section {
   padding-bottom: 200px;
   overflow: hidden;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     padding-bottom: 90px;
   }
   .about-advantages {
@@ -40,7 +40,7 @@
 
   &__ship {
     width: 170px !important;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       width: 100px !important;
     }
   }
