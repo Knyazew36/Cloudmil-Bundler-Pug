@@ -1,0 +1,19 @@
+.modal-dev {
+  transform: translateX(100%);
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  width: 300px;
+  background-color: #3e483c;
+  padding: 20px;
+  z-index: 20;
+  font-size: 18px;
+  border-radius: $border;
+  color: white;
+  line-height: 120%;
+  text-align: center;
+  transition: $transition;
+  @media #{media('<',l)} {
+    display: none;
+  }
+}
