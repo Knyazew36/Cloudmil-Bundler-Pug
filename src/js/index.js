@@ -19,6 +19,7 @@ import { changeBackgroundPositionOnScroll } from '../blocks/preview/preview';
 import { video } from './video';
 import { formComponents } from '../blocks/formComponents/formComponents';
 import { modalDev } from '../blocks/modal-dev/modal-dev';
+import { response } from '../blocks/response/response';
 
 preloader();
 window.addEventListener('DOMContentLoaded', () => {
@@ -35,4 +36,5 @@ window.addEventListener('DOMContentLoaded', () => {
   video();
   formComponents();
   modalDev();
+  response();
 });

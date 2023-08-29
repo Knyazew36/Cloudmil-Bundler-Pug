@@ -1,7 +1,7 @@
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 export const modal = () => {
   const modal = document.querySelector('.my-modal');
-  const close = document.querySelector('.btn-close');
+  const close = modal.querySelector('.btn-close');
   const overlay = document.querySelector('.overlay');
   const buttons = document.querySelectorAll('.modal-on');
 
