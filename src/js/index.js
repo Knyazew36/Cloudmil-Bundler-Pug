@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Fancybox } from '@fancyapps/ui';
 import '../../node_modules/@fancyapps/ui/dist/fancybox.css';
-
+import 'lazysizes';
 import './scrollto';
 import { header } from '../blocks/header/header';
 import { preloader } from '../blocks/preloader/preloader';
@@ -18,7 +18,6 @@ import { contact } from '../blocks/contact/contact';
 import { changeBackgroundPositionOnScroll } from '../blocks/preview/preview';
 import { video } from './video';
 import { formComponents } from '../blocks/formComponents/formComponents';
-import './countup';
 import { modalDev } from '../blocks/modal-dev/modal-dev';
 
 preloader();

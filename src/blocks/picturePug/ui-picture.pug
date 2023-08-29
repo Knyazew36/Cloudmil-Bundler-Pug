@@ -23,7 +23,11 @@ mixin picture(fileName)
     source(
       type="image/webp"
       srcset=(file.getPath(fileTitle, "webp") + " 1x")
+      alt=fileName
+      class="lazyload" 
     )
     img.picture__img(
-      src=(file.getPath(fileTitle, fileExtension))
+      class="lazyload" 
+      data-src=(file.getPath(fileTitle, fileExtension))
+      alt=fileName
     )
