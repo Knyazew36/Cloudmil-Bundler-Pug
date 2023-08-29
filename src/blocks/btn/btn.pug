@@ -2,4 +2,4 @@ mixin btn(text, classes, href)
    if (href)
     a(class='btn ' + classes href=href)&attributes(attributes)= text 
    else
-    button(class='btn ' + classes href=href)&attributes(attributes)= text
+    button(class='btn ' + classes href=href name=text)&attributes(attributes)= text

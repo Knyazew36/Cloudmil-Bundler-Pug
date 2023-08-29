@@ -5,22 +5,22 @@ mixin service(mods)
             h2.service__title Ознакомьтесь с предложением нашей компании для дальнейшего сотрудничества
             .service__box(data-aos='fade-up')
               a.service-card( href='catalog.html#seed1')
-                .service-card__img 
-                  img.service-img(src=`../../images/DSC08971.jpg` alt='')
+                .service-card__img
+                  +picture('DSC08971.jpg') 
                 .service-card__body 
                   h4.service-card__title Бобовые и зернобобовые культуры
                   .service-card__button
                     +arrow-right.service-card__arrow
               a.service-card(href='catalog.html#legumes')
-                .service-card__img 
-                  img.service-img(src=`../../images/DSC09226.jpg` alt='')
+                .service-card__img
+                  +picture('DSC09226.jpg') 
                 .service-card__body 
                   h4.service-card__title Масличные культуры
                   .service-card__button
                     +arrow-right.service-card__arrow
               a.service-card(href='catalog.html#cereals')
-                .service-card__img 
-                  img.service-img(src='../../images/DSC09288.jpg' alt='')
+                .service-card__img
+                  +picture('DSC09288.jpg') 
                 .service-card__body 
                   h4.service-card__title Мука чечевичная <br> (продовольственная и кормовая) 
                   .service-card__button
@@ -47,8 +47,8 @@ mixin service(mods)
                   .service-card__button
                     +arrow-right.service-card__arrow
               a.service-card(href='catalog.html#seed')
-                .service-card__img 
-                  img.service-img(src='../../images/card-1.JPG' alt='')
+                .service-card__img
+                  +picture('card-1.JPG') 
                 .service-card__body 
                   h4.service-card__title Прочие 
                   .service-card__button
