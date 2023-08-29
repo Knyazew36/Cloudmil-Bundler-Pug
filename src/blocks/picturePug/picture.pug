@@ -24,6 +24,7 @@ mixin picture(fileName)
       type="image/webp"
       srcset=(file.getPath(fileTitle, "webp") + " 1x")
       alt=(fileName)
+      class
     )
     img.picture__img(
       src=(file.getPath(fileTitle, fileExtension))
