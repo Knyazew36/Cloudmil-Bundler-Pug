@@ -28,6 +28,7 @@
       object-fit: cover;
       object-position: center;
     }
+
     &::after {
       content: '';
       position: absolute;
@@ -39,10 +40,12 @@
       opacity: 0.5;
     }
   }
+
   &__titlebox {
     z-index: 1;
     position: relative;
   }
+
   &__links {
     overflow: hidden;
   }
@@ -57,22 +60,28 @@
       font-size: 64px;
     }
   }
+
   @media #{media('<',m)} {
     height: 500px;
   }
 }
+
 .preview-page_contact {
-  background-image: url('/istockphoto-1346218406-1024x1024.jpg');
+  background-image: url('/istockphoto-1432404972-1024x1024.jpg');
 }
+
 .preview-page_catalog {
   background-image: url('/catalog.jpg');
 }
+
 .preview-page_gallery {
   background-image: url('/galery.jpg');
 }
+
 .preview-page_about {
   background-image: url('/about.jpg');
 }
+
 .preview-page_delivery {
   background-image: url('/delivery.jpg');
 }
