@@ -2,15 +2,16 @@ mixin swiper-top(mods)
   .slider.preview
     .swiper.preview-slider(data-swiper='top')
       .swiper-wrapper
-        .swiper-slide.preview__slide 
+        .swiper-slide.preview__slide
           .preview__block
             h2.preview__title.slider-active.fz-small  Экспорт сельскохозяйственной продукции
-          img.preview__img(src='../../images/istockphoto-614309548-1024x1024.jpg' alt='' )
-        .swiper-slide.preview__slide 
+          +picture('istockphoto-1327428630-1024x1024.jpg').preview__img
+          //- img.preview__img(src='../../images/istockphoto-614309548-1024x1024.jpg' alt='' )
+        .swiper-slide.preview__slide
           .preview__block
             h2.preview__title.slider-active Любая форма упаковки
-          +picture('slide-4.jpg').preview__img  
-        .swiper-slide.preview__slide 
+          +picture('slide-4.jpg').preview__img
+        .swiper-slide.preview__slide
           .preview__block
             h2.preview__title Качественное производство
-          +picture('st-2.jpg').preview__img  
+          +picture('st-2.jpg').preview__img
