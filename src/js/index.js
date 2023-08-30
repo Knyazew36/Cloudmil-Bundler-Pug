@@ -20,6 +20,7 @@ import { video } from './video';
 import { formComponents } from '../blocks/formComponents/formComponents';
 import { modalDev } from '../blocks/modal-dev/modal-dev';
 import { response } from '../blocks/response/response';
+import { telegramm } from './telegramm';
 
 preloader();
 window.addEventListener('DOMContentLoaded', () => {
@@ -37,4 +38,5 @@ window.addEventListener('DOMContentLoaded', () => {
   formComponents();
   modalDev();
   response();
+  telegramm();
 });

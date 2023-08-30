@@ -1,3 +1,58 @@
 .response {
   position: relative;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 6;
+  transition: $transition;
+  &__inner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    width: 500px;
+    background-color: #3e483c;
+    border-radius: $border;
+    z-index: 6;
+    transition: $transition;
+  }
+  &.--active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__title {
+    text-align: center;
+    color: white;
+    font-family: $cursive;
+    font-size: 36px;
+    line-height: 140%;
+  }
+  &__close {
+    position: absolute;
+    right: -20px;
+    top: 0;
+  }
+}
+
+@media #{media('<',m)} {
+  .response {
+    &__inner {
+      padding: 20px;
+      width: 90%;
+    }
+
+    &__title {
+      text-align: center;
+      color: white;
+      font-family: $cursive;
+      font-size: 36px;
+    }
+
+    &__btn {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }

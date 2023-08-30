@@ -9,13 +9,13 @@ mixin contact(mods)
       .container 
         .contact__block 
           .contact__form 
-            form.contact-form(action='#')
+            form.contact-form(action='#' id='form-page-contact')
               .contact-form__input
-                +input(type='text' placeholder='Имя' required)
+                +input(type='text' placeholder='Имя' name='name' required)
               .contact-from-input
-                +input(type='text' placeholder='Фамилия')
+                +input(type='text' placeholder='Фамилия' name='surname')
               .contact-from-input
-                +input(type='text' placeholder='Телефонный номер' required data-mask-phone)
+                +input(type='text' placeholder='Телефонный номер' required data-mask-phone name='phone')
               +textarea(name='comment' placeholder='Комментарий')
               +btn('Связаться с нами','btn_yellow contact__button').contact-form__button
           .contact__bottom

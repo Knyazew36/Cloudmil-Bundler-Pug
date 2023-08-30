@@ -6,21 +6,15 @@ mixin modal()
         span.icon-cross
         span.visually-hidden
       .my-modal__body
-        h3.my-modal__title Сайт находится в тестовом режиме, приносим извинения за неудобства
-        br
-        br
-        h3.my-modal__title Website is under development,so apologies for the lack of information
-
-        //TODO:
-        //- h3.my-modal__title Оставить заявку
-        //- .contact__form.my-modal__form 
-        //-   form.contact-form(action='#')
-        //-     .contact-form__input
-        //-       +input(placeholder='Имя' required)
-        //-     .contact-from-input
-        //-       +input(placeholder='Телефонный номер' required data-mask-phone)
-        //-     +textarea(placeholder='Комментарий')
-        //-     p.contact-form__text Нажимая кнопку "связаться с нами", я даю согласие на передачу и  обработку персональных данных, а также подтверждаю, что ознакомлен с Политикой конфеденциальности.
-        //-     +btn('Связаться с нами','btn_yellow contact__button modal-response').contact-form__button
+        h3.my-modal__title Оставить заявку
+        .contact__form.my-modal__form 
+          form.contact-form(action='#')
+            .contact-form__input
+              +input(placeholder='Имя' required name='name')
+            .contact-from-input
+              +input(placeholder='Телефонный номер' required data-mask-phone name='phone')
+            +textarea(placeholder='Комментарий' name='comment')
+            p.contact-form__text Нажимая кнопку "связаться с нами", я даю согласие на передачу и  обработку персональных данных, а также подтверждаю, что ознакомлен с политикой конфеденциальности.
+            +btn('Связаться с нами','btn_yellow contact__button modal-response').contact-form__button
       .my-modal__response
         p.my-modal__response-text Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время!
