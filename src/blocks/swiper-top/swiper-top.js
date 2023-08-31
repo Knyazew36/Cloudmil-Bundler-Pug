@@ -1,3 +1,5 @@
+import Swiper from 'swiper';
+
 export const swiperTop = () => {
   const swiper = new Swiper('[data-swiper="top"]', {
     loop: true,

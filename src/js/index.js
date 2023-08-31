@@ -1,6 +1,7 @@
 import '../styles/style.scss';
 import $ from 'jquery';
 import AOS from 'aos';
+import Swiper from 'swiper';
 import 'aos/dist/aos.css';
 import { Fancybox } from '@fancyapps/ui';
 import '../../node_modules/@fancyapps/ui/dist/fancybox.css';
@@ -21,7 +22,6 @@ import { formComponents } from '../blocks/formComponents/formComponents';
 import { modalDev } from '../blocks/modal-dev/modal-dev';
 import { response } from '../blocks/response/response';
 import { telegramm } from './telegramm';
-
 preloader();
 window.addEventListener('DOMContentLoaded', () => {
   AOS.init();
