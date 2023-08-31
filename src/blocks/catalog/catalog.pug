@@ -215,10 +215,10 @@ mixin catalog(mods)
           .catalog__btn
             +btn('Узнать о наличии товара','btn_yellow modal-on')
         section.catalog__section(data-aos='fade-up' id='seed')
-          h2.catalog__title Прочие
+          h2.catalog__title Прочее
           .catalog__box
             .catalog__item
-              each name in ['Фацелия','Сорго',]
+              each name in ['Фацелия','Сорго','Просо красное','Просо желтое','Пшено']
                 .catalog-card
                   .catalog-card__img
                     +picture(`zg.jpg`) 

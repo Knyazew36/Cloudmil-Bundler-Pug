@@ -6,6 +6,7 @@ import { Fancybox } from '@fancyapps/ui';
 import '../../node_modules/@fancyapps/ui/dist/fancybox.css';
 import 'lazysizes';
 import './scrollto';
+import './libs/swiper.min';
 import { header } from '../blocks/header/header';
 import { preloader } from '../blocks/preloader/preloader';
 import { modal } from '../blocks/modal/modal';
