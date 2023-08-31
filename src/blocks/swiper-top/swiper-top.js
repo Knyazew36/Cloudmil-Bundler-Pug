@@ -1,7 +1,8 @@
 import Swiper from 'swiper';
-
+import { Autoplay } from 'swiper/modules';
 export const swiperTop = () => {
   const swiper = new Swiper('[data-swiper="top"]', {
+    modules: [Autoplay],
     loop: true,
     autoplay: {
       delay: 4500,
