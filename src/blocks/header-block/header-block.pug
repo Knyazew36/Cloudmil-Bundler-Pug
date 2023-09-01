@@ -2,26 +2,26 @@ mixin header
   header.header
     .header__inner
       .header__col
-        a.header__logo(href='./index')
+        a.header__logo(href='./index.html')
           .header__logo-inner
             //FIXME: вставить в код свг
             img(src="/logo-y.svg", alt="").header-logo
-        a.header__logo.header__logo_2(href='./index').header-logo-circle
+        a.header__logo.header__logo_2(href='./index.html').header-logo-circle
           .header__logo-inner
         nav.navigation
           ul.navigation__list
             li.navigation__item
-              a.navigation__link(href='./index') Главная
+              a.navigation__link(href='./index.html') Главная
             li.navigation__item
-              a.navigation__link(href='./catalog') Каталог
+              a.navigation__link(href='./catalog.html') Каталог
             li.navigation__item
-              a.navigation__link(href='./about') О нас
+              a.navigation__link(href='./about.html') О нас
             li.navigation__item
-              a.navigation__link(href='./gallery') Галерея
+              a.navigation__link(href='./gallery.html') Галерея
             li.navigation__item
-              a.navigation__link(href='./delivery')  Доставка
+              a.navigation__link(href='./delivery.html')  Доставка
             li.navigation__item
-              a.navigation__link(href='./contact')  Контакты
+              a.navigation__link(href='./contact.html')  Контакты
       .header__col
         +language
         .header__connection.modal-on
@@ -33,25 +33,25 @@ mixin header-en
   header.header
     .header__inner
       .header__col
-        a.header__logo(href='./index-en')
+        a.header__logo(href='./index-en.html')
           .header__logo-inner
             img(src="/logo-y.svg", alt="").header-logo
-        a.header__logo.header__logo_2(href='./index').header-logo-circle
+        a.header__logo.header__logo_2(href='./index.html').header-logo-circle
           .header__logo-inner
         nav.navigation
           ul.navigation__list
             li.navigation__item
-              a.navigation__link(href='./index-en') Home
+              a.navigation__link(href='./index-en.html') Home
             li.navigation__item
-              a.navigation__link(href='./catalog-en') Catalog
+              a.navigation__link(href='./catalog-en.html') Catalog
             li.navigation__item
-              a.navigation__link(href='./about-en') About Us
+              a.navigation__link(href='./about-en.html') About Us
             li.navigation__item
-              a.navigation__link(href='./gallery-en') Gallery
+              a.navigation__link(href='./gallery-en.html') Gallery
             li.navigation__item
-              a.navigation__link(href='./delivery-en')  Delivery
+              a.navigation__link(href='./delivery-en.html')  Delivery
             li.navigation__item
-              a.navigation__link(href='./contact-en')  Contacts
+              a.navigation__link(href='./contact-en.html')  Contacts
       .header__col
         +language-en
         .header__connection.modal-on

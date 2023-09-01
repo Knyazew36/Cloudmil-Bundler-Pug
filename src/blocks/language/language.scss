@@ -14,6 +14,7 @@
   font-size: 20px;
   transition: $transition;
   font-family: $manrope;
+
   &:hover {
     color: $yellow;
     border: 1px solid $yellow;
@@ -24,6 +25,7 @@
       pointer-events: all;
     }
   }
+
   &__options {
     position: absolute;
     display: flex;
