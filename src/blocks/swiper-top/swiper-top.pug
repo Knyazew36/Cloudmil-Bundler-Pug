@@ -14,3 +14,20 @@ mixin swiper-top(mods)
           .preview__block
             h2.preview__title Качественное производство
           +picture('st-2.jpg').preview__img
+
+mixin swiper-top-en(mods)
+  .slider.preview
+    .swiper.preview-slider(data-swiper='top')
+      .swiper-wrapper
+        .swiper-slide.preview__slide
+          .preview__block
+            h2.preview__title.slider-active.fz-small  Agricultural export
+          +picture('iStock-1327428630.jpg').preview__img
+        .swiper-slide.preview__slide
+          .preview__block
+            h2.preview__title.slider-active Any form of packaging
+          +picture('slide-4.jpg').preview__img
+        .swiper-slide.preview__slide
+          .preview__block
+            h2.preview__title Quality production
+          +picture('st-2.jpg').preview__img

@@ -18,3 +18,24 @@ mixin modal()
             +btn('Связаться с нами','btn_yellow contact__button modal-response').contact-form__button
       .my-modal__response
         p.my-modal__response-text Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время!
+        
+mixin modal-en()
+  .my-modal
+    .overlay
+    .my-modal__inner
+      button.btn-close(type='button my-modal__close' name="close")
+        span.icon-cross
+        span.visually-hidden
+      .my-modal__body
+        h3.my-modal__title Submit your application
+        .contact__form.my-modal__form 
+          form.contact-form(action='#')
+            .contact-form__input
+              +input(placeholder='Name' required name='name')
+            .contact-from-input
+              +input(placeholder='Phone number' required data-mask-phone name='phone')
+            +textarea(placeholder='Comment' name='comment')
+            p.contact-form__text By clicking the "contact us" button, I consent to the transfer and processing of personal data, and also confirm that I have read the privacy policy.
+            +btn('Connect with us','btn_yellow contact__button modal-response').contact-form__button
+      .my-modal__response
+        p.my-modal__response-text Your application has been successfully sent! Our manager will contact you soon!

@@ -43,3 +43,48 @@ mixin contact(mods)
                 span Электронная почта:
                 p secotov@yandex.ru
         
+mixin contact-en(mods)
+  section.contact
+    .contact__inner 
+      .contact__map
+        .contact__map-body
+          .contact__map-overlay
+            img(src="../../images/tap.svg", alt="").contact__map-tap
+          script(type='text/javascript'  charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A298b118c05514fa7cf3d448d37f9574217fd1486cc8927396840209148ac2cee&width=100%25&height=720&lang=ru_RU&scroll=true')
+      .container 
+        .contact__block 
+          .contact__form 
+            form.contact-form(action='#' id='form-page-contact')
+              .contact-form__input
+                +input(type='text' placeholder='Name' name='name' required)
+              .contact-from-input
+                +input(type='text' placeholder='Surname' name='surname')
+              .contact-from-input
+                +input(type='text' placeholder='Phone number' required data-mask-phone name='phone')
+              +textarea(name='comment' placeholder='Comment')
+              +btn('Connect with us','btn_yellow contact__button').contact-form__button
+          .contact__bottom
+            h3.contact__subtitle Legal information:
+            .contact__row
+              .contact__text-info(data-aos='fade-left')
+                span Company name
+                p LIMITED LIABILITY COMPANY "BIG GRAIN",
+              .contact__text-info(data-aos='fade-left')
+                span Legal address of the organization 
+                p 394030, VORONEZH REGION, VORONEZH, BAKUNINSKIY PEREULOK, 11, OFFICE 411,
+              .contact__text-info(data-aos='fade-left') 
+                span INN (Taxpayer’s Identification Number)
+                | 3664252191
+              .contact__text-info(data-aos='fade-left') 
+                span KPP (Tax Registration Reason Code)
+                p 366401001
+              .contact__text-info(data-aos='fade-left') 
+                span OGRN (Primary State Registration Number)
+                | 1223600006728
+              .contact__text-info(data-aos='fade-left') 
+                span Phone:
+                p   8-920-227-77-57
+              .contact__text-info(data-aos='fade-left') 
+                span Email:
+                p secotov@yandex.ru
+        

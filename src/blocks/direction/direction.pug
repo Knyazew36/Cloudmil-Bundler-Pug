@@ -15,3 +15,20 @@ mixin direction(mods)
               li(data-aos='fade-right') - Шпрота подсолнечного
               li(data-aos='fade-right') - Подсолнечного масла
           +btn('Смотреть нашу продукцию', 'btn_green direction__button','catalog.html')
+mixin direction-en(mods)
+  section.direction.mt-section
+    .container
+      .direction__inner
+        .direction__left(data-aos='fade-up')
+          .direction__img
+            +picture('DSC09373.jpg').direction__img_1
+        .direction__right(data-aos='fade-up')
+          .direction__row
+            h2.direction__title Our main areas of focus are selling :
+            ul.direction__list
+              li(data-aos='fade-right') - Legume and grain crops
+              li(data-aos='fade-right') - Oil crop
+              li(data-aos='fade-right') - Lentil flour (food and feed)
+              li(data-aos='fade-right') - Шпрота подсолнечного
+              li(data-aos='fade-right') - Sunflower oil
+          +btn('See our products', 'btn_green direction__button','catalog.html')

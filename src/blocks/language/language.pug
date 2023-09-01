@@ -1,7 +1,10 @@
 mixin language(mods)
   .language
     p.language__text RU
-    //TODO: 
-    //- .language__options 
-    //-   a.language__option(href="#")  EN
-    //-   a.language__option(href="#")  CN
+    .language__options 
+      a.language__option(href="/index-en")  EN
+mixin language-en(mods)
+  .language
+    p.language__text EN
+    .language__options 
+      a.language__option(href="/index") RU

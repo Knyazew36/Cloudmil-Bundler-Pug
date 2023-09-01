@@ -48,3 +48,51 @@ mixin about-section(mods)
             .about-modal__inner 
               p.about__title Остались вопросы?
               +btn('НАПИСАТЬ НАМ','btn_yellow about-modal__btn modal-on')
+mixin about-section-en(mods)
+  .about-section(class=allMods)&attributes(attributes)
+    about
+      .container
+        .about__inner 
+          section.about-name
+            .about-name__inner 
+              h1.about__title "Big Grain" company
+              .about-name__text.about__text Our company is an important player on the agricultural export market. Over the past 9 years, we have been able to establish ourselves as a reliable partner not only in Russia, but also in the CIS countries, as well as near and far abroad.
+          section.about-history.mt-section(data-aos='fade-up')
+            .about-history__inner 
+              h2.about__title History
+              .about-history__block 
+                .about__text Founded in 2014, the company has rapidly expanded its activities and today it is a leader in its field.
+                .about__text In 2022, it was rebranded in order to improve perception among the target audience and adapt to changes in challenging market conditions. Our company was named "Big Grain". This step led to changes in business strategy and, therefore, strengthening our position on the global market.
+          section.about-directions.mt-section(data-aos='fade-up')
+            .about-directions__inner 
+              h2.about__title Our areas of focus
+              .about-directions__text.about__text Wide range of agricultural export
+              ul.about__list.about-directions__list
+               each item in ['- Oil and small-seeded crops','- Legume and grain crops','- Crops','- Grain crops','- Lentil flour (food and feed)','- Sunflower oil','- Sunflower meal']
+                li.about__item(data-aos='fade-left')=item
+          
+          section.about-advantages.mt-section(data-aos='fade-up') 
+            .about-advantages__inner 
+              h2.about__title Main benefits of working with our company
+              .about-advantages__box 
+                .about-advantages__item
+                  h3.about-advantages__subtitle Quality
+                  .about__text We carefully choose our suppliers and only cooperate with reliable agricultural enterprises
+                .about-advantages__item
+                  h3.about-advantages__subtitle Service 
+                  .about__text Communication, efficiency and professionalism in dealing with clients are the factors that make our company successful
+                .about-advantages__item
+                  h3.about-advantages__subtitle Reliability
+                  .about__text Our clients can expect favourable prices and strict compliance with agreements and deadlines
+          
+          section.about-missions.mt-section(data-aos='fade-up') 
+            .about-missions__inner 
+              h2.about__title Mission and values
+              ul.about__list.about-missions__list
+                li.about__item(data-aos='fade-left') - commitment to innovation and scale
+                li.about__item(data-aos='fade-left') - investment in the research and development of new production processes
+                li.about__item(data-aos='fade-left') - application of modern modern methods of organic farming and environmentally friendly production technologies to minimize the negative impact on the consumer and the environment
+          section.about-modal.mt-section(data-aos='fade-up')
+            .about-modal__inner 
+              p.about__title Any questions left?
+              +btn('WRITE TO US','btn_yellow about-modal__btn modal-on')

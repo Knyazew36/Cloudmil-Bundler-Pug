@@ -46,3 +46,52 @@ mixin service(mods)
                   h4.service-card__title Прочее 
                   .service-card__button
                     +arrow-right.service-card__arrow
+
+mixin service-en(mods)
+  section.service.mt-section(data-aos='fade-up')
+        .container
+          .service__inner
+            h2.service__title Check out our company's offer for further cooperation
+            .service__box(data-aos='fade-up')
+              a.service-card( href='catalog.html#seed1')
+                .service-card__img
+                  +picture('DSC08971.jpg') 
+                .service-card__body 
+                  h4.service-card__title Legume and grain crops
+                  .service-card__button
+                    +arrow-right.service-card__arrow
+              a.service-card(href='catalog.html#legumes')
+                .service-card__img
+                  +picture('DSC09226.jpg') 
+                .service-card__body 
+                  h4.service-card__title Oil crops
+                  .service-card__button
+                    +arrow-right.service-card__arrow
+              a.service-card(href='catalog.html#cereals')
+                .service-card__img
+                  +picture('DSC09288.jpg') 
+                .service-card__body 
+                  h4.service-card__title Lentil flour <br> (food and feed) 
+                  .service-card__button
+                    +arrow-right.service-card__arrow
+              a.service-card(href='catalog.html#oil')
+                .service-card__img
+                  +picture('close-up-water-rings-on-a-yellow-pool-surface.jpg') 
+                .service-card__body 
+                  h4.service-card__title Sunflower oil
+                  .service-card__button
+                    +arrow-right.service-card__arrow
+              a.service-card(href='catalog.html#fas')
+                .service-card__img
+                  +picture('fs.jpg')
+                .service-card__body 
+                  h4.service-card__title Packaged products
+                  .service-card__button
+                    +arrow-right.service-card__arrow
+              a.service-card(href='catalog.html#seed')
+                .service-card__img
+                  +picture('card-1.JPG') 
+                .service-card__body 
+                  h4.service-card__title Others 
+                  .service-card__button
+                    +arrow-right.service-card__arrow

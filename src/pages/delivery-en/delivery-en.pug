@@ -1,0 +1,27 @@
+extends ../../layout-en/layout
+
+block variables
+  -
+    const pageName = 'delivery-en'
+    const pageTitle = 'Delivery'
+
+block content
+  main
+    +preview-en('Delivery').preview-page_delivery
+    .container
+      section.about-advantages.mt-section.delivery-section(data-aos='fade-up') 
+        .about-advantages__inner 
+          h2.about__title Our company delivers in the following ways:
+          .about-advantages__box 
+            .about-advantages__item(data-aos='fade-left')
+              +car
+              h3.about-advantages__subtitle Delivery by road
+              .about__text 
+            .about-advantages__item(data-aos='fade-left')
+              +ship.delivery-section__ship
+              h3.about-advantages__subtitle Delivery by sea containers
+            .about-advantages__item(data-aos='fade-left')
+              +train
+              h3.about-advantages__subtitle Delivery by railways 
+        .catalog__btn
+          +btn('LEARN MORE','btn_yellow modal-on')

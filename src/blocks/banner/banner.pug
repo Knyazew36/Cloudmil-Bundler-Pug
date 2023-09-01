@@ -6,3 +6,11 @@ mixin banner(text)
         +logo-yellow
       .banner__text=text
       +btn('Узнать о нас больше','btn_yellow banner__button','about.html')
+mixin banner-en(text)
+  section.banner&attributes(attributes)
+    .banner__img.parallax
+    .banner__inner
+      .banner__logo
+        +logo-yellow
+      .banner__text=text
+      +btn('Learn more about us','btn_yellow banner__button','about-en.html')

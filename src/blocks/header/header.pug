@@ -1,39 +1,81 @@
-header.header
-  .header__inner
-    .header__col
-      a.header__logo(href='./index.html')
-        .header__logo-inner
-          //FIXME: вставить в код свг
-          img(src="/logo-y.svg", alt="").header-logo
-      a.header__logo.header__logo_2(href='./index.html').header-logo-circle
-        .header__logo-inner
-      nav.navigation
-        ul.navigation__list
-          li.navigation__item
-            a.navigation__link(href='./index.html') Главная
-          li.navigation__item
-            a.navigation__link(href='./catalog.html') Каталог
-          li.navigation__item
-            a.navigation__link(href='./about.html') О нас
-          li.navigation__item
-            a.navigation__link(href='./gallery.html') Галерея
-          li.navigation__item
-            a.navigation__link(href='./delivery.html')  Доставка
-          li.navigation__item
-            a.navigation__link(href='./contact.html')  Контакты
-        .navigation__bottom
-          p.footer__link(data-a='fade-left')
-            span Адрес:
-            |   394030, г. Воронеж, Бакунский переулок, д. 11, офис 411
-          a(href="tel:89202277757").footer__link(data-a='fade-left')
-            span Телефон:
-            |   8-920-227-77-57
-          a(href="mailto:secotov@yandex.ru").footer__link(data-a='fade-left')
-            span Электронная почта:
-            |   secotov@yandex.ru
-    .header__col
-      +language
-      .header__connection.modal-on
-        p.header__phone Связаться с нами
-        img.header__phone-img(src='./../../images/phone.svg' alt='phone')
-      .header__burger
+//- mixin header
+//-   header.header
+//-     .header__inner
+//-       .header__col
+//-         a.header__logo(href='./index.html')
+//-           .header__logo-inner
+//-             //FIXME: вставить в код свг
+//-             img(src="/logo-y.svg", alt="").header-logo
+//-         a.header__logo.header__logo_2(href='./index.html').header-logo-circle
+//-           .header__logo-inner
+//-         nav.navigation
+//-           ul.navigation__list
+//-             li.navigation__item
+//-               a.navigation__link(href='./index.html') Главная
+//-             li.navigation__item
+//-               a.navigation__link(href='./catalog.html') Каталог
+//-             li.navigation__item
+//-               a.navigation__link(href='./about.html') О нас
+//-             li.navigation__item
+//-               a.navigation__link(href='./gallery.html') Галерея
+//-             li.navigation__item
+//-               a.navigation__link(href='./delivery.html')  Доставка
+//-             li.navigation__item
+//-               a.navigation__link(href='./contact.html')  Контакты
+//-           .navigation__bottom
+//-             p.footer__link(data-a='fade-left')
+//-               span Адрес:
+//-               |   394030, г. Воронеж, Бакунский переулок, д. 11, офис 411
+//-             a(href="tel:89202277757").footer__link(data-a='fade-left')
+//-               span Телефон:
+//-               |   8-920-227-77-57
+//-             a(href="mailto:secotov@yandex.ru").footer__link(data-a='fade-left')
+//-               span Электронная почта:
+//-               |   secotov@yandex.ru
+//-       .header__col
+//-         +language
+//-         .header__connection.modal-on
+//-           p.header__phone Связаться с нами
+//-           img.header__phone-img(src='./../../images/phone.svg' alt='phone')
+//-         .header__burger
+
+//- mixin header-en
+//-   header.header
+//-     .header__inner
+//-       .header__col
+//-         a.header__logo(href='./index.html')
+//-           .header__logo-inner
+//-             //FIXME: вставить в код свг
+//-             img(src="/logo-y.svg", alt="").header-logo
+//-         a.header__logo.header__logo_2(href='./index.html').header-logo-circle
+//-           .header__logo-inner
+//-         nav.navigation
+//-           ul.navigation__list
+//-             li.navigation__item
+//-               a.navigation__link(href='./index.html') Home
+//-             li.navigation__item
+//-               a.navigation__link(href='./catalog.html') Catalog
+//-             li.navigation__item
+//-               a.navigation__link(href='./about.html') About Us
+//-             li.navigation__item
+//-               a.navigation__link(href='./gallery.html') Gallery
+//-             li.navigation__item
+//-               a.navigation__link(href='./delivery.html')  Delivery
+//-             li.navigation__item
+//-               a.navigation__link(href='./contact.html')  Contacts
+//-           .navigation__bottom
+//-             p.footer__link(data-a='fade-left')
+//-               span Адрес:
+//-               |   394030, г. Воронеж, Бакунский переулок, д. 11, офис 411
+//-             a(href="tel:89202277757").footer__link(data-a='fade-left')
+//-               span Телефон:
+//-               |   8-920-227-77-57
+//-             a(href="mailto:secotov@yandex.ru").footer__link(data-a='fade-left')
+//-               span Электронная почта:
+//-               |   secotov@yandex.ru
+//-       .header__col
+//-         +language
+//-         .header__connection.modal-on
+//-           p.header__phone Сonnect with us
+//-           img.header__phone-img(src='./../../images/phone.svg' alt='phone')
+//-         .header__burger

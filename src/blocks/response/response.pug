@@ -6,3 +6,11 @@ mixin response(mods)
         span.icon-cross
         span.visually-hidden
       p.response__title Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время!
+mixin response-en(mods)
+  .response 
+    .overlay 
+    .response__inner
+      button.btn-close(type='button my-modal__close' name="close")
+        span.icon-cross
+        span.visually-hidden
+      p.response__title Your application has been successfully sent! Our manager will contact you soon!

@@ -1,0 +1,60 @@
+mixin header
+  header.header
+    .header__inner
+      .header__col
+        a.header__logo(href='./index')
+          .header__logo-inner
+            //FIXME: вставить в код свг
+            img(src="/logo-y.svg", alt="").header-logo
+        a.header__logo.header__logo_2(href='./index').header-logo-circle
+          .header__logo-inner
+        nav.navigation
+          ul.navigation__list
+            li.navigation__item
+              a.navigation__link(href='./index') Главная
+            li.navigation__item
+              a.navigation__link(href='./catalog') Каталог
+            li.navigation__item
+              a.navigation__link(href='./about') О нас
+            li.navigation__item
+              a.navigation__link(href='./gallery') Галерея
+            li.navigation__item
+              a.navigation__link(href='./delivery')  Доставка
+            li.navigation__item
+              a.navigation__link(href='./contact')  Контакты
+      .header__col
+        +language
+        .header__connection.modal-on
+          p.header__phone Связаться с нами
+          img.header__phone-img(src='./../../images/phone.svg' alt='phone')
+        .header__burger
+
+mixin header-en
+  header.header
+    .header__inner
+      .header__col
+        a.header__logo(href='./index-en')
+          .header__logo-inner
+            img(src="/logo-y.svg", alt="").header-logo
+        a.header__logo.header__logo_2(href='./index').header-logo-circle
+          .header__logo-inner
+        nav.navigation
+          ul.navigation__list
+            li.navigation__item
+              a.navigation__link(href='./index-en') Home
+            li.navigation__item
+              a.navigation__link(href='./catalog-en') Catalog
+            li.navigation__item
+              a.navigation__link(href='./about-en') About Us
+            li.navigation__item
+              a.navigation__link(href='./gallery-en') Gallery
+            li.navigation__item
+              a.navigation__link(href='./delivery-en')  Delivery
+            li.navigation__item
+              a.navigation__link(href='./contact-en')  Contacts
+      .header__col
+        +language-en
+        .header__connection.modal-on
+          p.header__phone Сonnect with us
+          img.header__phone-img(src='./../../images/phone.svg' alt='phone')
+        .header__burger
