@@ -11,6 +11,10 @@
   transition: $transition;
   border-radius: 3px;
   cursor: pointer;
+
+  &-en {
+    white-space: normal;
+  }
   @media #{media('<',m)} {
     line-height: 130%;
     padding: 20px;
