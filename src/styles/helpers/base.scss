@@ -1,6 +1,6 @@
 body {
   background-color: $bg;
-  font-family: $font;
+  font-family: $baseFont;
   overflow-x: hidden;
   @include styled-scrollbar;
   caret-color: transparent;
@@ -26,4 +26,8 @@ h3 {
 picture {
   width: 100%;
   height: 100%;
+}
+
+a {
+  font-family: $baseFont;
 }

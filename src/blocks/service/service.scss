@@ -17,7 +17,7 @@
     font-size: 42px;
     font-weight: 600;
     text-align: center;
-    font-family: $cursive;
+    font-family: $baseFont;
   }
 
   &__box {
@@ -29,7 +29,7 @@
       font-size: 28px;
       text-align: center;
       font-weight: 500;
-      font-family: $cursive;
+      font-family: $baseFont;
       transition: $transition;
 
       @media #{media('>',m)} {
@@ -96,7 +96,7 @@
     &__title {
       font-size: 28px;
       font-weight: 500;
-      font-family: $cursive;
+      font-family: $baseFont;
       transition: all 0.4s ease;
       line-height: 130%;
       color: #435a52;

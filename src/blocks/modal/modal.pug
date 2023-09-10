@@ -2,7 +2,7 @@ mixin modal()
   .my-modal
     .overlay
     .my-modal__inner
-      button.btn-close(type='button my-modal__close' name="btn-close")
+      button.btn-close(type='button my-modal__close' name="btn-close" aria-label="Close modal window")
         span.icon-cross
         span.visually-hidden
       .my-modal__body
@@ -23,7 +23,7 @@ mixin modal-en()
   .my-modal
     .overlay
     .my-modal__inner
-      button.btn-close(type='button my-modal__close' name="close")
+      button.btn-close(type='button my-modal__close' name="close" aria-label="Close modal window")
         span.icon-cross
         span.visually-hidden
       .my-modal__body

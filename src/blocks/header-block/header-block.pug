@@ -6,7 +6,7 @@ mixin header
           .header__logo-inner
             //FIXME: вставить в код свг
             img(src="/logo-y.svg", alt="logo").header-logo
-        a.header__logo.header__logo_2(href='./index.html').header-logo-circle
+        a.header__logo.header__logo_2(href='./index.html' aria-label="Главная страница").header-logo-circle
           .header__logo-inner
         nav.navigation
           ul.navigation__list
@@ -33,7 +33,7 @@ mixin header-en
   header.header
     .header__inner
       .header__col
-        a.header__logo(href='./index-en.html')
+        a.header__logo(href='./index-en.html' aria-label="Home page")
           .header__logo-inner
             img(src="/logo-y.svg", alt="").header-logo
         a.header__logo.header__logo_2(href='./index.html').header-logo-circle

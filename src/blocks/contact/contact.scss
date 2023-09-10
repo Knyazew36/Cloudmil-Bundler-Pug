@@ -105,14 +105,14 @@
     }
     span {
       font-weight: 400;
-      font-family: $cursive;
+      font-family: $baseFont;
       color: white;
       line-height: 120%;
     }
   }
 
   &__subtitle {
-    font-family: $cursive;
+    font-family: $baseFont;
     font-size: 32px;
     color: white;
   }
