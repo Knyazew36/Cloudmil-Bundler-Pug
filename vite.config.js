@@ -9,7 +9,6 @@ import viteStylelint from 'vite-plugin-stylelint';
 import viteSassGlob from 'vite-plugin-sass-glob-import';
 import viteImagemin from 'vite-plugin-imagemin';
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
-import { htmlPlugin } from './vitePlugin';
 
 const root = resolve(path.dirname(url.fileURLToPath(import.meta.url)), 'src');
 const outDir = resolve(
@@ -61,7 +60,6 @@ export default defineConfig({
     viteEslint({
       failOnError: false,
     }),
-    htmlPlugin(),
     viteStylelint(),
     viteSassGlob(),
     viteImagemin({
