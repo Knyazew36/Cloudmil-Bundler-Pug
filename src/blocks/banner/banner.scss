@@ -18,6 +18,9 @@
   }
 
   &_banner2 {
+    @media #{media('<',t)} {
+      background-image: url(/iStock-1481692677-mob.webp);
+    }
     .banner__img {
       background-image: url(/iStock-1481692677.webp);
       background-position: top;
@@ -31,6 +34,9 @@
     width: 100%;
     height: 100vh;
     z-index: -1;
+    @media #{media('<',t)} {
+      background-image: url(/iStock-1493937240-mob.webp);
+    }
     background-image: url(/iStock-1493937240.webp);
     background-size: cover;
     background-position: bottom;

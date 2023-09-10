@@ -53,6 +53,7 @@
     overflow: hidden;
 
     @media #{media('<',m)} {
+      transform: translateY(-30%);
       width: 100%;
       padding: 10px 20px;
       padding-bottom: 30px;

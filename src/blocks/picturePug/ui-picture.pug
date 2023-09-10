@@ -1,4 +1,4 @@
-mixin picture(fileName)
+mixin picture(fileName, mobileFileName)
   -
     var file = {
       getTitle(filename) {
@@ -25,10 +25,32 @@ mixin picture(fileName)
       srcset=(file.getPath(fileTitle, "webp") + " 1x")
       alt=fileName
       class="lazyload" 
+      media="(min-width: 769px)" 
     )
+    source(
+      type="image/jpeg"
+      srcset=(file.getPath(fileTitle, "jpg") + " 1x")
+      alt=fileName
+      class="lazyload" 
+      media="(min-width: 769px)"  
+    )
+    if mobileFileName
+      source(
+        type="image/webp"
+        srcset=(file.getPath(fileTitle + '-mob', "webp") + " 1x")
+        alt=fileName
+        class="lazyload" 
+        media="(max-width: 768px)"  
+      )
+      source(
+        type="image/jpeg"
+        srcset=(file.getPath(fileTitle + '-mob', "jpg") + " 1x")
+        alt=fileName
+        class="lazyload" 
+        media="(max-width: 768px)" 
+      )
     img.picture__img(
       class="lazyload" 
       data-src=(file.getPath(fileTitle, fileExtension))
       alt=fileName
-      src=(file.getPath(fileTitle, fileExtension))
     )
