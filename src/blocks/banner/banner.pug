@@ -5,7 +5,7 @@ mixin banner(text)
       .banner__logo
         +logo-yellow
       .banner__text=text
-      +btn('Узнать о нас больше','btn_yellow banner__button','about.html')
+      +btn('Узнать о нас больше','btn_yellow banner__button','about')
 mixin banner-en(text)
   section.banner&attributes(attributes)
     .banner__img.parallax
@@ -13,4 +13,4 @@ mixin banner-en(text)
       .banner__logo
         +logo-yellow
       .banner__text=text
-      +btn('Learn more about us','btn_yellow banner__button','about-en.html')
+      +btn('Learn more about us','btn_yellow banner__button','about-en')
