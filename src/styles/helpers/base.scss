@@ -1,11 +1,12 @@
 body {
   background-color: $bg;
   font-family: $baseFont;
-  overflow-x: hidden;
-  @include styled-scrollbar;
+  @include styled-scrollbar();
   caret-color: transparent;
+  min-width: 100vw;
+  overflow-x: hidden;
+  padding: 0 !important;
 }
-
 .main {
   padding: 0 !important;
 }

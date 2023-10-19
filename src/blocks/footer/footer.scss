@@ -39,7 +39,27 @@
         color: #50694c;
       }
     }
+
+    svg {
+      margin-bottom: -1px;
+      &:hover {
+        path {
+          fill: #50694c;
+        }
+      }
+      path {
+        fill: white;
+        transition: $transition;
+      }
+
+      #decor {
+        fill: #e6d64f;
+      }
+      height: 14px;
+      width: auto;
+    }
   }
+
   &__logo {
     width: 135px;
     flex-shrink: 0;
